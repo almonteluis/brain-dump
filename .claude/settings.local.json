@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(ls:*)",
+      "Bash(xargs cat:*)",
+      "Bash(while IFS= read -r -d '' f)",
+      "Bash(do if ! head -10 \"$f\")",
+      "Bash(then echo \"$f\" fi done)",
+      "Bash(then)",
+      "Bash(echo:*)",
+      "Bash(fi:*)",
+      "Bash(done:*)",
+      "Bash(grep:*)",
+      "Bash(xargs ls:*)",
+      "Bash(tree:*)",
+      "mcp__web-reader__webReader",
+      "mcp__web-search-prime__webSearchPrime",
+      "Bash(bun install:*)"
+    ]
+  }
+}
