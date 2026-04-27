@@ -1,1 +1,0 @@
-{look at all my react notes and add wiki-links to advance patterns in this notes.}
