@@ -1,5 +1,5 @@
 {
-  "folder": "00_inbox/daily/",
+  "folder": "raw",
   "template": "06_system/templates/daily note template",
   "format": "YYYY-MM-DD"
 }

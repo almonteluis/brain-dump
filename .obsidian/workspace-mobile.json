@@ -8,36 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f21fc928f2855247",
+            "id": "a40c5862f4931e5e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_reference/software-engineer/Frontend/Patterns/End-to-End testing with Playwright.md",
-                "mode": "preview",
-                "source": true,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "End-to-End testing with Playwright"
-            }
-          },
-          {
-            "id": "d5dba41777f8d54a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
+                "file": "street cart chicken over rice.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,35 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Untitled"
-            }
-          },
-          {
-            "id": "89ec0bd67fd1ef67",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02-reference/notes/levels-of-energy-atomic.md",
-                "mode": "preview",
-                "source": true,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "levels-of-energy-atomic"
+              "title": "street cart chicken over rice"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -108,7 +59,7 @@
         "state": {
           "type": "search",
           "state": {
-            "query": "tag:energy",
+            "query": "",
             "matchingCase": true,
             "explainSearch": false,
             "collapseAll": false,
@@ -145,7 +96,7 @@
         }
       }
     ],
-    "currentTab": 1
+    "currentTab": 0
   },
   "right": {
     "id": "a4127ef55cb29edf",
@@ -157,7 +108,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "02-reference/notes/levels-of-energy-atomic.md",
+            "file": "street cart chicken over rice.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -224,6 +175,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "templater-obsidian:Templater": false,
       "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -233,34 +185,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "89ec0bd67fd1ef67",
+  "active": "a40c5862f4931e5e",
   "lastOpenFiles": [
-    "00_inbox/Links/Energy Spectrum Universal Pattern.md",
-    "02-reference/notes/levels-of-energy-atomic.md",
-    "investigations/nikolai-mushegian-death-puerto-rico.md",
-    "investigations/epstein-andrew-second-victim.md",
-    "investigations/epstein-oklahoma-powerball-2008.md",
-    "05_archive/It’s a simple idea, but also stupid. Thing is, when stupid ideas work, they become genius ideas. We’ll see which way this one falls..md",
-    "05_archive/Dumping grounds.md",
-    "00_inbox/HEARTBEAT.md",
-    "claude-code-monorepo-documentation-prompt.md",
-    "Relay Fragment Research & Presentation.md",
-    "Pull Request Templates.md",
-    "graphql-workshop-summary.md",
-    "obsidian-orphan-finder-report.md",
-    "relay-main.md",
-    "relay-query-refactoring-guide.md",
-    "03_creating/drafts/relay-fragment-research-presentation.md",
-    "03_creating/drafts/css-tools-presentation.md",
-    "03_creating/drafts/ab-testing-logging-rollout.md",
-    "05_archive/react-legacy/Hooks.md",
-    "05_archive/react-legacy/Suspense.md",
-    "02_reference/software-engineer/frontend/Framework Learning.md",
-    "02_reference/software-engineer/frontend/HTML5 Tags.md",
-    "Readwise/Supplementals/How to Take Smart Notes in Obsidian.md",
-    "Readwise/Tweets/I've Been Sleeping on Ap.md",
-    "Readwise/Tweets/Tweets From GitHub Projects.md",
-    "Readwise/Tweets/Tweets From Iceberg Slime 🥶.md",
+    "NewClassrooms/marlboro.md",
+    "street cart chicken over rice.md",
+    "raw/Modular embedding SDK - quickstart.md",
+    "raw/Full app embedding quickstart.md",
+    "raw/Modular embedding - authentication.md",
+    "wiki/reference/tmux-cheatsheet.md",
+    "raw/recursive-tickling-kahn.md",
+    "NewClassrooms",
+    "raw/LocalStorage, sessionStorage.md",
+    "wiki/sources/vite-rollup-tree-shaking-guide.md",
+    "wiki/index.md",
+    "wiki/Completed Work.md",
+    "wiki/Active Projects.md",
+    "wiki/sources/vite-4-4-1-to-7-x-upgrade-gameplan.md",
+    "wiki/sources/typescript-debugging-patterns.md",
+    "wiki/sources/obsidian-claude-ai-tools-conversations.md",
+    "wiki/sources/claude-code-power-user-patterns.md",
+    "wiki/sources/why-we-banned-useeffect.md",
+    "wiki/synthesis/thinking-frameworks-for-code-review.md",
+    "raw/02_reference/ai-conversations/Areas/coding/2025-02-07 - Roadmap to Mastering React Testing.md",
+    "raw/Post Mortem axios npm supply chain compromise · Issue 10636 · axiosaxios.md",
+    "raw/Conflict Resolution Diagram.md",
+    "raw/Coding Models Are Doing Too Much.md",
+    "raw/Fastest Frontend Tooling for Humans & AI.md",
+    "raw/Algorithms & Big O.md",
+    "raw/Ishikawa Diagram.md",
+    "raw/Decision matrix.md",
     "02_reference/software-engineer/frontend/modern",
     "styling",
     "2025",
@@ -280,7 +233,6 @@
     "06_system/add-layer2-react 2.py",
     "06_system/add-layer2-react.py",
     "06_system/add-layer2-descriptions.sh",
-    "06_system/add-layer2-frontend-simple.sh",
     "05_archive/Untitled.canvas",
     "Untitled 3.canvas",
     "Untitled 2.canvas",
