@@ -1,22 +1,56 @@
 {
   "permissions": {
+    "deny": [
+      "Bash(*rm *-rf*)",
+      "Bash(*rm -rf*)",
+      "Bash(*git push --force*)",
+      "Bash(*git push -f*)",
+      "Bash(*git reset --hard*)",
+      "Bash(*git clean -fd*)",
+      "Bash(*git branch -D*)"
+    ],
     "allow": [
-      "Bash(find:*)",
-      "Bash(ls:*)",
-      "Bash(xargs cat:*)",
-      "Bash(while IFS= read -r -d '' f)",
-      "Bash(do if ! head -10 \"$f\")",
-      "Bash(then echo \"$f\" fi done)",
-      "Bash(then)",
-      "Bash(echo:*)",
-      "Bash(fi:*)",
-      "Bash(done:*)",
-      "Bash(grep:*)",
-      "Bash(xargs ls:*)",
-      "Bash(tree:*)",
-      "mcp__web-reader__webReader",
-      "mcp__web-search-prime__webSearchPrime",
-      "Bash(bun install:*)"
+      "Bash(bun --version)",
+      "Bash(npm --version)"
     ]
-  }
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PROJECT_DIR}/.claude/hooks/skill-discovery.sh",
+            "timeout": 5000
+          }
+        ]
+      }
+    ]
+  },
+  "PreToolUse": [
+    {
+      "matcher": "Bash",
+      "pattern": "rm\\s+-rf|--force-delete",
+      "message": "Destructive file deletion detected. Are you sure you want to delete files?",
+      "bypass": "bypass"
+    },
+    {
+      "matcher": "Bash",
+      "pattern": "git\\s+push\\s+.*--force|git\\s+push\\s+-f",
+      "message": "Force push detected. This could rewrite public history. Continue?",
+      "bypass": "bypass"
+    },
+    {
+      "matcher": "Bash",
+      "pattern": "git\\s+reset\\s+--hard",
+      "message": "Hard reset detected. This discards all local changes. Continue?",
+      "bypass": "bypass"
+    },
+    {
+      "matcher": "Edit|Write",
+      "pattern": "\\.env$|\\.pem$|\\.key$|secrets?\\.json",
+      "message": "Editing secrets file detected. Use environment variables instead.",
+      "bypass": "bypass"
+    }
+  ]
 }
