@@ -39,3 +39,5 @@ Verification layer must be separate from AI that generates code. Independent ver
 - [[lean-theorem-prover]] — Platform for verified software
 - [[ai-verification-gap]] — Generation speed outpacing review
 - [[supply-chain-security]] — Poisoning risks in AI-generated code
+- [[dependency-bloat]] — Same problem from the other direction: shrink the trust surface instead of proving it correct (graph confirmed via INFERRED edge)
+- [[trust-boundaries-formal-verification-and-bloat]] — Synthesis: formal verification + dependency reduction as twin strategies for the trust boundary problem; tier framework for code provenance

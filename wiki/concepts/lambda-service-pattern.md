@@ -1,14 +1,19 @@
 ---
-description: Three-tier Lambda architecture pattern — Function entry point, Engine business orchestration, DataService GraphQL wrapper
-tags: ["aws-lambda", "csharp", "architecture", "serverless"]
-sources: ["assessmentauditor-assignmentchecker-pattern-analysis"]
+description: Lambda Service Pattern — three-tier AWS Lambda architecture (Function → Engine → DataService) with DI, GraphQL, and clear separation of concerns.
+tags:
+  - aws/lambda
+  - csharp
+  - architecture
+  - serverless
+sources:
+  - assessmentauditor-assignmentchecker-pattern-analysis
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-05-17
 ---
 
 # Lambda Service Pattern
 
-A three-tier architecture for AWS Lambda functions using C# and dependency injection.
+A three-tier architecture for AWS Lambda functions using C# and dependency injection. The pattern keeps each Lambda's code structured the same way — Function (entry point) → Engine (business logic) → DataService (data access) — so any developer can drop into any Lambda and know where they are.
 
 ## Structure
 
@@ -22,25 +27,23 @@ Engine.cs        → Business orchestration: domain logic, external service call
 DataService.cs   → GraphQL wrapper: typed client, null-guard, logging
 ```
 
-## Components
+## What Each Layer Does
 
 ### Function.cs
 - `[LambdaFunction]` attribute marks the handler
 - Constructor injects `ILogger` and `Engine`
-- Minimal wrapper: logs request ID, delegates to `Engine.RunAsync()`, catches exceptions
+- Minimal wrapper: logs request ID, delegates to `Engine.RunAsync()`, catches exceptions. Nothing sexy. Just the door.
 
 ### Startup.cs
 - `[LambdaStartup]` on class inheriting `Shared.Environment.Startup`
 - Constructor validates required env vars via `HashSet<string>`
-- Fluent `IServiceCollection` chain:
-  - Singletons: config, secret providers, environment
-  - Scoped: GraphQL services, AWS SDK clients, business services
-  - `AddGraphQLClientWithAuth` for GraphQL client setup
+- Fluent `IServiceCollection` chain — singletons for config, scoped for GraphQL and AWS SDK clients, `AddGraphQLClientWithAuth` for the GraphQL client
 
 ### Engine.cs
-- Constructor receives `ILoggerFactory` (creates its own logger) + domain dependencies
+- Constructor receives `ILoggerFactory` + domain dependencies
 - `RunAsync()` orchestrates calls to external services, data layer, event publishers
 - Business constants and env-driven configuration as fields
+- This is where the actual work happens
 
 ### DataService.cs
 - Implements `IDataService` interface
@@ -61,10 +64,9 @@ public interface ILambdaEngine<TPayload> { Task RunAsync(TPayload input); }
 public abstract class LambdaDataService { ... }
 ```
 
-**Keep per-service:**
-- Concrete `Engine` implementing `ILambdaEngine<TPayload>`
-- Concrete `DataService` with domain methods
-- Domain-specific DI registrations
+**Keep per-service:** concrete Engine, concrete DataService, domain-specific DI registrations.
+
+The pattern is [[backend-for-frontend|BFF]] thinking applied to serverless — each function is a small, purpose-built service with clear boundaries. The same way BFFs prevent frontend-backend coupling, this pattern prevents Lambda-to-Lambda coupling.
 
 ## Related
 

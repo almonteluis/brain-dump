@@ -1,7 +1,12 @@
 ---
 description: Securing software supply chains — npm package integrity, publishing best practices, and maintainer protection
-tags: ["security", "supply-chain", "npm", "open-source"]
-sources: ["axios-supply-chain-compromise-postmortem"]
+tags:
+  - security
+  - supply-chain
+  - package-manager/npm
+  - open-source
+sources:
+  - axios-supply-chain-compromise-postmortem
 created: 2026-04-28
 updated: 2026-04-28
 ---

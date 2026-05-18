@@ -1,7 +1,13 @@
 ---
 description: AI coding models rewriting more code than necessary to fix a bug — functionally correct but structurally divergent
-tags: [ai-coding, llm, code-review, brown-field, testing]
-sources: ["coding-models-over-editing"]
+tags:
+  - ai/code
+  - llm
+  - code/review
+  - brown-field
+  - testing
+sources:
+  - coding-models-over-editing
 created: 2026-04-29
 updated: 2026-04-29
 ---

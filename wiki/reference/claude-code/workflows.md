@@ -1,9 +1,17 @@
 ---
 description: Claude Code power user workflows including plan mode, PreToolUse hooks, security self-review, and Obsidian integration patterns
-tags: ["claude-code", "workflows", "productivity", "ai-coding", "reference"]
+tags:
+  - claude/code
+  - workflow
+  - productivity
+  - ai/code
+  - reference
 created: 2026-04-08
 updated: 2026-04-11
-sources: ["claude-code-power-user-patterns.md", "claude-prompt-prefix-combos.md", "claude-code-thinking-transparency.md"]
+sources:
+  - claude-code-power-user-patterns.md
+  - claude-prompt-prefix-combos.md
+  - claude-code-thinking-transparency.md
 ---
 
 # Claude Code Workflows

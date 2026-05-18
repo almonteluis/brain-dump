@@ -1,9 +1,18 @@
 ---
 description: React patterns and best practices from industry standards including Airbnb style guide and 2026 React Compiler patterns
-tags: ["react", "javascript", "patterns", "best-practices", "reference", "react-compiler", "concurrent-rendering"]
+tags:
+  - react
+  - javascript
+  - pattern
+  - best-practices
+  - reference
+  - react/compiler
+  - concurrent-rendering
 created: 2026-04-08
 updated: 2026-04-09
-sources: ["airbnb-react-patterns-summary.md", "React Design Patterns Research 2026.md"]
+sources:
+  - airbnb-react-patterns-summary.md
+  - React Design Patterns Research 2026.md
 ---
 
 # React Patterns
@@ -14,10 +23,10 @@ Industry-standard patterns for writing maintainable, performant React applicatio
 
 ### Stateful vs Stateless
 
-| Type | When to Use | Syntax |
-|------|-------------|--------|
-| **Stateful** | Internal state, refs | `class extends React.Component` |
-| **Stateless** | No state/refs | Normal function (not arrow) |
+| Type          | When to Use          | Syntax                          |
+| ------------- | -------------------- | ------------------------------- |
+| **Stateful**  | Internal state, refs | `class extends React.Component` |
+| **Stateless** | No state/refs        | Normal function (not arrow)     |
 
 ### File Organization
 

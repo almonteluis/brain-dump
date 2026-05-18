@@ -1,7 +1,11 @@
 ---
 description: React's Rules of Hooks ensure component behavior consistency across renders
-tags: ["react", "hooks", "patterns"]
-sources: ["teame-218-brainbreak-postmortem"]
+tags:
+  - react
+  - hooks
+  - pattern
+sources:
+  - teame-218-brainbreak-postmortem
 created: 2026-04-11
 updated: 2026-04-11
 ---

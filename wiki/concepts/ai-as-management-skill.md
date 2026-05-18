@@ -1,9 +1,18 @@
 ---
 description: AI integration is fundamentally a management skill requiring context assembly, quality judgment, task decomposition, and workflow integration
-tags: ["ai", "management", "skills", "literacy", "senior-level", "productivity", "concept"]
+tags:
+  - ai
+  - management
+  - skill
+  - literacy
+  - senior-level
+  - productivity
+  - concept
 created: 2026-04-11
 updated: 2026-04-11
-sources: ["raw/01_thinking/notes/ai-as-management-skill.md", "wiki/reference/ai-education-landscape.md"]
+sources:
+  - raw/01_thinking/notes/ai-as-management-skill.md
+  - wiki/reference/ai-education-landscape.md
 ---
 
 # AI as Management Skill

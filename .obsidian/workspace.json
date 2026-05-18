@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ea7c8f8bc2d0ca33",
+        "id": "e06966bff26f3008",
         "type": "tabs",
         "children": [
           {
-            "id": "c6aa6885e6af8ee4",
+            "id": "b00ca83325f6bb71",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/Active Projects.md",
+                "file": "wiki/synthesis/may-4-5-2026-themes.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Active Projects"
+              "title": "may-4-5-2026-themes"
             }
           },
           {
-            "id": "cc0fe4cd0be40fd0",
+            "id": "f6528e1c0dbab9fa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/Time-of-check to time-of-use.md",
+                "file": "wiki/entities/andy-matuschak.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -48,20 +48,20 @@
                   "showSearch": false,
                   "searchQuery": "",
                   "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
+                  "unlinkedCollapsed": false
                 }
               },
               "icon": "lucide-file",
-              "title": "Time-of-check to time-of-use"
+              "title": "andy-matuschak"
             }
           },
           {
-            "id": "b83047af7c97b791",
+            "id": "8cf1ac81fe99fe13",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "useful commands i see from claude code.md",
+                "file": "wiki/thinking/energy-spectrum-pattern.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,35 +76,190 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "useful commands i see from claude code"
+              "title": "energy-spectrum-pattern"
             }
           },
           {
-            "id": "12bd8947f81c793b",
+            "id": "de6726a502ef2cd7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "raw/A beginner's guide to voice-first experiences for kids.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "file": "papers/ATLAS Concept Paper 23-Pager.pdf",
+                "page": 17,
+                "left": -14,
+                "top": 413,
+                "zoom": 1.0674019607843137
               },
-              "icon": "lucide-file",
-              "title": "A beginner's guide to voice-first experiences for kids"
+              "icon": "lucide-file-text",
+              "title": "ATLAS Concept Paper 23-Pager"
+            }
+          },
+          {
+            "id": "f040337a94483749",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "papers/link_springer_com_content_pdf_10_3758_s13421-012-0272-7_pdf.pdf",
+                "page": 1,
+                "left": -15,
+                "top": 795,
+                "zoom": 0.9688783002021277
+              },
+              "icon": "lucide-file-text",
+              "title": "link_springer_com_content_pdf_10_3758_s13421-012-0272-7_pdf"
+            }
+          },
+          {
+            "id": "0228d7df9e87a917",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Algebra Error Classification with Large Language Models.pdf",
+                "page": 7,
+                "left": -3,
+                "top": 665,
+                "zoom": 1.1
+              },
+              "icon": "lucide-file-text",
+              "title": "Algebra Error Classification with Large Language Models"
+            }
+          },
+          {
+            "id": "455b50cea495ffdf",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "papers/A Benchmark for Math Misconceptions - Bridging Gaps in Middle School Algebra with AI-Supported Instruction.pdf",
+                "page": 30,
+                "left": 93,
+                "top": 819,
+                "zoom": 1.7
+              },
+              "icon": "lucide-file-text",
+              "title": "A Benchmark for Math Misconceptions - Bridging Gaps in Middle School Algebra with AI-Supported Instruction"
+            }
+          },
+          {
+            "id": "1dbba236bdaeba7d",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
+      },
+      {
+        "id": "7a2c52dfa82c53cf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ea3f1904f2b3ee12",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "raw/A Benchmark for Math Misconceptions - Bridging Gaps in Middle School Algebra with AI-Supported Instruction.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "A Benchmark for Math Misconceptions - Bridging Gaps in Middle School Algebra with AI-Supported Instruction"
+            }
+          },
+          {
+            "id": "e09b2b8a364644e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "papers/grading-handwritten-engineering-mllm-2025-extracted.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "grading-handwritten-engineering-mllm-2025-extracted"
+            }
+          },
+          {
+            "id": "b7d70730034b8908",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "raw/www_cs_cornell_edu_molly_chi2018_pdf-extracted.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "www_cs_cornell_edu_molly_chi2018_pdf-extracted"
+            }
+          },
+          {
+            "id": "17cf714443c6025b",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "papers/s13421-012-0272-7.pdf",
+                "page": 1,
+                "zoom": 1
+              },
+              "icon": "lucide-file-text",
+              "title": "s13421-012-0272-7"
+            }
+          },
+          {
+            "id": "06685f2e1a1f0548",
+            "type": "leaf",
+            "state": {
+              "type": "surfing-view",
+              "state": {
+                "url": "https://arxiv.org/abs/2601.00730"
+              },
+              "icon": "lucide-file",
+              "title": "[2601.00730] Grading Handwritten Engineering Exams with Multimodal Large Language Models"
+            }
+          }
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -123,8 +278,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
+                "sortOrder": "byModifiedTime",
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -136,8 +291,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:clippings TOCTOU",
-                "matchingCase": false,
+                "query": "tag:psychology",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": true,
@@ -156,12 +311,22 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
+          },
+          {
+            "id": "ac5a038be50aa2e9",
+            "type": "leaf",
+            "state": {
+              "type": "notebook-navigator",
+              "state": {},
+              "icon": "notebook-navigator",
+              "title": "Notebook Navigator"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 339.50390243530273
+    "width": 281.50390243530273
   },
   "right": {
     "id": "938861255d380e36",
@@ -177,7 +342,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Block scope.md",
+                "file": "wiki/concepts/second-brain-pattern.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +352,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Block scope"
+              "title": "Backlinks for second-brain-pattern"
             }
           },
           {
@@ -196,12 +361,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Block scope.md",
+                "file": "wiki/concepts/second-brain-pattern.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Block scope"
+              "title": "Outgoing links from second-brain-pattern"
             }
           },
           {
@@ -225,61 +390,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Block scope.md",
+                "file": "wiki/concepts/second-brain-pattern.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Block scope"
-            }
-          },
-          {
-            "id": "6844691c6cc79d76",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
-            }
-          },
-          {
-            "id": "45b71400ad21cc54",
-            "type": "leaf",
-            "state": {
-              "type": "todo",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "todo"
-            }
-          },
-          {
-            "id": "c278fbb0a20d4f8c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled 5.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Untitled 5"
+              "title": "Outline of second-brain-pattern"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -294,59 +415,69 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "notebook-navigator:Notebook Navigator": false,
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "92892269f38b361b",
+  "active": "06685f2e1a1f0548",
   "lastOpenFiles": [
-    "06_metadata/Templates/Research Note Template.md",
-    "06_metadata/Templates/Project Template.md",
-    "06_metadata/Templates/Daily Note Template.md",
-    "06_metadata/Reference/Feature Flagging One-Pager.md",
-    "06_metadata/Reference/Common Claude Code Prompts.md",
-    "06_metadata/Templates",
-    "06_metadata/Reference",
-    "06_metadata",
-    "06_system/templates/daily-note-template.md",
-    "06_system/templates/daily-note-quick.md",
-    "06_system/templates/case-study-template.md",
-    "06_system/templates/article-template.md",
-    "06_system/templates/README.md",
-    "06_system/templates/Pull Request Templates.md",
-    "06_system/daily-notes-automation/README.md",
-    "06_system/attachments/Jorge_L_Almonte_MASTER_CV_resume.pdf",
-    "06_system/attachments/bookmarks_2026-01-29-2036.csv",
+    "papers/grading-handwritten-engineering-mllm-2025-extracted.md",
+    "papers/metacognitive-reflection-emotion-2023-extracted.md",
+    "papers/metacognitive-requirements-ai-feedback-2025-extracted.md",
+    "papers/misconception-benchmark-algebra-2024-extracted.md",
+    "papers/multimodal-stem-assessment-2024-extracted.md",
+    "papers/2603.24961v1.pdf",
+    "papers/mllms-grade-handwritten-work-2024-extracted.md",
+    "raw/why-interleaving-enhances-discrimination-retrieval-2012-extracted.md",
+    "papers/scratchmath-mllm-handwritten-errors-2025-extracted.md",
+    "papers/s13421-012-0272-7.pdf",
+    "papers/why-interleaving-enhances-discrimination-retrieval-2012-extracted.md",
+    "papers/www_cs_cornell_edu_molly_chi2018_pdf-extracted.md",
+    "papers/chi2018-mathEducation.pdf",
+    "raw/www_cs_cornell_edu_molly_chi2018_pdf-extracted.md",
+    "Algebra Error Classification with Large Language Models.md",
+    "Algebra Error Classification with Large Language Models.pdf",
+    "raw/2026-05-18.md",
+    "papers/link_springer_com_content_pdf_10_3758_s13421-012-0272-7_pdf.pdf",
+    "papers/benchmarking-llms-cognitive-skills-handwritten-2025-extracted.md",
+    "papers/ATLAS Concept Paper 23-Pager-extracted.md",
+    "papers/metacognition-math-extracted.md",
+    "raw/scratchmath-mllm-handwritten-errors-2025-extracted.md",
+    "raw/PIIS2405844024014142-extracted.md",
+    "raw/multimodal-stem-assessment-2024-extracted.md",
+    "raw/mllms-grade-handwritten-work-2024-extracted.md",
+    "raw/misconception-benchmark-algebra-2024-extracted.md",
+    "raw/metacognitive-requirements-ai-feedback-2025-extracted.md",
+    "raw/metacognitive-reflection-emotion-2023-extracted.md",
+    "raw/metacognition-math-extracted.md",
+    "raw/link_springer_com_content_pdf_10_3758_s13421-012-0272-7_pdf-extracted.md",
+    "raw/interleaving-perceptual-modality-2022-extracted.md",
+    "papers/A Benchmark for Math Misconceptions - Bridging Gaps in Middle School Algebra with AI-Supported Instruction.pdf",
+    "papers/holstein-codesign-orchestration-tool-2019.pdf",
+    "papers/adaptive-feedback-ai-vs-teachers-2025.pdf",
+    "papers/metacognitive-requirements-ai-feedback-2025.pdf",
+    "papers/cognitive-mirror-ai-metacognition-2025.pdf",
+    "pedagogy.canvas",
+    "Hacker News Books.canvas",
+    "archive/IMG_1969.jpeg",
+    "archive/IMG_1968.jpeg",
+    "archive/Pasted image 20260512103038.png",
+    "Student Pace - Visual Map.canvas",
+    "marvin/graphs/graph.canvas",
+    "wiki/marvin/graphs/graph.canvas",
     "06_system/attachments/IMG_9002.webp",
-    "06_system/attachments/Jorge_Almonte_-_Frontend_Engineer.pdf",
     "06_system/attachments/IMG_9005.webp",
     "06_system/attachments/IMG_9007.webp",
     "06_system/attachments/IMG_9006.webp",
     "06_system/attachments/IMG_9001.webp",
     "06_system/attachments/IMG_8999.gif",
     "06_system/attachments/IMG_9004.webp",
-    "06_system/attachments/IMG_9003.webp",
-    "06_system/standardize-yaml.py",
-    "06_system/vault-ops.sh",
-    "06_system/vault-tree-generator.sh",
-    "06_system/tasks.md",
-    "06_system/templates",
-    "06_system/README.md",
-    "06_system/UNIVERSAL-MINING.md",
-    "06_system/LEVI-ARTICLE-WORKFLOW.md",
-    "06_system/ARTICLE-WORKFLOW.md",
-    "05_archive/react-legacy/useState.md",
-    "05_archive/react-legacy/useRef.md",
-    "05_archive/react-legacy/useMemo.md",
-    "05_archive/react-legacy/useEffect.md",
-    "05_archive/react-legacy/useEffect quiz.md",
-    "05_archive/react-legacy/useCallBack.md",
-    "05_archive/react-legacy/turning UI into react components.md",
-    "05_archive/react-legacy/shouldComponentUpdate.md",
-    "05_archive/react-legacy/react-bits-summary.md",
     "05_archive/Untitled.canvas",
-    "00_inbox/daily/2025/attachments/Pasted image 20250617191155.png",
-    "00_inbox/daily/2025/attachments/Pasted image 20250207010259.png",
-    "Untitled.canvas",
     "Software Engineer/Untitled 7.canvas",
     "Software Engineer/Untitled 3.canvas"
   ]

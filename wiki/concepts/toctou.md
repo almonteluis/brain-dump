@@ -92,7 +92,7 @@ Version numbers incremented on every lock acquisition. Updates include the token
 
 - [[distributed-locking]] — Locking patterns for distributed systems
 - [[bb-cross-browser-session-lock]] — Real-world TOCTOU in a React/GraphQL app
-- [[bb-brain-break-session-lock-update]] — Updated implementation notes
+- [[BB being open in 2 sessions via different browser]] — Updated implementation notes
 - [[cross-browser-toctou-window-analysis]] — Cross-browser TOCTOU window research
 - [[toctou-wikipedia]] — Formal definition and academic references
 - [[toctou-explained-deepstrike]] — Practical guide with attack methods and detection

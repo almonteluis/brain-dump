@@ -1,6 +1,12 @@
 ---
 description: The gap between having Agentic AI and knowing what to do with it — the 2026 competitive edge is AI that works together through orchestration, observability, and auditability.
-tags: ["agentic-ai", "governance", "orchestration", "observability", "ai-strategy", "maturity-model"]
+tags:
+  - agent
+  - governance
+  - orchestration
+  - observability
+  - ai/strategy
+  - maturity-model
 created: 2026-01-29
 source: https://dev.to/talweezy/the-agentic-ai-maturity-gap-orchestration-observability-auditability-governance-19op
 author: Nick Talwar
@@ -8,62 +14,38 @@ author: Nick Talwar
 
 # Agentic AI Maturity Gap
 
-> From scattered pilots to strategic systems: the new competitive edge is AI that works together and is observable and auditable.
+Everyone has AI running somewhere. Chatbots, recommendation engines, LLM flows, automated reviews. The 2026 question isn't "do you have AI?" — it's "can your AI actually work together?"
 
-## The Core Problem
-
-Three years into the generative AI era, companies face a recurring pattern:
-
-- AI running somewhere in the org (chatbots, recommendation engines, LLM flows, automated reviews)
-- Question: "How do we actually get value out of all this?"
-- **Gap:** Between having Agentic AI and knowing what to do with it
-
-## The 2026 Reality
-
-| Metric | Value |
-|--------|-------|
-| Companies using AI in at least one function | ~90% |
-| Companies successfully scaling pilots | Minority |
-| Projected agent market growth | $7.8B → $52B by 2030 |
-| Enterprise apps with AI agents by end of 2026 | ~40% |
-
-**Winners in 2026** won't be determined by who has the most AI — they'll be defined by who figured out [[orchestration-observability-auditability-governance|Orchestration, Observability, Auditability, Governance]].
+The answer for most companies is no. ~90% of companies use AI in at least one function. A minority have successfully scaled pilots beyond the demo stage. The agent market is projected to grow from $7.8B to $52B by 2030, and ~40% of enterprise apps will have AI agents by end of 2026. But having agents and orchestrating agents are completely different problems.
 
 ## The Real Problem
 
-Having Agents ≠ Orchestrating Agents
+I've seen the pattern: a client with 17 different AI implementations across marketing automation, supply chain, HR screening — each works fine in isolation. Nobody designed them to work together. The result is 17 point solutions that can't coordinate, can't share context, and can't be audited as a system.
 
-Example: Client with 17 different AI implementations across marketing automation, supply chain optimization, HR screening — each worked in isolation, but nobody designed systems to work together until too late.
-
-## How to Assess Your Maturity Gap
+## How to Diagnose Your Gap
 
 Ask your teams what success looks like for their AI initiatives:
 
-- If everyone gives different answers → **coordination gap**
-- If nobody can connect metrics to business outcomes → **orchestration gap**
-- If people can't explain how AI decisions affect other systems → **governance/auditability gap**
+- Everyone gives different answers → **coordination gap**
+- Nobody connects metrics to business outcomes → **orchestration gap**
+- People can't explain how AI decisions affect other systems → **governance/auditability gap**
+
+Most organizations hit at least two of three.
 
 ## Maturity Progression
 
-1. **Experimentation** — Individual teams build individual solutions (doesn't scale)
-2. **Systems talking to each other** — Shared data foundations, common platforms (where most enterprises are stuck)
-3. **Strategic integration** — Coordination layers, governance frameworks, measurement systems
+1. **Experimentation** — individual teams build individual solutions. Fun, doesn't scale.
+2. **Systems talking to each other** — shared data foundations, common platforms. This is where most enterprises are stuck.
+3. **Strategic integration** — coordination layers, governance frameworks, measurement systems. The boring infrastructure that makes AI actually useful.
 
-## Action Items for 2026
+## The 2026 Play
 
-1. Prioritize orchestration infrastructure over point solutions
-2. Treat governance frameworks as product decisions, not compliance
-3. Build observability in from the start
-4. Design for auditability
-5. Shift from centralized IT oversight to empowered line-of-business leaders
+Winners this year won't be defined by who has the most AI. They'll be defined by who figured out [[orchestration-observability-auditability-governance|Orchestration, Observability, Auditability, Governance]]. It's the difference between having a fleet of cars and having a logistics network.
 
----
+The open thread: the maturity model assumes you *want* to integrate. What if the highest-value move is intentionally keeping some AI systems isolated — narrow, auditable, and decoupled from the mess? Not every agent needs to be part of an orchestra. Some should just be really good at one thing.
 
 ## Related
 
-[[orchestration-observability-auditability-governance]]
-[[decision-velocity]]
-[[ai-coordination-gap]]
-[[observability-competitive-advantage]]
-[[ai-as-management-skill]]
-[[process-over-outcome]]
+- [[orchestration-observability-auditability-governance]]
+- [[decision-velocity]]
+- [[observability-competitive-advantage]]

@@ -64,4 +64,4 @@ import { ConfidenceSlider } from '../components/BrainBreak/ConfidenceSlider';
 
 - [[tree-shaking]] — Dead code elimination
 - [[bundle-optimization]] — Reducing JavaScript bundle size
-- [[brainbreak-code-cleanup]] — Real-world barrel file removal
+- [[TEAME-218 Code Cleanup - TEAME-177 (In-Platform Polling)]] — Real-world barrel file removal

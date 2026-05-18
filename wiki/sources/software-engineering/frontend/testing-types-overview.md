@@ -1,7 +1,14 @@
 ---
 description: Overview of software testing types including unit, integration, functional, E2E, and performance testing
-tags: ["source", "testing", "unit-testing", "integration-testing", "e2e", "performance-testing"]
-sources: ["Testing your apps.md"]
+tags:
+  - source
+  - testing
+  - unit-testing
+  - integration-testing
+  - e2e
+  - performance
+sources:
+  - Testing your apps.md
 created: 2026-04-09
 updated: 2026-04-09
 ---

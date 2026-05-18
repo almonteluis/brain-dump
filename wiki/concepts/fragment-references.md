@@ -1,6 +1,11 @@
 ---
 description: Fragment references — Relay's opaque pointers to GraphQL data, enabling data masking and colocation
-tags: ["relay", "graphql", "fragments", "data-fetching", "concept"]
+tags:
+  - relay
+  - graphql
+  - fragments
+  - data/fetching
+  - concept
 created: 2026-04-23
 ---
 

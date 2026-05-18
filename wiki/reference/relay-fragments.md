@@ -1,6 +1,12 @@
 ---
 description: Relay fragments let each component declare its own data needs independently while retaining single-query efficiency — co-location, data masking, and composition patterns for GraphQL data fetching.
-tags: ["relay", "graphql", "fragments", "data-fetching", "react", "frontend"]
+tags:
+  - relay
+  - graphql
+  - fragments
+  - data/fetching
+  - react
+  - marvin/frontend
 created: 2026-01-29
 source: https://relay.dev/docs/tutorial/fragments-1/
 ---

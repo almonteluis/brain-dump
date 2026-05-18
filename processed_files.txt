@@ -1,0 +1,5 @@
+- `raw/00_inbox/HEARTBEAT.md` — Knowledge architect processing framework
+- `raw/00_inbox/README.md` — Inbox workflow documentation
+- `raw/00_inbox/Tasks.kanban.md` — Test data
+**Processed** from `raw/You Might Not Need an Effect – React.md`
+**Updated** [[vite-rollup-tree-shaking-guide]] with content from `raw/02_reference/frontend/Vite Rollup tree-shaking.md`.

@@ -1,6 +1,11 @@
 ---
 description: Component architecture — patterns for structuring React components, from atoms to feature modules
-tags: ["react", "components", "architecture", "patterns", "concept"]
+tags:
+  - react
+  - components
+  - architecture
+  - pattern
+  - concept
 created: 2026-04-23
 ---
 

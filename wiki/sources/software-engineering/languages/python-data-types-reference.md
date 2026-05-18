@@ -1,7 +1,13 @@
 ---
 description: Python data types and syntax reference covering basic types, flow control, indentation, comments, and built-in functions
-tags: ["source", "python", "data-types", "syntax", "reference"]
-sources: ["Python Data Types and Syntax Reference.md"]
+tags:
+  - source
+  - python
+  - data/types
+  - syntax
+  - reference
+sources:
+  - Python Data Types and Syntax Reference.md
 created: 2026-04-09
 updated: 2026-04-09
 ---

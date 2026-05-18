@@ -1,6 +1,12 @@
 ---
 description: State management — patterns for handling application state in React, from local to global
-tags: ["react", "state", "redux", "relay", "zustand", "concept"]
+tags:
+  - react
+  - state
+  - marvin/frontend/redux
+  - relay
+  - zustand
+  - concept
 created: 2026-04-23
 ---
 
@@ -70,3 +76,5 @@ Best for: Lightweight global state without boilerplate. Popular for React Native
 - [[data-colocation]] — Keeping data near where it's used
 - [[nc-frontend-architecture]] — Production Redux + Relay + Context architecture
 - [[brainbreak-mvc-refactor]] — Migrating from useState to Redux for traceability
+- [[experiment-speculative-data]] — Speculative data writes are state management masquerading as CRUD; same anti-pattern as treating server state as local state
+- [[speculative-data-as-state-machine]] — Synthesis: applying state-machine framing to backend speculative data writes (TEAME-287 refactor)

@@ -1,131 +1,39 @@
 ---
-description: Managing mental overhead in software development through understanding human memory limitations
-tags: ["cognitive-science", "complexity", "learning", "code-quality"]
-created: 2026-04-09
-updated: 2026-04-09
+description: Cognitive load is why a kid who can add single digits fine suddenly melts down when you hand them three-digit addition with carrying. Working memory has ~4 slots and Sweller's theory explains what fills them.
+tags:
+  - concept
+  - cognitive/load
+  - working-memory
+  - instructional-design
+  - pedagogy
+sources:
+  - Sweller, J. (1988). Cognitive load during problem solving. Cognitive Science, 12(2).
+created: 2026-05-16
+updated: 2026-05-16
 ---
 
 # Cognitive Load
 
-Understanding how human memory works — and its severe limitations — to write more comprehensible code and learn more effectively.
+Cognitive load is the reason a kid who can add single digits fine will melt down when you hand them three-digit addition with carrying. Working memory has about 4±1 slots. When you fill all of them — with the numbers, the carrying procedure, the place value tracking, the anxiety about getting it wrong — there's no room left for actually *understanding* what's happening. The kid is computing, but they're not learning.
 
-## Memory Architecture
+Sweller laid this out in 1988. Three types of load:
 
-### Working Memory (Short-Term)
+| Type | What fills it | What you do about it |
+|------|-------------|---------------------|
+| **Intrinsic** | The actual complexity of the material. Can't remove it. | Manage it — break into smaller pieces, sequence prerequisites. |
+| **Extraneous** | Bad design. Confusing instructions, split attention, unnecessary info. | *Eliminate it.* This is the low-hanging fruit. |
+| **Germane** | The mental work of building schemas — connecting new stuff to what you already know. | *Maximize it.* This is where learning actually happens. |
 
-- **Capacity**: 7±2 items (Miller, 1956)
-- **Duration**: Seconds without rehearsal
-- **Function**: Conscious processing
+The math is brutal: intrinsic + extraneous + germane has to fit in ~4 slots. If extraneous load eats 2 of them (bad UI, unclear instructions, split attention between two sources), you've got 2 slots left for actual learning. Cut the extraneous junk and germane load doubles.
 
-**Implication**: We can only juggle a handful of concepts at once. Exceed this and comprehension breaks down.
+## Why It Matters for ATLAS
 
-### Long-Term Memory
+[[project-atlas]] has to manage cognitive load at every level:
 
-- **Capacity**: Effectively unlimited
-- **Function**: Stores schemas (chunks of related information)
-- **Access**: Retrieved into working memory when needed
+- The [[skill-graph]] controls intrinsic load — if a skill is too complex, break it into smaller prerequisite nodes
+- The UI controls extraneous load — clean interface, focused feedback from [[adaptive-feedback-education]], no unnecessary noise
+- The pedagogical design controls germane load — [[productive-struggle]] is *designed* to activate schema building, but only if the kid has enough bandwidth to actually build the schema
 
-**Key insight**: A schema takes only ONE slot in working memory, even if it contains dozens of related facts.
+[[zone-of-proximal-development]] is essentially "intrinsic load fits in working memory when [[scaffolding]] is available." [[math-anxiety]] eats working memory slots directly — a kid who's anxious about math has fewer available slots for the actual math, which is why anxious kids underperform even when they *know* the material.
 
-## Three Types of Cognitive Load
-
-| Type | Definition | Goal |
-|------|------------|------|
-| **Intrinsic** | Inherent complexity of the task | Minimize through simpler solutions |
-| **Extraneous** | Accidental complexity, poor presentation | Eliminate entirely |
-| **Germane** | Load that helps build schemas | Maximize |
-
-Maps to Fred Brooks:
-- Intrinsic = Essential complexity
-- Extraneous = Accidental complexity
-
-## Software Development Applications
-
-### Code Comprehension
-
-When reading code, working memory must hold:
-- Variable values and types
-- Function purposes and relationships
-- Control flow
-- Business logic intent
-- Performance characteristics
-
-**Exceed 7 items** → confusion, bugs, wrong mental model
-
-### Writing Comprehensible Code
-
-**Reduce extraneous load**:
-- Clear, consistent naming
-- Small functions (fit in working memory)
-- Limited dependencies (reduce items to track)
-- DRY principle (don't repeat information)
-
-**Build on existing schemas**:
-- Follow conventions
-- Use familiar patterns
-- Match code structure to domain concepts
-
-### Learning Codebases
-
-**For novices** (few schemas):
-- Start with working examples
-- Isolate concepts before connecting them
-- Run and modify code actively
-
-**For experts** (many schemas):
-- Pattern matching speeds comprehension
-- Risk: Expert blind spot (missing novel solutions)
-- Benefit: Can handle more complex chunks
-
-## Learning Strategies
-
-### Effective
-
-| Strategy | Why It Works |
-|----------|--------------|
-| Working examples | Builds schemas through active processing |
-| Concept isolation | Prevents working memory overload |
-| Deliberate practice | Active construction of schemas |
-| Spaced repetition | Strengthens long-term retention |
-
-### Ineffective
-
-| Strategy | Why It Fails |
-|----------|--------------|
-| Passive reading | Schemas require active construction |
-| Katas/general challenges | Transfer to domain problems is poor |
-| Memorization without application | No schema formation |
-
-## Team Implications
-
-### Code Review
-
-- Reviewer working memory is limited too
-- Large changes exceed capacity
-- Staged reviews (architecture → logic → style)
-
-### Onboarding
-
-- Novices need more working memory for basics
-- Pair with domain experts for schema transfer
-- Document domain concepts (ubiquitous language)
-
-### Architecture
-
-- Bounded contexts limit what must be held in mind
-- APIs reduce surface area
-- Monoliths risk exceeding working memory at scale
-
-## Related
-
-- [[cognitive-load-theory]] — Source summary
-- [[essential-complexity]] — Fred Brooks concept
-- [[split-attention-effect]] — Documentation pitfalls
-- [[schema-theory]] — Long-term memory organization
-- [[working-memory]] — 7±2 limitation
-
-## Resources
-
-- [Cognitive Load Theory in Software Development](https://thevaluable.dev/cognitive-load-theory-software-developer/) — Matthieu Cneude
-- [The Magical Number Seven](https://github.com/Phantas0s/alexandria-library/blob/master/teaching_learning/_PAPERS/1956_magical_number_seven_plus_minus_two.pdf) — Miller (1956)
-- [No Silver Bullet](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf) — Brooks
+The design tension that keeps coming up: [[productive-struggle]] requires cognitive effort, but too much effort = overload. The line between "productive" and "destructive" isn't about the problem difficulty — it's about total load. A medium-difficulty problem with a confusing interface and an anxious kid can overload where the same problem with a calm kid and clean design wouldn't. The system has to read more than just correctness — it has to read *capacity*.

@@ -2,7 +2,7 @@
 description: Pending work items not yet started — TEAME tickets and cross-functional initiatives awaiting prioritization or unblocked start
 tags: ["projects", "backlog", "work-in-progress", "meta", "TEAME", "metabase"]
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-01
 ---
 
 # Backlog
@@ -103,9 +103,9 @@ Tickets currently being worked or in active QA iteration.
 | Ticket | Priority | Sprint | Assignee | Summary |
 |--------|----------|--------|----------|---------|
 | [[teame-218-code-cleanup-lts-conversion]] | High | — | Luis Almonte | Convert in-platform polling to LTS feature (TEAME-177 cleanup) |
-| [[teame-268-brain-brake-retry-cooldown]] | Medium | — | Luis Almonte | Brain Brake not shown on skill assessment retry despite 10+ day cooldown |
-| [[teame-272-scrollbar-usability]] | Low | — | Luis Almonte | Brain Break scrollbar drag not responsive on first question |
-| [[teame-277-brain-break-two-minute-trigger]] | Medium | — | Luis Almonte | Brain Break triggered twice for same student within 2 minutes |
+| [[teame-268-brain-brake-retry-cooldown]] | Medium | — | Luis Almonte | Brain Brake not shown on skill assessment retry despite 10+ day cooldown (ready to merge, DB verification pending) |
+| [[teame-284-emotion-picker-responsiveness]] | Release-blocking | — | Luis Almonte | BB Q2 emotion-picker green options cut off on 1366×768 |
+| [[teamf-fe-package-updates]] | High | 53 | Luis Almonte | TEAMF-539: 5 high-sev npm audit fixes done; PNPM migration deferred (due May 8) |
 
 ### Ticket Details
 
@@ -122,32 +122,34 @@ Tickets currently being worked or in active QA iteration.
 - **Source:** [[teame-218-code-cleanup-lts-conversion]]
 
 #### [[teame-268-brain-brake-retry-cooldown|TEAME-268: Brain Brake Retry Cooldown]]
-- **Status:** In Progress
+- **Status:** In Progress → Ready to merge (pending DB verification)
 - **Priority:** Medium
 - **Assignee:** Luis Almonte
 - **Reporter:** Maria Canteras
 - **Created:** April 16, 2026
 - **Issue:** Brain Brake modal does not appear on retry even after 10+ days
-- **Next step:** Verify `experiments_speculative_data` cooldown entry in DB
+- **Next step:** Verify `experiments_speculative_data` cooldown entry in DB (Luis — today or Monday)
 - **Source:** [[teame-268-brain-brake-retry-cooldown]]
 
-#### [[teame-272-scrollbar-usability|TEAME-272: Scrollbar Usability]]
-- **Status:** Open (issue persists)
-- **Priority:** Low
+#### [[teame-284-emotion-picker-responsiveness|TEAME-284: Q2 Emotion-Picker Responsiveness]]
+- **Status:** In Progress (new, 2026-05-01)
+- **Priority:** Release-blocking (per Maria QA)
 - **Assignee:** Luis Almonte
 - **Reporter:** Maria Canteras
-- **Created:** April 16, 2026
-- **Last tested:** April 29, 2026 — issue still persists in qa-clam
-- **Source:** [[teame-272-scrollbar-usability]]
+- **Issue:** Q2 green emotion options on fourth row cut off at 1366×768
+- **Root cause:** Border spacing / gap too large at desktop breakpoint
+- **Source:** [[teame-284-emotion-picker-responsiveness]]
+- **Sprint context:** [[BB being open in 2 sessions via different browser]]
 
-#### [[teame-277-brain-break-two-minute-trigger|TEAME-277: Brain Break Triggered Within 2 Minutes]]
-- **Status:** Open (reported April 29, 2026)
-- **Priority:** Medium
-- **Assignee:** Luis Almonte
-- **Reporter:** Maria Canteras
-- **Created:** April 29, 2026
-- **Issue:** Cooldown system allowing re-trigger within 2 minutes
-- **Source:** [[teame-277-brain-break-two-minute-trigger]]
+#### [[teamf-fe-package-updates|TEAMF-539: Address High-Severity Front End Dependabot Alerts]]
+- **Status:** In Progress (commit ready)
+- **Priority:** High
+- **Sprint:** 53
+- **Story Points:** 2
+- **Due:** May 8, 2026
+- **Done:** `npm audit fix` cleared 5 high-sev vulnerabilities, deployed to deer, ~3 frontend tests kicked off
+- **Deferred to separate ticket:** NPM → PNPM migration (needs team buy-in + Remi docs update + local stress test)
+- **Source:** [[teamf-fe-package-updates]]
 
 ---
 
@@ -175,6 +177,8 @@ Tickets resolved in recent sprints, kept here briefly for reference before archi
 |--------|---------|------------|
 | [[teame-265-brain-brake-login]] | Brain Brake at login wasn't implemented | Implemented — student must spend 30s on dashboard before skill card click triggers modal. Verified by Maria in qa-clam. |
 | [[teame-267-brain-brake-practice-problems]] | Brain Brake not shown after 30s in Practice Problems | Fixed — triggers from both "Take Challenge" buttons. Verified by Maria in qa-clam. |
+| [[teame-272-scrollbar-usability]] | Brain Break scrollbar drag not responsive on Q1 | Fixed — confidence slider / scrollbar drag responsiveness corrected |
+| [[teame-277-brain-break-two-minute-trigger]] | Brain Break triggered twice within 2 minutes | Resolved — cooldown re-trigger issue fixed, ready to merge |
 | TEAME-157 | Multi-part questions showing as separate boxes | Resolved on authoring side (not code). Sam Martin confirmed academics team can fix. |
 
 ### [[teame-265-brain-brake-login|TEAME-265: Brain Brake at Login]]
@@ -210,14 +214,56 @@ Large programs spanning multiple teams, awaiting kickoff or unblocked start.
 
 ---
 
+## Refactoring Initiatives — Backlog
+
+Larger refactoring efforts on hold pending priority / capacity.
+
+### DashboardStudent Relay Refactor
+- **Status:** Backlog (moved 2026-05-05)
+- **Goal:** Migrate DashboardStudent from multiple Relay queries to single query + fragments
+- **Source:** [[relay-refactor]]
+- **Related research:** [[relay-fragment-research-presentation]] — fragment composition presentation
+- **Migration guide:** [[relay-query-refactoring-guide]]
+
+### SkillResource Phase 2 Refactor
+- **Status:** Backlog (moved 2026-05-05)
+- **Goal:** Split SkillResource god component into Container + View + hooks
+- **Plan:**
+  - Extract 6 Relay ops into `useSkillResourceQueries` — [[skill-resource-phase2-extract-graphql-hook]]
+  - Consolidate modal flags into `useSkillModals` via reducer + discriminated union — [[skill-resource-phase2-extract-modals-hook]]
+  - Extract step navigation state machine into `useSkillTimeline` — [[skill-resource-phase2-extract-timeline-hook]]
+- **Architecture:** [[skill-resource-phase2-architecture]], [[skill-resource-phase2-architecture-overview]]
+
+---
+
+## Future Ideas
+
+Exploratory concepts, brainstormed features, and research threads. Not scheduled — surfaced when capacity opens.
+
+### [[three-ring-mastery-system|Mastery Velocity — Three-Ring Feature]]
+- **Tags:** `#future-idea` `#product-concept` `#ed-tech` `#spaced-repetition` `#mastery` `#gamification`
+- **Origin:** Brainstorm session with AI collaborator (2026-05-01)
+- **Concept:** Three-ring progress indicator (New / Practice / Maintain) with spaced repetition, streaks, and weekly 2-skills goal
+- **Key insight:** SR + skill graph = living artifact students tend. Practice ring rewards productive struggle (Manu Kapur), not correctness.
+- **SR path recommended:** Path B (Leitner + empirical decay curves from 6yr TTO data)
+- **Measurement:** Skills mastered/week (not time-on-task). Mean + median + distribution shape.
+- **Blockers before work starts:**
+  - Confirm Learnosity retake behavior (can students re-answer after seeing solution?)
+  - Determine if TTO has structured prerequisite skill map (enables Path C)
+  - Identify data science owner for decay curve modeling
+- **Full concept:** [[three-ring-mastery-system]]
+- **Source brainstorm:** [[mastery-velocity-three-ring-feature-concept]]
+
+---
+
 ## Backlog Stats
 
 | Category | Count |
 |----------|-------|
 | Team E Pending (To Do) | 8 |
-| In Progress / Active | 4 |
+| In Progress / Active | 3 |
 | Near Release / In QA | 1 |
-| Recently Resolved | 3 |
+| Recently Resolved | 5 |
 | Cross-Functional Initiatives | 1 |
 
 ---

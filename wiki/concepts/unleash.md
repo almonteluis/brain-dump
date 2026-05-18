@@ -17,7 +17,16 @@ Open-source feature flagging platform for managing feature toggles across applic
 - Kill switches for rapid feature disable
 - Client SDKs for multiple languages
 
+## Feature Flags as Release Gates, Not Just Experiments (2026-05-17)
+
+From [[My thoughts shipping faster code]]: The non-obvious use case — wrap *every* release in a feature flag, not just A/B tests. The benefit: you skip the full QA edge-case gauntlet before shipping. Release behind a flag, enable for internal users first, validate, then roll out. If something breaks, you kill the flag — instant rollback without a revert deploy.
+
+This reframes feature flags from "experimentation infrastructure" to "release safety net." The cost is marginal (you're already running Unleash) but the speed gain is real: smaller diffs ship faster because they don't carry the weight of a full QA cycle before they're visible to anyone.
+
+Source: [[My thoughts shipping faster code]]
+
 ## Related
 
 - [[frontend-architecture-guide]] — VITE_UNLEASH_URL and VITE_UNLEASH_CLIENT_KEY configuration
 - [[feature-flags-frontend]] — frontend integration patterns
+- [[shift-left-fe-automation]] — Running automation earlier pairs with flag-gated releases

@@ -1,7 +1,19 @@
 ---
 description: JavaScript package managers compared across speed, disk usage, monorepo support, and compatibility
-tags: [javascript, package-manager, npm, yarn, pnpm, bun, tooling]
-sources: ["pnpm-vs-npm-vs-yarn-vs-bun-2026", "choosing-right-js-package-manager-2025", "migrating-npm-to-pnpm", "pnpm-vs-bun-vs-yarn-berry", "pnpm-npm-yarn-bun-benchmarks"]
+tags:
+  - javascript
+  - package-manager
+  - package-manager/npm
+  - package-manager/yarn
+  - package-manager/pnpm
+  - package-manager/bun
+  - tooling
+sources:
+  - pnpm-vs-npm-vs-yarn-vs-bun-2026
+  - choosing-right-js-package-manager-2025
+  - migrating-npm-to-pnpm
+  - pnpm-vs-bun-vs-yarn-berry
+  - pnpm-npm-yarn-bun-benchmarks
 created: 2026-04-29
 updated: 2026-04-29
 ---

@@ -1,9 +1,15 @@
 ---
 description: Ally Piechowski — Git codebase analysis expert and consultant
-tags: ["person", "expert", "git", "codebase-analysis", "technical-debt"]
+tags:
+  - person
+  - expert
+  - git
+  - codebase/analysis
+  - technical-debt
 created: 2026-04-11
 updated: 2026-04-11
-sources: ["wiki/sources/git-commands-before-reading-code.md"]
+sources:
+  - wiki/sources/git-commands-before-reading-code.md
 ---
 
 # Ally Piechowski

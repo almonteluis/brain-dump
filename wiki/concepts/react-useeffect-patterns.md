@@ -1,6 +1,11 @@
 ---
 description: Patterns that replace useEffect for more predictable React code
-tags: ["react", "hooks", "useeffect", "state-management", "patterns"]
+tags:
+  - react
+  - hooks
+  - useeffect
+  - state-management
+  - pattern
 created: 2026-04-09
 updated: 2026-04-09
 ---

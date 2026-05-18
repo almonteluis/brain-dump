@@ -1,0 +1,32 @@
+{
+  "dualConfigs": false,
+  "showConsoleLog": false,
+  "desktop": {
+    "shortDelaySeconds": 5,
+    "longDelaySeconds": 15,
+    "delayBetweenPlugins": 40,
+    "defaultStartupType": "short",
+    "showDescriptions": true,
+    "enableDependencies": false,
+    "plugins": {
+      "colored-tags": {
+        "startupType": "instant"
+      },
+      "papers": {
+        "startupType": "disabled"
+      },
+      "pdf-plus": {
+        "startupType": "short"
+      },
+      "templater-obsidian": {
+        "startupType": "instant"
+      },
+      "notebook-navigator": {
+        "startupType": "short"
+      },
+      "omnisearch": {
+        "startupType": "short"
+      }
+    }
+  }
+}

@@ -1,7 +1,13 @@
 ---
 description: JavaScript package management concepts including npm, yarn, dependencies, and tooling
-tags: ["source", "javascript", "package-management", "tooling", "npm", "workspaces"]
-sources: ["Package Management.md"]
+tags:
+  - source
+  - javascript
+  - package-manager
+  - tooling
+  - package-manager/npm
+sources:
+  - Package Management.md
 created: 2026-04-09
 updated: 2026-04-09
 ---

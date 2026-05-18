@@ -1,6 +1,10 @@
 ---
-tags: [person, ai-tools, claude-code]
-sources: ["how-claude-code-is-built"]
+tags:
+  - person
+  - ai/tools
+  - claude/code
+sources:
+  - how-claude-code-is-built
 created: 2026-04-29
 updated: 2026-04-29
 ---
@@ -21,3 +25,4 @@ Founding engineer of Claude Code at Anthropic. Created the original prototype in
 ## Sources
 
 - [[how-claude-code-is-built]]
+- [[Anthropic's Boris Cherny Why Coding Is Solved, and What Comes Next]]

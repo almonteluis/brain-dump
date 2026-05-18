@@ -1,31 +1,39 @@
 ---
-description: Decision framework for choosing between Modal, Popover, and Tooltip based on attention level and interaction complexity
-tags: [ui, ux, modal, popover, tooltip, accessibility, overlay]
-sources: ["modal-vs-popover-vs-tooltip"]
+description: Overlay Patterns — Modal, Popover, and Tooltip. Pick based on how much attention you need. Modal = stop everything. Popover = sidebar chat. Tooltip = whisper.
+tags:
+  - ui
+  - ux
+  - modal
+  - popover
+  - tooltip
+  - accessibility
+  - overlay
+sources:
+  - "modal-vs-popover-vs-tooltip"
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-05-17
 ---
 
 # Overlay Patterns
 
-Decision framework for choosing between Modal, Popover, and Tooltip based on attention level, interaction complexity, and contextual relevance.
+Three overlay types. Three attention levels. Pick wrong and you either interrupt someone for no reason or hide critical information behind a whisper. The decision framework is simple: how much of the user's attention do you need?
 
-## Modal
+## Modal: "Stop Everything"
 
-**Use when**: Task must interrupt user. Critical confirmations, required input, complex forms, focused attention.
+Modals are the friend who pauses the movie because they *have* to tell you something critical. The rest of the page goes dim. The user can't do anything else until they deal with this. Use for confirming purchases, signing in, filling required forms. Abuse for anything less important and users will hate you.
 
 | Criteria | Value |
 |----------|-------|
 | Attention demand | High |
 | Interaction complexity | High |
 | Content length | Medium to high |
-| Page context visible | Weak |
+| Page context visible | Weak (dimmed) |
 | Mobile suitability | Strong |
 | Accessibility difficulty | High |
 
-## Popover
+## Popover: "Quick Sidebar Chat"
 
-**Use when**: Content is contextual to a trigger. Quick actions, compact settings, lightweight details.
+Popovers are the helpful assistant leaning in with options right next to what you're doing. Doesn't block the whole page. Connected to a specific element. Perfect for mini-menus, quick settings, showing detail without navigating away. **When in doubt, pick popover.** It's the chill middle ground.
 
 | Criteria | Value |
 |----------|-------|
@@ -36,11 +44,9 @@ Decision framework for choosing between Modal, Popover, and Tooltip based on att
 | Mobile suitability | Medium |
 | Accessibility difficulty | Medium |
 
-**Default recommendation**: If unsure, Popover is the safer middle option.
+## Tooltip: "FYI Whisper"
 
-## Tooltip
-
-**Use when**: Brief explanation only. Non-critical, non-interactive content on hover/focus.
+Tooltips are the quietest — a tiny text blurb on hover/focus. Strictly for short, non-interactive explanations. Clarifying an icon, labeling a data point. If you need more than a few words or any interaction, you've outgrown the tooltip.
 
 | Criteria | Value |
 |----------|-------|
@@ -53,9 +59,11 @@ Decision framework for choosing between Modal, Popover, and Tooltip based on att
 
 ## Decision Flow
 
-1. Does task need to interrupt user? → **Yes** → Modal
-2. Does content include actions or multi-step interaction? → **Yes** → Popover
-3. Is it only brief explanation with no interaction? → **Yes** → Tooltip
+1. **Does this need to stop the user completely?** → Modal
+2. **Does it need interaction but not a full takeover?** → Popover
+3. **Is it a brief label with zero interaction?** → Tooltip
+
+These overlays are [[progressive-disclosure]] applied to interruption. The amount of attention you demand = the amount of information you can deliver. Demand too much and you're annoying. Demand too little and the message gets lost.
 
 ## Related
 

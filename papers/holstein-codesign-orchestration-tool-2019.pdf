@@ -1,0 +1,866 @@
+	<!DOCTYPE html>
+<html lang="en-US" xml:lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Co-Designing a Real-Time Classroom Orchestration Tool to Support Teacher–AI Complementarity
+							| Journal of Learning Analytics
+			</title>
+
+	
+<link rel="icon" href="https://learning-analytics.info/public/journals/42/favicon_en_US.png">
+<meta name="generator" content="Open Journal Systems 3.2.1.1">
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC.Creator.PersonalName" content="Kenneth Holstein"/>
+<meta name="DC.Creator.PersonalName" content="Bruce M. McLaren"/>
+<meta name="DC.Creator.PersonalName" content="Vincent Aleven"/>
+<meta name="DC.Date.created" scheme="ISO8601" content="2019-07-22"/>
+<meta name="DC.Date.dateSubmitted" scheme="ISO8601" content="2018-11-01"/>
+<meta name="DC.Date.issued" scheme="ISO8601" content="2019-08-05"/>
+<meta name="DC.Date.modified" scheme="ISO8601" content="2019-08-05"/>
+<meta name="DC.Description" xml:lang="en" content="Involving stakeholders throughout the creation of new educational technologies can help ensure their usefulness and usability in real-world contexts. However, given the complexity of learning analytics (LA) systems, it can be challenging to meaningfully involve non-technical stakeholders throughout their design and development. This article reports on the iterative co-design, development, and classroom evaluation of Konscia, a wearable, real-time awareness tool for teachers working in AI-enhanced K-12 classrooms. In the process, we argue that the co-design of LA systems requires new kinds of prototyping methods. We introduce one of our own prototyping methods, REs, to address unique challenges of co-prototyping LA tools. This work presents the first end-to-end demonstration of how non-technical stakeholders can participate throughout the whole design process for a complex LA system—from early generative phases to the selection and tuning of analytics to evaluation in real-world contexts. We conclude by providing methodological recommendations for future LA co-design efforts.
+"/>
+<meta name="DC.Format" scheme="IMT" content="application/pdf"/>
+<meta name="DC.Identifier" content="6336"/>
+<meta name="DC.Identifier.pageNumber" content="27–52"/>
+<meta name="DC.Identifier.DOI" content="10.18608/jla.2019.62.3"/>
+<meta name="DC.Identifier.URI" content="https://learning-analytics.info/index.php/JLA/article/view/6336"/>
+<meta name="DC.Language" scheme="ISO639-1" content="en"/>
+<meta name="DC.Rights" content="Copyright (c) 2019 Journal of Learning Analytics"/>
+<meta name="DC.Rights" content=""/>
+<meta name="DC.Source" content="Journal of Learning Analytics"/>
+<meta name="DC.Source.ISSN" content="1929-7750"/>
+<meta name="DC.Source.Issue" content="2"/>
+<meta name="DC.Source.Volume" content="6"/>
+<meta name="DC.Source.URI" content="https://learning-analytics.info/index.php/JLA"/>
+<meta name="DC.Subject" xml:lang="en" content="participatory design"/>
+<meta name="DC.Title" content="Co-Designing a Real-Time Classroom Orchestration Tool to Support Teacher–AI Complementarity"/>
+<meta name="DC.Type" content="Text.Serial.Journal"/>
+<meta name="DC.Type.articleType" content="Special Section: Human-Centred Learning Analytics"/>
+<meta name="gs_meta_revision" content="1.1"/>
+<meta name="citation_journal_title" content="Journal of Learning Analytics"/>
+<meta name="citation_journal_abbrev" content="Learning Analytics"/>
+<meta name="citation_issn" content="1929-7750"/> 
+<meta name="citation_author" content="Kenneth Holstein"/>
+<meta name="citation_author_institution" content="Carnegie Mellon University"/>
+<meta name="citation_author" content="Bruce M. McLaren"/>
+<meta name="citation_author_institution" content="Carnegie Mellon University"/>
+<meta name="citation_author" content="Vincent Aleven"/>
+<meta name="citation_author_institution" content="Carnegie Mellon University"/>
+<meta name="citation_title" content="Co-Designing a Real-Time Classroom Orchestration Tool to Support Teacher–AI Complementarity"/>
+<meta name="citation_language" content="en"/>
+<meta name="citation_date" content="2019/07/22"/>
+<meta name="citation_volume" content="6"/>
+<meta name="citation_issue" content="2"/>
+<meta name="citation_firstpage" content="27–52"/>
+<meta name="citation_lastpage" content="27–52"/>
+<meta name="citation_doi" content="10.18608/jla.2019.62.3"/>
+<meta name="citation_abstract_html_url" content="https://learning-analytics.info/index.php/JLA/article/view/6336"/>
+<meta name="citation_keywords" xml:lang="en" content="real-time analytics"/>
+<meta name="citation_keywords" xml:lang="en" content="co-design"/>
+<meta name="citation_keywords" xml:lang="en" content="cognitive augmentation"/>
+<meta name="citation_keywords" xml:lang="en" content="orchestration"/>
+<meta name="citation_keywords" xml:lang="en" content="awareness"/>
+<meta name="citation_keywords" xml:lang="en" content="design methods"/>
+<meta name="citation_keywords" xml:lang="en" content="prototyping methods"/>
+<meta name="citation_keywords" xml:lang="en" content="k-12"/>
+<meta name="citation_keywords" xml:lang="en" content="classrooms"/>
+<meta name="citation_keywords" xml:lang="en" content="needfinding"/>
+<meta name="citation_keywords" xml:lang="en" content="wearables"/>
+<meta name="citation_keywords" xml:lang="en" content="AI"/>
+<meta name="citation_keywords" xml:lang="en" content="adaptive learning technologies"/>
+<meta name="citation_keywords" xml:lang="en" content="intelligent tutoring systems"/>
+<meta name="citation_keywords" xml:lang="en" content="automation"/>
+<meta name="citation_keywords" xml:lang="en" content="augmentation"/>
+<meta name="citation_keywords" xml:lang="en" content="teachers"/>
+<meta name="citation_keywords" xml:lang="en" content="participatory design"/>
+<meta name="citation_pdf_url" content="https://learning-analytics.info/index.php/JLA/article/download/6336/7175"/>
+<meta name="citation_reference" content="Aguilar, S. J. (2018). Examining the relationship between comparative and self-focused academic data visualizations in at-risk college students’ academic motivation. Journal of Research on Technology in Education, 50(1), 84–103. http://dx.doi.org/10.1080/15391523.2017.1401498"/>
+<meta name="citation_reference" content="Aleven, V., Roll, I., McLaren, B. M., &amp; Koedinger, K. R. (2016). Help helps, but only so much: Research on help seeking with intelligent tutoring systems. International Journal of Artificial Intelligence in Education, 26(1), 205–223. http://dx.doi.org/10.1007/s40593-015-0089-1"/>
+<meta name="citation_reference" content="Baker, R. S. (2016). Stupid tutoring systems, intelligent humans. International Journal of Artificial Intelligence in Education, 26(2), 600–614. http://dx.doi.org/10.1007/s40593-016-0105-0"/>
+<meta name="citation_reference" content="Baumer, E. P. (2017). Toward human-centered algorithm design. Big Data &amp; Society, 4(2). http://dx.doi.org/10.1177/2053951717718854"/>
+<meta name="citation_reference" content="Beck, J. E., &amp; Gong, Y. (2013). Wheel-spinning: Students who fail to master a skill. In H. C. Lane, K. Yacef, J. Mostow, &amp; P. Pavlik (Eds.), Proceedings of the 16th International Conference on Artificial Intelligence in Education (AIED ʼ13), 9–13 July 2013, Memphis, TN, USA. (pp. 431–440). Springer, Berlin, Heidelberg. http://dx.doi.org/10.1007/978-3-642-39112-5_44"/>
+<meta name="citation_reference" content="Beyer, H., &amp; Holtzblatt, K. (1997). Contextual design: Defining customer-centered systems. Amsterdam, Netherlands: Elsevier."/>
+<meta name="citation_reference" content="Black, P., &amp; Harrison, C. (2001). Feedback in questioning and marking: The science teacher’s role in formative assessment. School Science Review, 82(301), 55–61."/>
+<meta name="citation_reference" content="Bonsignore, E., DiSalvo, B., DiSalvo, C., &amp; Yip, J. (2017). Introduction to participatory design in the learning sciences. In B. DiSalvo, J. Yip, E. Bonsignore, &amp; C. DiSalvo (Eds.), Participatory Design for Learning (pp. 15–18). Abingdon-on-Thames, UK: Routledge."/>
+<meta name="citation_reference" content="Buchenau, M., &amp; Suri, J. F. (2000). Experience prototyping. In Proceedings of the 3rd Conference on Designing Interactive Systems: Processes, Practices, Methods, and Techniques (DIS ’00), 17–19 August 2000, New York City, NY, USA (pp. 424–433). New York: ACM. http://dx.doi.org10.1145/347642.347802"/>
+<meta name="citation_reference" content="Bull, S., &amp; Kay, J. (2016). SMILI☺: A framework for interfaces to learning data in open learner models, learning analytics and related fields. International Journal of Artificial Intelligence in Education, 26(1), 293–331. http://dx.doi.org/10.1007/s40593-015-0090-8"/>
+<meta name="citation_reference" content="Cairns, P., &amp; Cox, A. L. (Eds.). (2008). Research methods for human–computer interaction (Vol. 12). Cambridge, UK: Cambridge University Press."/>
+<meta name="citation_reference" content="Davidoff, S., Lee, M. K., Dey, A. K., &amp; Zimmerman, J. (2007). Rapidly exploring application design through speed dating. In J. Krumm, G. D. Abowd, A. Seneviratne, &amp; T. Strang (Eds.), Proceedings of the International Conference on Ubiquitous Computing (UbiComp 2007), Lecture Notes in Computer Science, vol. 4717 (pp. 429–446). Springer, Berlin, Heidelberg. http://dx.doi.org/10.1007/978-3-540-74853-3_25"/>
+<meta name="citation_reference" content="Dennerlein, S., Kowald, D., Pammer-Schindler, V., Lex, E., &amp; Ley, T. (2018). Simulation-based co-creation of algorithms. In CEUR Workshop Proceedings (Vol. 2190). RWTH Aachen University."/>
+<meta name="citation_reference" content="Desmarais, M. C., &amp; Baker, R. S. (2012). A review of recent advances in learner and skill modeling in intelligent learning environments. User Modeling and User-Adapted Interaction, 22(1–2), 9–38. http://dx.doi.org/10.1007/s11257-011-9106-8"/>
+<meta name="citation_reference" content="Diana, N., Eagle, M., Stamper, J. C., Grover, S., Bienkowski, M. A., &amp; Basu, S. (2017). Automatic peer tutor matching: Data-driven methods to enable new opportunities for help. In X. Hu, T. Barnes, A. Hershkovitz, &amp; L. Paquette (Eds.), Proceedings of the 10th International Conference on Educational Data Mining (EDM2017), 25–28 June 2017, Wuhan, China (pp. 372–373). International Educational Data Mining Society."/>
+<meta name="citation_reference" content="DiSalvo, B., &amp; DiSalvo, C. (2014). Designing for democracy in education: Participatory design and the learning sciences. In J. L. Polman, E. A. Kyza, D. K. O’Neill, I. Tabak, W. R. Penuel, A. S. Jurow, &amp; L. D’Amico (Eds.), Learning and Becoming in Practice: Proceedings of the International Conference of the Learning Sciences (ICLS ’14), 23–27 June 2014, Boulder, CO, USA (Vol. 2, pp. 793–799). International Society of the Learning Sciences. https://dx.doi.org/10.22318/icls2014.793"/>
+<meta name="citation_reference" content="Dollinger, M., &amp; Lodge, J. M. (2018). Co-creation strategies for learning analytics. In Proceedings of the 8th International Conference on Learning Analytics and Knowledge (LAK ’18), 5–9 March 2018, Sydney, NSW, Australia (pp. 97–101). New York: ACM. http://dx.doi.org/10.1145/3170358.3170372"/>
+<meta name="citation_reference" content="Doshi-Velez, F., &amp; Kim, B. (2017). Towards a rigorous science of interpretable machine learning. arXiv preprint arXiv:1702.08608."/>
+<meta name="citation_reference" content="Dove, G., Halskov, K., Forlizzi, J., &amp; Zimmerman, J. (2017). UX design innovation: Challenges for working with machine learning as a design material. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI ’17), 6–11 May 2017, Denver, Colorado, USA (pp. 278–288). New York: ACM. http://dx.doi.org/10.1145/3025453.3025739"/>
+<meta name="citation_reference" content="Evenson, S. (2006). Directed storytelling: Interpreting experience for design. In A. Bennett (Ed.), Design Studies: Theory and research in graphic design (pp. 231–240). Hudson, NY: Princeton Architectural Press."/>
+<meta name="citation_reference" content="Halloran, J., Hornecker, E., Fitzpatrick, G., Weal, M., Millard, D., Michaelides, D., Cruickshank, D., &amp; De Roure, D. (2006). Unfolding understandings: Co-designing UbiComp in situ, over time. In Proceedings of the 6th Conference on Designing Interactive Systems (DIS ’06), 26–28 June 2006, University Park, PA, USA (pp. 109–118). New York: ACM. http://dx.doi.org/ 10.1145/1142405.1142423"/>
+<meta name="citation_reference" content="Hanington, B., &amp; Martin, B. (2012). Universal methods of design: 100 ways to research complex problems, develop innovative ideas, and design effective solutions. London: Rockport Publishers."/>
+<meta name="citation_reference" content="Heffernan, N. T., &amp; Heffernan, C. L. (2014). The ASSISTments ecosystem: Building a platform that brings scientists and teachers together for minimally invasive research on human learning and teaching. International Journal of Artificial Intelligence in Education, 24(4), 470–497. http://dx.doi.org/10.1007/s40593-014-0024-x"/>
+<meta name="citation_reference" content="Hoadley, C. (2017). How participatory design has influenced the learning sciences. In B. DiSalvo, J. Yip, E. Bonsignore, &amp; C. DiSalvo (Eds.), Participatory design for learning (pp. 34–39). Abingdon-on-Thames, UK: Routledge."/>
+<meta name="citation_reference" content="Holstein, K., Hong, G., Tegene, M., McLaren, B. M., &amp; Aleven, V. (2018). The classroom as a dashboard: Co-designing wearable cognitive augmentation for K–12 teachers. In Proceedings of the 8th International Conference on Learning Analytics and Knowledge (LAK ’18), 5–9 March 2018, Sydney, NSW, Australia (pp. 79–88). New York: ACM. http://dx.doi.org/10.1145/3170358.3170377"/>
+<meta name="citation_reference" content="Holstein, K., McLaren, B. M., &amp; Aleven, V. (2017a). SPACLE: Investigating learning across virtual and physical spaces using spatial replays. In Proceedings of the 7th International Conference on Learning Analytics and Knowledge (LAK ’17), 13–17 March 2017, Vancouver, BC, Canada (pp. 358–367). New York: ACM. http://dx.doi.org/10.1145/3027385.3027450"/>
+<meta name="citation_reference" content="Holstein, K., McLaren, B. M., &amp; Aleven, V. (2017b). Intelligent tutors as teachers’ aides: Exploring teacher needs for real-time analytics in blended classrooms. In Proceedings of the 7th International Conference on Learning Analytics and Knowledge (LAK ’17), 13–17 March 2017, Vancouver, BC, Canada (pp. 257–266). New York: ACM. http://dx.doi.org/10.1145/3027385.3027451"/>
+<meta name="citation_reference" content="Holstein, K., McLaren, B. M., &amp; Aleven, V. (2018a). Informing the design of teacher awareness tools through causal alignment analysis. In J. Kay &amp; R. Luckin (Eds.), Rethinking Learning in the Digital Age: Making the Learning Sciences Count. Proceedings of the 13th International Conference of the Learning Sciences (ICLS ’18), 23–27 June 2018, London, UK (Vol. 1, pp. 104–111). International Society of the Learning Sciences."/>
+<meta name="citation_reference" content="Holstein, K., McLaren, B. M., &amp; Aleven, V. (2018b). Student learning benefits of a mixed-reality teacher awareness tool in AI-enhanced classrooms. In C. Penstein Rosé, R. Martínez-Maldonado, U. Hoppe, R. Luckin, M. Mavrikis, K. Porayska-Pomsta, B. McLaren, &amp; B. du Boulay (Eds.), Proceedings of the 19th International Conference on Artificial Intelligence in Education (AIED 2018), 27–30 June 2018, London, UK. (pp. 154–168). Springer, Cham. http://dx.doi.org/10.1007/978-3-319-93843-1_12"/>
+<meta name="citation_reference" content="Holstein, K., Wortman Vaughan, J., Daumé, H. III, Dudík, M., &amp; Wallach, H. (2019). Improving fairness in machine learning systems: What do industry practitioners need? In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (CHI ’19), 4–9 May 2019, Glasgow, Scotland, UK, Paper No. 600. New York: ACM. https://dx.doi.org/10.1145/3290605.3300830"/>
+<meta name="citation_reference" content="Holstein, K., Yu, Z., Sewall, J., Popescu, O., McLaren, B. M., &amp; Aleven, V. (2018). Opening up an intelligent tutoring system development environment for extensible student modeling. In C. Penstein Rosé, R. Martínez-Maldonado, U. Hoppe, R. Luckin, M. Mavrikis, K. Porayska-Pomsta, B. McLaren, &amp; B. du Boulay (Eds.), Proceedings of the 19th International Conference on Artificial Intelligence in Education (AIED 2018), 27–30 June 2018, London, UK (pp. 169–183). Springer, Cham. http://dx.doi.org/10.1007/978-3-319-93843-1_13"/>
+<meta name="citation_reference" content="Kai, S., Almeda, M. V., Baker, R. S., Heffernan, C., &amp; Heffernan, N. (2018). Decision tree modeling of wheel-spinning and productive persistence in skill builders. Journal of Educational Data Mining, 10(1), 36–71. https://jedm.educationaldatamining.org/index.php/JEDM/article/view/210"/>
+<meta name="citation_reference" content="Kamar, E. (2016). Directions in hybrid intelligence: Complementing AI systems with human intelligence. In S. Kambhampati (Ed.), Proceedings of the 25th International Joint Conference on Artificial Intelligence (IJCAI-16), 9–15 July 2016, New York, NY, USA (pp. 4070–4073). Palo Alto, CA: AAAI Press/International Joint Conferences on Artificial Intelligence."/>
+<meta name="citation_reference" content="Käser, T., Klingler, S., &amp; Gross, M. (2016). When to stop? Towards universal instructional policies. In Proceedings of the 6th International Conference on Learning Analytics and Knowledge (LAK ʼ16), 25–29 April 2016, Edinburgh, UK (pp. 289–298). New York: ACM. http://dx.doi.org/10.1145/2883851.2883961"/>
+<meta name="citation_reference" content="Khachatryan, G. A., Romashov, A. V., Khachatryan, A. R., Gaudino, S. J., Khachatryan, J. M., Guarian, K. R., &amp; Yufa, N. V. (2014). Reasoning mind genie 2: An intelligent tutoring system as a vehicle for international transfer of instructional methods in mathematics. International Journal of Artificial Intelligence in Education, 24(3), 333–382."/>
+<meta name="citation_reference" content="Koedinger, K. R., Baker, R. S., Cunningham, K., Skogsholm, A., Leber, B., &amp; Stamper, J. (2010). A data repository for the EDM community: The PSLC DataShop. In C. Romero, S. Ventura, M. Pechenizkiy, &amp; R. S. J. d. Baker (Eds.), Handbook of educational data mining (pp. 43–56). Boca Raton, FL: Chapman &amp; Hall/CRC."/>
+<meta name="citation_reference" content="Kulik, J. A., &amp; Fletcher, J. D. (2016). Effectiveness of intelligent tutoring systems: A meta-analytic review. Review of Educational Research, 86(1), 42–78. http://dx.doi.org/10.3102/0034654315581420"/>
+<meta name="citation_reference" content="Lee, M. K., &amp; Baykal, S. (2017). Algorithmic mediation in group decisions: Fairness perceptions of algorithmically mediated vs. discussion-based social division. In Proceedings of the 20th ACM Conference on Computer-Supported Cooperative Work &amp; Social Computing (CSCW 2017) 25 February–1 March 2017, Portland, OR, USA (pp. 1035–1048). New York: ACM. http://dx.doi.org/10.1145/2998181.2998230"/>
+<meta name="citation_reference" content="Lee, M. K., Kusbit, D., Kahng, A., Kim, J. T., Yuan, X., Chan, A., Noothigattu, R., See, D., Lee, S., Psomas, C. A., &amp; Procaccia, A. (2018). WeBuildAI: Participatory framework for fair and efficient algorithmic governance. Pre-print."/>
+<meta name="citation_reference" content="Lipton, Z. C. (2016). The mythos of model interpretability. Paper presented at the 2016 ICML Workshop on Human Interpretability in Machine Learning (WHI 2016), 23 June 2016, New York, NY, USA. arXiv preprint arXiv:1606.03490."/>
+<meta name="citation_reference" content="Martinez-Maldonado, R., Clayphan, A., Yacef, K., &amp; Kay, J. (2015). MTFeedback: Providing notifications to enhance teacher awareness of small group work in the classroom. IEEE Transactions on Learning Technologies, 8(2), 187–200. http://dx.doi.org/10.1109/TLT.2014.2365027"/>
+<meta name="citation_reference" content="Martinez-Maldonado, R. M., Kay, J., Yacef, K., &amp; Schwendimann, B. (2012). An interactive teacher’s dashboard for monitoring groups in a multi-tabletop learning environment. In S. A. Cerri, W. J. Clancey, G. Papadourakis, &amp; K.-K."/>
+<meta name="citation_reference" content="Panourgia (Eds.), Proceedings of the 11th International Conference on Intelligent Tutoring Systems (ITS 2012), 14–18 June 2012, Chania, Greece (pp. 482–492). Springer, Berlin, Heidelberg. http://dx.doi.org/10.1007/978-3-642-30950-2_62"/>
+<meta name="citation_reference" content="Martinez-Maldonado, R., Pardo, A., Mirriahi, N., Yacef, K., Kay, J., &amp; Clayphan, A. (2016). LATUX: An iterative workflow for designing, validating and deploying learning analytics visualisations. Journal of Learning Analytics, 2(3), 9–39. http://dx.doi.org/10.1007/978-3-642-30950-2_62"/>
+<meta name="citation_reference" content="Mavrikis, M., Gutierrez-Santos, S., Geraniou, E., Noss, R., &amp; Poulovassilis, A. (2013). Iterative context engineering to inform the design of intelligent exploratory learning environments for the classroom. In R. Luckin, S. Puntambekar, P. Goodyear, B. Grabowski, J. Underowood, &amp; N. Winters (Eds.), Handbook of design in educational technology (pp. 80–92). Abingdon-on-Thames, UK: Routledge."/>
+<meta name="citation_reference" content="Mavrikis, M., Gutierrez-Santos, S., &amp; Poulovassilis, A. (2016). Design and evaluation of teacher assistance tools for exploratory learning environments. In Proceedings of the 6th International Conference on Learning Analytics and Knowledge (LAK ʼ16), 25–29 April 2016, Edinburgh, UK (pp. 168–172). New York: ACM. http://dx.doi.org/10.1145/2883851.2883909"/>
+<meta name="citation_reference" content="Moraveji, N., Li, J., Ding, J., O’Kelley, P., &amp; Woolf, S. (2007). Comicboarding: Using comics as proxies for participatory design with children. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI ʼ07), 28 April–3 May 2007, San Jose, CA (pp. 1371–1374). New York: ACM."/>
+<meta name="citation_reference" content="Odom, W., Zimmerman, J., Davidoff, S., Forlizzi, J., Dey, A. K., &amp; Lee, M. K. (2012). A fieldwork of the future with user enactments. In Proceedings of the Designing Interactive Systems Conference (DIS ’12) 11–15 June 2012, Newcastle Upon Tyne, UK (pp. 338–347). New York: ACM. http://dx.doi.org/10.1145/2317956.2318008"/>
+<meta name="citation_reference" content="Ogan, A., Walker, E., Baker, R. S., Rebolledo Mendez, G., Jimenez Castro, M., Laurentino, T., &amp; De Carvalho, A. (2012). Collaboration in cognitive tutor use in Latin America: Field study and design recommendations. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI ʼ12), 5–10 May 2012, Austin, TX, USA (pp. 1381–1390). New York: ACM. http://dx.doi.org/10.1145/2207676.2208597"/>
+<meta name="citation_reference" content="Ogan, A., Walker, E., Baker, R., Rodrigo, M. M. T., Soriano, J. C., &amp; Castro, M. J. (2015). Towards understanding how to assess help-seeking behavior across cultures. International Journal of Artificial Intelligence in Education, 25(2), 229–248. http://dx.doi.org/10.1007/s40593-014-0034-8"/>
+<meta name="citation_reference" content="Olsen, J. K. (2017). Orchestrating Combined Collaborative and Individual Learning in the Classroom. Unpublished doctoral dissertation, Carnegie Mellon University."/>
+<meta name="citation_reference" content="Oulasvirta, A., Kurvinen, E., &amp; Kankainen, T. (2003). Understanding contexts by being there: Case studies in bodystorming. Personal and Ubiquitous Computing, 7(2), 125–134."/>
+<meta name="citation_reference" content="Penuel, W. R., Roschelle, J., &amp; Shechtman, N. (2007). Designing formative assessment software with teachers: An analysis of the co-design process. Research and Practice in Technology Enhanced Learning, 2(1), 51–74. http://dx.doi.org/10.1142/S1793206807000300"/>
+<meta name="citation_reference" content="Penuel, W. R., &amp; Yarnall, L. (2005). Designing handheld software to support classroom assessment: Analysis of conditions for teacher adoption. The Journal of Technology, Learning and Assessment, 3(5). https://ejournals.bc.edu/index.php/jtla/article/view/1658"/>
+<meta name="citation_reference" content="Poursabzi-Sangdeh, F., Goldstein, D. G., Hofman, J. M., Vaughan, J. W., &amp; Wallach, H. (2018). Manipulating and measuring model interpretability. arXiv preprint arXiv:1802.07810."/>
+<meta name="citation_reference" content="Prieto-Alvarez, C. G., Martinez-Maldonado, R., &amp; Anderson, T. (2018). Co-designing learning analytics tools with learners. Learning analytics in the classroom: Translating learning analytics research for teachers. Abingdon-on-Thames, UK: Routledge."/>
+<meta name="citation_reference" content="Rau, M. A. (2015). Why do the rich get richer? A structural equation model to test how spatial skills affect learning with representations. In O. C. Santos et al. (Eds.), Proceedings of the 8th International Conference on Educational Data Mining (EDM2015), 26–29 June 2015, Madrid, Spain (pp. 350–357). International Educational Data Mining Society."/>
+<meta name="citation_reference" content="Reich, J., &amp; Ito, M. (2017). From good intentions to real outcomes: Equity by design in learning technologies. Irvine, CA: Digital Media and Learning Research Hub."/>
+<meta name="citation_reference" content="Ritter, S., Carlson, R., Sandbothe, M., &amp; Fancsali, S. E. (2015). Carnegie Learning’s adaptive learning products. In O. C. Santos et al. (Eds.), Proceedings of the 8th International Conference on Educational Data Mining (EDM2015), 26–29 June 2015, Madrid, Spain (pp. 633–634). International Educational Data Mining Society."/>
+<meta name="citation_reference" content="Ritter, S., Yudelson, M., Fancsali, S., &amp; Berman, S. R. (2016). Towards integrating human and automated tutoring systems. In T. Barnes et al. (Eds.), Proceedings of the 9th International Conference on Educational Data Mining (EDM2016), 29 June–2 July 2016, Raleigh, NC, USA (pp. 626–627). International Educational Data Mining Society."/>
+<meta name="citation_reference" content="Rodriguez-Triana, M. J., Prieto Santos, L. P., Vozniuk, A., Shirvani Boroujeni, M., Schwendimann, B. A., Holzer, A. C., &amp; Gillet, D. (2017). Monitoring, awareness and reflection in blended technology enhanced learning: A systematic review. International Journal of Technology Enhanced Learning, 9, 126–150. http://dx.doi.org/10.1504/IJTEL.2017.084489"/>
+<meta name="citation_reference" content="Schofield, J. W., Eurich-Fulcer, R., &amp; Britt, C. L. (1994). Teachers, computer tutors, and teaching: The artificially intelligent tutor as an agent for classroom change. American Educational Research Journal, 31(3), 579–607. http://dx.doi.org/10.2307/1163227"/>
+<meta name="citation_reference" content="Schuler, D., &amp; Namioka, A. (Eds.). (1993). Participatory design: Principles and practices. Boca Raton, FL: CRC Press."/>
+<meta name="citation_reference" content="Shepard, L. A. (1997). Insights gained from a classroom-based assessment project. Center for the Study of Evaluation, National Center for Research on Evaluation, Standards, and Student Testing, Graduate School of Education &amp; Information Studies, University of California, Los Angeles."/>
+<meta name="citation_reference" content="Sujan, M., &amp; Pasquini, A. (1998). Allocating tasks between humans and machines in complex systems. In Proceedings of the 4th International Conference on Achieving Quality in Software (AQuIS ’98), 30 March–2 April 1998, Venice, Italy (pp. 173–184)."/>
+<meta name="citation_reference" content="Tohidi, M., Buxton, W., Baecker, R., &amp; Sellen, A. (2006). User sketches: A quick, inexpensive, and effective way to elicit more reflective user feedback. In Proceedings of the 4th Nordic Conference on Human–Computer Interaction: Changing Roles (NordiCHI 2006), 14–18 October 2006, Oslo, Norway (pp. 105–114). New York: ACM. http://dx.doi.org/10.1145/1182475.1182487"/>
+<meta name="citation_reference" content="Veitch, J., Salmon, J., &amp; Ball, K. (2007). Children’s active free play in local neighborhoods: A behavioral mapping study. Health Education Research, 23(5), 870–879. http://dx.doi.org/10.1093/her/cym074"/>
+<meta name="citation_reference" content="Wickens, C. D., Gordon, S. E., Liu, Y., &amp; Lee, J. (1998). An introduction to human factors engineering. New York: Longman."/>
+<meta name="citation_reference" content="Wright, P., Dearden, A., &amp; Fields, B. (2000). Function allocation: A perspective from studies of work practice. International Journal of Human–Computer Studies, 52(2), 335–355. http://dx.doi.org/10.1006/ijhc.1999.0292"/>
+<meta name="citation_reference" content="Yacef, K. (2002). Intelligent teaching assistant systems. In Proceedings of the International Conference on Computers in Education (ICCE 2002), 3–6 December 2002, Auckland, New Zealand (pp. 136–140). IEEE Computer Society. http://dx.doi.org/10.1109/CIE.2002.1185885"/>
+<meta name="citation_reference" content="Zhu, H., Yu, B., Halfaker, A., &amp; Terveen, L. (2018, November). Value-sensitive algorithm design: Method, case study, and lessons. Proceedings of the ACM on Human–Computer Interaction, CSCW issue, Vol. 2, article #194. http://dx.doi.org/10.1145/3274463"/>
+	<link rel="stylesheet" href="https://learning-analytics.info/index.php/JLA/$$$call$$$/page/page/css?name=stylesheet" type="text/css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css?v=3.2.1.1" type="text/css" /><style type="text/css">.pkp_structure_head { background: inherit center / cover no-repeat url("https://learning-analytics.info/public/journals/42/homepageImage_en_US.png");}</style><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Noto+Serif:400,400i,700,700i" type="text/css" /><link rel="stylesheet" href="https://learning-analytics.info/plugins/generic/orcidProfile/css/orcidProfile.css?v=3.2.1.1" type="text/css" /><link rel="stylesheet" href="https://learning-analytics.info/public/journals/42/styleSheet.css?v=3.2.1.1" type="text/css" />
+</head>
+<body class="pkp_page_article pkp_op_view has_site_logo" dir="ltr">
+
+	<div class="pkp_structure_page">
+
+				<header class="pkp_structure_head" id="headerNavigationContainer" role="banner">
+						 <nav class="cmp_skip_to_content" aria-label="Jump to content links">
+	<a href="#pkp_content_main">Skip to main content</a>
+	<a href="#siteNav">Skip to main navigation menu</a>
+		<a href="#pkp_content_footer">Skip to site footer</a>
+</nav>
+
+			<div class="pkp_head_wrapper">
+
+				<div class="pkp_site_name_wrapper">
+					<button class="pkp_site_nav_toggle">
+						<span>Open Menu</span>
+					</button>
+										<div class="pkp_site_name">
+																<a href="						https://learning-analytics.info/index.php/JLA/index
+					" class="is_img">
+							<img src="https://learning-analytics.info/public/journals/42/pageHeaderLogoImage_en_US.png" width="5000" height="426"  />
+						</a>
+										</div>
+				</div>
+
+				
+				<nav class="pkp_site_nav_menu" aria-label="Site Navigation">
+					<a id="siteNav"></a>
+					<div class="pkp_navigation_primary_row">
+						<div class="pkp_navigation_primary_wrapper">
+																				<ul id="navigationPrimary" class="pkp_navigation_primary pkp_nav_list">
+								<li class="">
+				<a href="https://learning-analytics.info/index.php/JLA/about">
+					About
+				</a>
+									<ul>
+																					<li class="">
+									<a href="https://learning-analytics.info/index.php/JLA/about">
+										About the Journal
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://learning-analytics.info/index.php/JLA/about/editorialTeam">
+										Editorial Team
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://learning-analytics.info/index.php/JLA/focusandscope">
+										Focus & scope
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://learning-analytics.info/index.php/JLA/guidelines">
+										Author guidelines
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://learning-analytics.info/index.php/JLA/policies">
+										Journal policies
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://learning-analytics.info/index.php/JLA/faq">
+										FAQ
+									</a>
+								</li>
+																		</ul>
+							</li>
+								<li class="">
+				<a href="https://learning-analytics.info/index.php/JLA/issue/view/517">
+					Current issue
+				</a>
+							</li>
+								<li class="">
+				<a href="https://learning-analytics.info/index.php/JLA/issue/archive">
+					Previous Issues
+				</a>
+							</li>
+								<li class="">
+				<a href="https://learning-analytics.info/index.php/JLA/announcement">
+					Announcements
+				</a>
+							</li>
+			</ul>
+
+				
+
+																								
+	<form class="pkp_search pkp_search_desktop" action="https://learning-analytics.info/index.php/JLA/search/search" method="get" role="search" aria-label="Article Search">
+		<input type="hidden" name="csrfToken" value="e5b394dc2d2e1d2193729af19c8e7eee">
+				
+			<input name="query" value="" type="text" aria-label="Search Query">
+		
+
+		<button type="submit">
+			Search
+		</button>
+		<div class="search_controls" aria-hidden="true">
+			<a href="https://learning-analytics.info/index.php/JLA/search/search" class="headerSearchPrompt search_prompt" aria-hidden="true">
+				Search
+			</a>
+			<a href="#" class="search_cancel headerSearchCancel" aria-hidden="true"></a>
+			<span class="search_loading" aria-hidden="true"></span>
+		</div>
+	</form>
+													</div>
+					</div>
+					<div class="pkp_navigation_user_wrapper" id="navigationUserWrapper">
+							<ul id="navigationUser" class="pkp_navigation_user pkp_nav_list">
+								<li class="profile">
+				<a href="https://learning-analytics.info/index.php/JLA/user/register">
+					Register
+				</a>
+							</li>
+								<li class="profile">
+				<a href="https://learning-analytics.info/index.php/JLA/login">
+					Login
+				</a>
+							</li>
+										</ul>
+
+					</div>
+																		
+	<form class="pkp_search pkp_search_mobile" action="https://learning-analytics.info/index.php/JLA/search/search" method="get" role="search" aria-label="Article Search">
+		<input type="hidden" name="csrfToken" value="e5b394dc2d2e1d2193729af19c8e7eee">
+				
+			<input name="query" value="" type="text" aria-label="Search Query">
+		
+
+		<button type="submit">
+			Search
+		</button>
+		<div class="search_controls" aria-hidden="true">
+			<a href="https://learning-analytics.info/index.php/JLA/search/search" class="headerSearchPrompt search_prompt" aria-hidden="true">
+				Search
+			</a>
+			<a href="#" class="search_cancel headerSearchCancel" aria-hidden="true"></a>
+			<span class="search_loading" aria-hidden="true"></span>
+		</div>
+	</form>
+									</nav>
+			</div><!-- .pkp_head_wrapper -->
+		</header><!-- .pkp_structure_head -->
+
+						<div class="pkp_structure_content has_sidebar">
+			<div class="pkp_structure_main" role="main">
+				<a id="pkp_content_main"></a>
+
+<div class="page page_article">
+			<nav class="cmp_breadcrumbs" role="navigation" aria-label="You are here:">
+	<ol>
+		<li>
+			<a href="https://learning-analytics.info/index.php/JLA/index">
+				Home
+			</a>
+			<span class="separator">/</span>
+		</li>
+		<li>
+			<a href="https://learning-analytics.info/index.php/JLA/issue/archive">
+				Archives
+			</a>
+			<span class="separator">/</span>
+		</li>
+					<li>
+				<a href="https://learning-analytics.info/index.php/JLA/issue/view/463">
+					Vol. 6 No. 2 (2019): Human-Centred Learning Analytics
+				</a>
+				<span class="separator">/</span>
+			</li>
+				<li class="current" aria-current="page">
+			<span aria-current="page">
+									Special Section: Human-Centred Learning Analytics
+							</span>
+		</li>
+	</ol>
+</nav>
+	
+		<article class="obj_article_details">
+
+		
+	<h1 class="page_title">
+		Co-Designing a Real-Time Classroom Orchestration Tool to Support Teacher–AI Complementarity
+	</h1>
+
+	
+	<div class="row">
+		<div class="main_entry">
+
+							<section class="item authors">
+					<h2 class="pkp_screen_reader">Authors</h2>
+					<ul class="authors">
+											<li>
+							<span class="name">
+								Kenneth Holstein
+							</span>
+															<span class="affiliation">
+									Carnegie Mellon University
+								</span>
+																				</li>
+											<li>
+							<span class="name">
+								Bruce M. McLaren
+							</span>
+															<span class="affiliation">
+									Carnegie Mellon University
+								</span>
+																				</li>
+											<li>
+							<span class="name">
+								Vincent Aleven
+							</span>
+															<span class="affiliation">
+									Carnegie Mellon University
+								</span>
+																				</li>
+										</ul>
+				</section>
+			
+																												<section class="item doi">
+						<h2 class="label">
+														DOI:
+						</h2>
+						<span class="value">
+							<a href="https://doi.org/10.18608/jla.2019.62.3">
+								https://doi.org/10.18608/jla.2019.62.3
+							</a>
+						</span>
+					</section>
+							
+									<section class="item keywords">
+				<h2 class="label">
+										Keywords:
+				</h2>
+				<span class="value">
+											real-time analytics, 											co-design, 											cognitive augmentation, 											orchestration, 											awareness, 											design methods, 											prototyping methods, 											k-12, 											classrooms, 											needfinding, 											wearables, 											AI, 											adaptive learning technologies, 											intelligent tutoring systems, 											automation, 											augmentation, 											teachers, 											participatory design									</span>
+			</section>
+			
+										<section class="item abstract">
+					<h2 class="label">Abstract</h2>
+					<p>Involving stakeholders throughout the creation of new educational technologies can help ensure their usefulness and usability in real-world contexts. However, given the complexity of learning analytics (LA) systems, it can be challenging to meaningfully involve non-technical stakeholders throughout their design and development. This article reports on the iterative co-design, development, and classroom evaluation of Konscia, a wearable, real-time awareness tool for teachers working in AI-enhanced K-12 classrooms. In the process, we argue that the co-design of LA systems requires <em>new kinds of prototyping methods</em>. We introduce one of our own prototyping methods, REs, to address unique challenges of co-prototyping LA tools. This work presents the first end-to-end demonstration of how non-technical stakeholders can participate throughout the whole design process for a complex LA system—from early generative phases to the selection and tuning of analytics to evaluation in real-world contexts. We conclude by providing methodological recommendations for future LA co-design efforts.</p>
+<p><a href="#_ftnref1"></a></p>
+				</section>
+			
+			
+
+																																	
+										<section class="item references">
+					<h2 class="label">
+						References
+					</h2>
+					<div class="value">
+																					<p>Aguilar, S. J. (2018). Examining the relationship between comparative and self-focused academic data visualizations in at-risk college students’ academic motivation. Journal of Research on Technology in Education, 50(1), 84–103. <a href="http://dx.doi.org/10.1080/15391523.2017.1401498">http://dx.doi.org/10.1080/15391523.2017.1401498</a> </p>
+															<p>Aleven, V., Roll, I., McLaren, B. M., &amp; Koedinger, K. R. (2016). Help helps, but only so much: Research on help seeking with intelligent tutoring systems. International Journal of Artificial Intelligence in Education, 26(1), 205–223. <a href="http://dx.doi.org/10.1007/s40593-015-0089-1">http://dx.doi.org/10.1007/s40593-015-0089-1</a> </p>
+															<p>Baker, R. S. (2016). Stupid tutoring systems, intelligent humans. International Journal of Artificial Intelligence in Education, 26(2), 600–614. <a href="http://dx.doi.org/10.1007/s40593-016-0105-0">http://dx.doi.org/10.1007/s40593-016-0105-0</a> </p>
+															<p>Baumer, E. P. (2017). Toward human-centered algorithm design. Big Data &amp; Society, 4(2). <a href="http://dx.doi.org/10.1177/2053951717718854">http://dx.doi.org/10.1177/2053951717718854</a> </p>
+															<p>Beck, J. E., &amp; Gong, Y. (2013). Wheel-spinning: Students who fail to master a skill. In H. C. Lane, K. Yacef, J. Mostow, &amp; P. Pavlik (Eds.), Proceedings of the 16th International Conference on Artificial Intelligence in Education (AIED ʼ13), 9–13 July 2013, Memphis, TN, USA. (pp. 431–440). Springer, Berlin, Heidelberg. <a href="http://dx.doi.org/10.1007/978-3-642-39112-5_44">http://dx.doi.org/10.1007/978-3-642-39112-5_44</a> </p>
+															<p>Beyer, H., &amp; Holtzblatt, K. (1997). Contextual design: Defining customer-centered systems. Amsterdam, Netherlands: Elsevier. </p>
+															<p>Black, P., &amp; Harrison, C. (2001). Feedback in questioning and marking: The science teacher’s role in formative assessment. School Science Review, 82(301), 55–61. </p>
+															<p>Bonsignore, E., DiSalvo, B., DiSalvo, C., &amp; Yip, J. (2017). Introduction to participatory design in the learning sciences. In B. DiSalvo, J. Yip, E. Bonsignore, &amp; C. DiSalvo (Eds.), Participatory Design for Learning (pp. 15–18). Abingdon-on-Thames, UK: Routledge. </p>
+															<p>Buchenau, M., &amp; Suri, J. F. (2000). Experience prototyping. In Proceedings of the 3rd Conference on Designing Interactive Systems: Processes, Practices, Methods, and Techniques (DIS ’00), 17–19 August 2000, New York City, NY, USA (pp. 424–433). New York: ACM. <a href="http://dx.doi.org10.1145/347642.347802">http://dx.doi.org10.1145/347642.347802</a> </p>
+															<p>Bull, S., &amp; Kay, J. (2016). SMILI☺: A framework for interfaces to learning data in open learner models, learning analytics and related fields. International Journal of Artificial Intelligence in Education, 26(1), 293–331. <a href="http://dx.doi.org/10.1007/s40593-015-0090-8">http://dx.doi.org/10.1007/s40593-015-0090-8</a> </p>
+															<p>Cairns, P., &amp; Cox, A. L. (Eds.). (2008). Research methods for human–computer interaction (Vol. 12). Cambridge, UK: Cambridge University Press. </p>
+															<p>Davidoff, S., Lee, M. K., Dey, A. K., &amp; Zimmerman, J. (2007). Rapidly exploring application design through speed dating. In J. Krumm, G. D. Abowd, A. Seneviratne, &amp; T. Strang (Eds.), Proceedings of the International Conference on Ubiquitous Computing (UbiComp 2007), Lecture Notes in Computer Science, vol. 4717 (pp. 429–446). Springer, Berlin, Heidelberg. <a href="http://dx.doi.org/10.1007/978-3-540-74853-3_25">http://dx.doi.org/10.1007/978-3-540-74853-3_25</a> </p>
+															<p>Dennerlein, S., Kowald, D., Pammer-Schindler, V., Lex, E., &amp; Ley, T. (2018). Simulation-based co-creation of algorithms. In CEUR Workshop Proceedings (Vol. 2190). RWTH Aachen University. </p>
+															<p>Desmarais, M. C., &amp; Baker, R. S. (2012). A review of recent advances in learner and skill modeling in intelligent learning environments. User Modeling and User-Adapted Interaction, 22(1–2), 9–38. <a href="http://dx.doi.org/10.1007/s11257-011-9106-8">http://dx.doi.org/10.1007/s11257-011-9106-8</a> </p>
+															<p>Diana, N., Eagle, M., Stamper, J. C., Grover, S., Bienkowski, M. A., &amp; Basu, S. (2017). Automatic peer tutor matching: Data-driven methods to enable new opportunities for help. In X. Hu, T. Barnes, A. Hershkovitz, &amp; L. Paquette (Eds.), Proceedings of the 10th International Conference on Educational Data Mining (EDM2017), 25–28 June 2017, Wuhan, China (pp. 372–373). International Educational Data Mining Society. </p>
+															<p>DiSalvo, B., &amp; DiSalvo, C. (2014). Designing for democracy in education: Participatory design and the learning sciences. In J. L. Polman, E. A. Kyza, D. K. O’Neill, I. Tabak, W. R. Penuel, A. S. Jurow, &amp; L. D’Amico (Eds.), Learning and Becoming in Practice: Proceedings of the International Conference of the Learning Sciences (ICLS ’14), 23–27 June 2014, Boulder, CO, USA (Vol. 2, pp. 793–799). International Society of the Learning Sciences. <a href="https://dx.doi.org/10.22318/icls2014.793">https://dx.doi.org/10.22318/icls2014.793</a> </p>
+															<p>Dollinger, M., &amp; Lodge, J. M. (2018). Co-creation strategies for learning analytics. In Proceedings of the 8th International Conference on Learning Analytics and Knowledge (LAK ’18), 5–9 March 2018, Sydney, NSW, Australia (pp. 97–101). New York: ACM. <a href="http://dx.doi.org/10.1145/3170358.3170372">http://dx.doi.org/10.1145/3170358.3170372</a> </p>
+															<p>Doshi-Velez, F., &amp; Kim, B. (2017). Towards a rigorous science of interpretable machine learning. arXiv preprint arXiv:1702.08608. </p>
+															<p>Dove, G., Halskov, K., Forlizzi, J., &amp; Zimmerman, J. (2017). UX design innovation: Challenges for working with machine learning as a design material. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI ’17), 6–11 May 2017, Denver, Colorado, USA (pp. 278–288). New York: ACM. <a href="http://dx.doi.org/10.1145/3025453.3025739">http://dx.doi.org/10.1145/3025453.3025739</a> </p>
+															<p>Evenson, S. (2006). Directed storytelling: Interpreting experience for design. In A. Bennett (Ed.), Design Studies: Theory and research in graphic design (pp. 231–240). Hudson, NY: Princeton Architectural Press. </p>
+															<p>Halloran, J., Hornecker, E., Fitzpatrick, G., Weal, M., Millard, D., Michaelides, D., Cruickshank, D., &amp; De Roure, D. (2006). Unfolding understandings: Co-designing UbiComp in situ, over time. In Proceedings of the 6th Conference on Designing Interactive Systems (DIS ’06), 26–28 June 2006, University Park, PA, USA (pp. 109–118). New York: ACM. <a href="http://dx.doi.org/">http://dx.doi.org/</a> 10.1145/1142405.1142423 </p>
+															<p>Hanington, B., &amp; Martin, B. (2012). Universal methods of design: 100 ways to research complex problems, develop innovative ideas, and design effective solutions. London: Rockport Publishers. </p>
+															<p>Heffernan, N. T., &amp; Heffernan, C. L. (2014). The ASSISTments ecosystem: Building a platform that brings scientists and teachers together for minimally invasive research on human learning and teaching. International Journal of Artificial Intelligence in Education, 24(4), 470–497. <a href="http://dx.doi.org/10.1007/s40593-014-0024-x">http://dx.doi.org/10.1007/s40593-014-0024-x</a> </p>
+															<p>Hoadley, C. (2017). How participatory design has influenced the learning sciences. In B. DiSalvo, J. Yip, E. Bonsignore, &amp; C. DiSalvo (Eds.), Participatory design for learning (pp. 34–39). Abingdon-on-Thames, UK: Routledge. </p>
+															<p>Holstein, K., Hong, G., Tegene, M., McLaren, B. M., &amp; Aleven, V. (2018). The classroom as a dashboard: Co-designing wearable cognitive augmentation for K–12 teachers. In Proceedings of the 8th International Conference on Learning Analytics and Knowledge (LAK ’18), 5–9 March 2018, Sydney, NSW, Australia (pp. 79–88). New York: ACM. <a href="http://dx.doi.org/10.1145/3170358.3170377">http://dx.doi.org/10.1145/3170358.3170377</a> </p>
+															<p>Holstein, K., McLaren, B. M., &amp; Aleven, V. (2017a). SPACLE: Investigating learning across virtual and physical spaces using spatial replays. In Proceedings of the 7th International Conference on Learning Analytics and Knowledge (LAK ’17), 13–17 March 2017, Vancouver, BC, Canada (pp. 358–367). New York: ACM. <a href="http://dx.doi.org/10.1145/3027385.3027450">http://dx.doi.org/10.1145/3027385.3027450</a> </p>
+															<p>Holstein, K., McLaren, B. M., &amp; Aleven, V. (2017b). Intelligent tutors as teachers’ aides: Exploring teacher needs for real-time analytics in blended classrooms. In Proceedings of the 7th International Conference on Learning Analytics and Knowledge (LAK ’17), 13–17 March 2017, Vancouver, BC, Canada (pp. 257–266). New York: ACM. <a href="http://dx.doi.org/10.1145/3027385.3027451">http://dx.doi.org/10.1145/3027385.3027451</a> </p>
+															<p>Holstein, K., McLaren, B. M., &amp; Aleven, V. (2018a). Informing the design of teacher awareness tools through causal alignment analysis. In J. Kay &amp; R. Luckin (Eds.), Rethinking Learning in the Digital Age: Making the Learning Sciences Count. Proceedings of the 13th International Conference of the Learning Sciences (ICLS ’18), 23–27 June 2018, London, UK (Vol. 1, pp. 104–111). International Society of the Learning Sciences. </p>
+															<p>Holstein, K., McLaren, B. M., &amp; Aleven, V. (2018b). Student learning benefits of a mixed-reality teacher awareness tool in AI-enhanced classrooms. In C. Penstein Rosé, R. Martínez-Maldonado, U. Hoppe, R. Luckin, M. Mavrikis, K. Porayska-Pomsta, B. McLaren, &amp; B. du Boulay (Eds.), Proceedings of the 19th International Conference on Artificial Intelligence in Education (AIED 2018), 27–30 June 2018, London, UK. (pp. 154–168). Springer, Cham. <a href="http://dx.doi.org/10.1007/978-3-319-93843-1_12">http://dx.doi.org/10.1007/978-3-319-93843-1_12</a> </p>
+															<p>Holstein, K., Wortman Vaughan, J., Daumé, H. III, Dudík, M., &amp; Wallach, H. (2019). Improving fairness in machine learning systems: What do industry practitioners need? In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (CHI ’19), 4–9 May 2019, Glasgow, Scotland, UK, Paper No. 600. New York: ACM. <a href="https://dx.doi.org/10.1145/3290605.3300830">https://dx.doi.org/10.1145/3290605.3300830</a> </p>
+															<p>Holstein, K., Yu, Z., Sewall, J., Popescu, O., McLaren, B. M., &amp; Aleven, V. (2018). Opening up an intelligent tutoring system development environment for extensible student modeling. In C. Penstein Rosé, R. Martínez-Maldonado, U. Hoppe, R. Luckin, M. Mavrikis, K. Porayska-Pomsta, B. McLaren, &amp; B. du Boulay (Eds.), Proceedings of the 19th International Conference on Artificial Intelligence in Education (AIED 2018), 27–30 June 2018, London, UK (pp. 169–183). Springer, Cham. <a href="http://dx.doi.org/10.1007/978-3-319-93843-1_13">http://dx.doi.org/10.1007/978-3-319-93843-1_13</a> </p>
+															<p>Kai, S., Almeda, M. V., Baker, R. S., Heffernan, C., &amp; Heffernan, N. (2018). Decision tree modeling of wheel-spinning and productive persistence in skill builders. Journal of Educational Data Mining, 10(1), 36–71. <a href="https://jedm.educationaldatamining.org/index.php/JEDM/article/view/210">https://jedm.educationaldatamining.org/index.php/JEDM/article/view/210</a> </p>
+															<p>Kamar, E. (2016). Directions in hybrid intelligence: Complementing AI systems with human intelligence. In S. Kambhampati (Ed.), Proceedings of the 25th International Joint Conference on Artificial Intelligence (IJCAI-16), 9–15 July 2016, New York, NY, USA (pp. 4070–4073). Palo Alto, CA: AAAI Press/International Joint Conferences on Artificial Intelligence. </p>
+															<p>Käser, T., Klingler, S., &amp; Gross, M. (2016). When to stop? Towards universal instructional policies. In Proceedings of the 6th International Conference on Learning Analytics and Knowledge (LAK ʼ16), 25–29 April 2016, Edinburgh, UK (pp. 289–298). New York: ACM. <a href="http://dx.doi.org/10.1145/2883851.2883961">http://dx.doi.org/10.1145/2883851.2883961</a> </p>
+															<p>Khachatryan, G. A., Romashov, A. V., Khachatryan, A. R., Gaudino, S. J., Khachatryan, J. M., Guarian, K. R., &amp; Yufa, N. V. (2014). Reasoning mind genie 2: An intelligent tutoring system as a vehicle for international transfer of instructional methods in mathematics. International Journal of Artificial Intelligence in Education, 24(3), 333–382. </p>
+															<p>Koedinger, K. R., Baker, R. S., Cunningham, K., Skogsholm, A., Leber, B., &amp; Stamper, J. (2010). A data repository for the EDM community: The PSLC DataShop. In C. Romero, S. Ventura, M. Pechenizkiy, &amp; R. S. J. d. Baker (Eds.), Handbook of educational data mining (pp. 43–56). Boca Raton, FL: Chapman &amp; Hall/CRC. </p>
+															<p>Kulik, J. A., &amp; Fletcher, J. D. (2016). Effectiveness of intelligent tutoring systems: A meta-analytic review. Review of Educational Research, 86(1), 42–78. <a href="http://dx.doi.org/10.3102/0034654315581420">http://dx.doi.org/10.3102/0034654315581420</a> </p>
+															<p>Lee, M. K., &amp; Baykal, S. (2017). Algorithmic mediation in group decisions: Fairness perceptions of algorithmically mediated vs. discussion-based social division. In Proceedings of the 20th ACM Conference on Computer-Supported Cooperative Work &amp; Social Computing (CSCW 2017) 25 February–1 March 2017, Portland, OR, USA (pp. 1035–1048). New York: ACM. <a href="http://dx.doi.org/10.1145/2998181.2998230">http://dx.doi.org/10.1145/2998181.2998230</a> </p>
+															<p>Lee, M. K., Kusbit, D., Kahng, A., Kim, J. T., Yuan, X., Chan, A., Noothigattu, R., See, D., Lee, S., Psomas, C. A., &amp; Procaccia, A. (2018). WeBuildAI: Participatory framework for fair and efficient algorithmic governance. Pre-print. </p>
+															<p>Lipton, Z. C. (2016). The mythos of model interpretability. Paper presented at the 2016 ICML Workshop on Human Interpretability in Machine Learning (WHI 2016), 23 June 2016, New York, NY, USA. arXiv preprint arXiv:1606.03490. </p>
+															<p>Martinez-Maldonado, R., Clayphan, A., Yacef, K., &amp; Kay, J. (2015). MTFeedback: Providing notifications to enhance teacher awareness of small group work in the classroom. IEEE Transactions on Learning Technologies, 8(2), 187–200. <a href="http://dx.doi.org/10.1109/TLT.2014.2365027">http://dx.doi.org/10.1109/TLT.2014.2365027</a> </p>
+															<p>Martinez-Maldonado, R. M., Kay, J., Yacef, K., &amp; Schwendimann, B. (2012). An interactive teacher’s dashboard for monitoring groups in a multi-tabletop learning environment. In S. A. Cerri, W. J. Clancey, G. Papadourakis, &amp; K.-K. </p>
+															<p>Panourgia (Eds.), Proceedings of the 11th International Conference on Intelligent Tutoring Systems (ITS 2012), 14–18 June 2012, Chania, Greece (pp. 482–492). Springer, Berlin, Heidelberg. <a href="http://dx.doi.org/10.1007/978-3-642-30950-2_62">http://dx.doi.org/10.1007/978-3-642-30950-2_62</a> </p>
+															<p>Martinez-Maldonado, R., Pardo, A., Mirriahi, N., Yacef, K., Kay, J., &amp; Clayphan, A. (2016). LATUX: An iterative workflow for designing, validating and deploying learning analytics visualisations. Journal of Learning Analytics, 2(3), 9–39. <a href="http://dx.doi.org/10.1007/978-3-642-30950-2_62">http://dx.doi.org/10.1007/978-3-642-30950-2_62</a> </p>
+															<p>Mavrikis, M., Gutierrez-Santos, S., Geraniou, E., Noss, R., &amp; Poulovassilis, A. (2013). Iterative context engineering to inform the design of intelligent exploratory learning environments for the classroom. In R. Luckin, S. Puntambekar, P. Goodyear, B. Grabowski, J. Underowood, &amp; N. Winters (Eds.), Handbook of design in educational technology (pp. 80–92). Abingdon-on-Thames, UK: Routledge. </p>
+															<p>Mavrikis, M., Gutierrez-Santos, S., &amp; Poulovassilis, A. (2016). Design and evaluation of teacher assistance tools for exploratory learning environments. In Proceedings of the 6th International Conference on Learning Analytics and Knowledge (LAK ʼ16), 25–29 April 2016, Edinburgh, UK (pp. 168–172). New York: ACM. <a href="http://dx.doi.org/10.1145/2883851.2883909">http://dx.doi.org/10.1145/2883851.2883909</a> </p>
+															<p>Moraveji, N., Li, J., Ding, J., O’Kelley, P., &amp; Woolf, S. (2007). Comicboarding: Using comics as proxies for participatory design with children. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI ʼ07), 28 April–3 May 2007, San Jose, CA (pp. 1371–1374). New York: ACM. </p>
+															<p>Odom, W., Zimmerman, J., Davidoff, S., Forlizzi, J., Dey, A. K., &amp; Lee, M. K. (2012). A fieldwork of the future with user enactments. In Proceedings of the Designing Interactive Systems Conference (DIS ’12) 11–15 June 2012, Newcastle Upon Tyne, UK (pp. 338–347). New York: ACM. <a href="http://dx.doi.org/10.1145/2317956.2318008">http://dx.doi.org/10.1145/2317956.2318008</a> </p>
+															<p>Ogan, A., Walker, E., Baker, R. S., Rebolledo Mendez, G., Jimenez Castro, M., Laurentino, T., &amp; De Carvalho, A. (2012). Collaboration in cognitive tutor use in Latin America: Field study and design recommendations. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI ʼ12), 5–10 May 2012, Austin, TX, USA (pp. 1381–1390). New York: ACM. <a href="http://dx.doi.org/10.1145/2207676.2208597">http://dx.doi.org/10.1145/2207676.2208597</a> </p>
+															<p>Ogan, A., Walker, E., Baker, R., Rodrigo, M. M. T., Soriano, J. C., &amp; Castro, M. J. (2015). Towards understanding how to assess help-seeking behavior across cultures. International Journal of Artificial Intelligence in Education, 25(2), 229–248. <a href="http://dx.doi.org/10.1007/s40593-014-0034-8">http://dx.doi.org/10.1007/s40593-014-0034-8</a> </p>
+															<p>Olsen, J. K. (2017). Orchestrating Combined Collaborative and Individual Learning in the Classroom. Unpublished doctoral dissertation, Carnegie Mellon University. </p>
+															<p>Oulasvirta, A., Kurvinen, E., &amp; Kankainen, T. (2003). Understanding contexts by being there: Case studies in bodystorming. Personal and Ubiquitous Computing, 7(2), 125–134. </p>
+															<p>Penuel, W. R., Roschelle, J., &amp; Shechtman, N. (2007). Designing formative assessment software with teachers: An analysis of the co-design process. Research and Practice in Technology Enhanced Learning, 2(1), 51–74. <a href="http://dx.doi.org/10.1142/S1793206807000300">http://dx.doi.org/10.1142/S1793206807000300</a> </p>
+															<p>Penuel, W. R., &amp; Yarnall, L. (2005). Designing handheld software to support classroom assessment: Analysis of conditions for teacher adoption. The Journal of Technology, Learning and Assessment, 3(5). <a href="https://ejournals.bc.edu/index.php/jtla/article/view/1658">https://ejournals.bc.edu/index.php/jtla/article/view/1658</a> </p>
+															<p>Poursabzi-Sangdeh, F., Goldstein, D. G., Hofman, J. M., Vaughan, J. W., &amp; Wallach, H. (2018). Manipulating and measuring model interpretability. arXiv preprint arXiv:1802.07810. </p>
+															<p>Prieto-Alvarez, C. G., Martinez-Maldonado, R., &amp; Anderson, T. (2018). Co-designing learning analytics tools with learners. Learning analytics in the classroom: Translating learning analytics research for teachers. Abingdon-on-Thames, UK: Routledge. </p>
+															<p>Rau, M. A. (2015). Why do the rich get richer? A structural equation model to test how spatial skills affect learning with representations. In O. C. Santos et al. (Eds.), Proceedings of the 8th International Conference on Educational Data Mining (EDM2015), 26–29 June 2015, Madrid, Spain (pp. 350–357). International Educational Data Mining Society. </p>
+															<p>Reich, J., &amp; Ito, M. (2017). From good intentions to real outcomes: Equity by design in learning technologies. Irvine, CA: Digital Media and Learning Research Hub. </p>
+															<p>Ritter, S., Carlson, R., Sandbothe, M., &amp; Fancsali, S. E. (2015). Carnegie Learning’s adaptive learning products. In O. C. Santos et al. (Eds.), Proceedings of the 8th International Conference on Educational Data Mining (EDM2015), 26–29 June 2015, Madrid, Spain (pp. 633–634). International Educational Data Mining Society. </p>
+															<p>Ritter, S., Yudelson, M., Fancsali, S., &amp; Berman, S. R. (2016). Towards integrating human and automated tutoring systems. In T. Barnes et al. (Eds.), Proceedings of the 9th International Conference on Educational Data Mining (EDM2016), 29 June–2 July 2016, Raleigh, NC, USA (pp. 626–627). International Educational Data Mining Society. </p>
+															<p>Rodriguez-Triana, M. J., Prieto Santos, L. P., Vozniuk, A., Shirvani Boroujeni, M., Schwendimann, B. A., Holzer, A. C., &amp; Gillet, D. (2017). Monitoring, awareness and reflection in blended technology enhanced learning: A systematic review. International Journal of Technology Enhanced Learning, 9, 126–150. <a href="http://dx.doi.org/10.1504/IJTEL.2017.084489">http://dx.doi.org/10.1504/IJTEL.2017.084489</a> </p>
+															<p>Schofield, J. W., Eurich-Fulcer, R., &amp; Britt, C. L. (1994). Teachers, computer tutors, and teaching: The artificially intelligent tutor as an agent for classroom change. American Educational Research Journal, 31(3), 579–607. <a href="http://dx.doi.org/10.2307/1163227">http://dx.doi.org/10.2307/1163227</a> </p>
+															<p>Schuler, D., &amp; Namioka, A. (Eds.). (1993). Participatory design: Principles and practices. Boca Raton, FL: CRC Press. </p>
+															<p>Shepard, L. A. (1997). Insights gained from a classroom-based assessment project. Center for the Study of Evaluation, National Center for Research on Evaluation, Standards, and Student Testing, Graduate School of Education &amp; Information Studies, University of California, Los Angeles. </p>
+															<p>Sujan, M., &amp; Pasquini, A. (1998). Allocating tasks between humans and machines in complex systems. In Proceedings of the 4th International Conference on Achieving Quality in Software (AQuIS ’98), 30 March–2 April 1998, Venice, Italy (pp. 173–184). </p>
+															<p>Tohidi, M., Buxton, W., Baecker, R., &amp; Sellen, A. (2006). User sketches: A quick, inexpensive, and effective way to elicit more reflective user feedback. In Proceedings of the 4th Nordic Conference on Human–Computer Interaction: Changing Roles (NordiCHI 2006), 14–18 October 2006, Oslo, Norway (pp. 105–114). New York: ACM. <a href="http://dx.doi.org/10.1145/1182475.1182487">http://dx.doi.org/10.1145/1182475.1182487</a> </p>
+															<p>Veitch, J., Salmon, J., &amp; Ball, K. (2007). Children’s active free play in local neighborhoods: A behavioral mapping study. Health Education Research, 23(5), 870–879. <a href="http://dx.doi.org/10.1093/her/cym074">http://dx.doi.org/10.1093/her/cym074</a> </p>
+															<p>Wickens, C. D., Gordon, S. E., Liu, Y., &amp; Lee, J. (1998). An introduction to human factors engineering. New York: Longman. </p>
+															<p>Wright, P., Dearden, A., &amp; Fields, B. (2000). Function allocation: A perspective from studies of work practice. International Journal of Human–Computer Studies, 52(2), 335–355. <a href="http://dx.doi.org/10.1006/ijhc.1999.0292">http://dx.doi.org/10.1006/ijhc.1999.0292</a> </p>
+															<p>Yacef, K. (2002). Intelligent teaching assistant systems. In Proceedings of the International Conference on Computers in Education (ICCE 2002), 3–6 December 2002, Auckland, New Zealand (pp. 136–140). IEEE Computer Society. <a href="http://dx.doi.org/10.1109/CIE.2002.1185885">http://dx.doi.org/10.1109/CIE.2002.1185885</a> </p>
+															<p>Zhu, H., Yu, B., Halfaker, A., &amp; Terveen, L. (2018, November). Value-sensitive algorithm design: Method, case study, and lessons. Proceedings of the ACM on Human–Computer Interaction, CSCW issue, Vol. 2, article #194. <a href="http://dx.doi.org/10.1145/3274463">http://dx.doi.org/10.1145/3274463</a> </p>
+																		</div>
+				</section>
+			
+		</div><!-- .main_entry -->
+
+		<div class="entry_details">
+
+										<div class="item cover_image">
+					<div class="sub_item">
+													<a href="https://learning-analytics.info/index.php/JLA/issue/view/463">
+								<img src="https://learning-analytics.info/public/journals/42/cover_issue_463_en_US.jpg" alt="">
+							</a>
+											</div>
+				</div>
+			
+										<div class="item galleys">
+					<h2 class="pkp_screen_reader">
+						Downloads
+					</h2>
+					<ul class="value galleys_links">
+													<li>
+								
+	
+							
+
+<a class="obj_galley_link pdf" href="https://learning-analytics.info/index.php/JLA/article/view/6336/7175">
+
+		
+	PDF
+
+	</a>
+							</li>
+											</ul>
+				</div>
+						
+						<div class="item published">
+				<section class="sub_item">
+					<h2 class="label">
+						Published
+					</h2>
+					<div class="value">
+																			<span>2019-07-22</span>
+																	</div>
+				</section>
+							</div>
+			
+										<div class="item citation">
+					<section class="sub_item citation_display">
+						<h2 class="label">
+							How to Cite
+						</h2>
+						<div class="value">
+							<div id="citationOutput" role="region" aria-live="polite">
+								<div class="csl-bib-body">
+  <div class="csl-entry">Holstein, K., McLaren, B. M., &#38; Aleven, V. (2019). Co-Designing a Real-Time Classroom Orchestration Tool to Support Teacher–AI Complementarity. <i>Journal of Learning Analytics</i>, <i>6</i>(2), 27–52. https://doi.org/10.18608/jla.2019.62.3</div>
+</div>
+							</div>
+							<div class="citation_formats">
+								<button class="cmp_button citation_formats_button" aria-controls="cslCitationFormats" aria-expanded="false" data-csl-dropdown="true">
+									More Citation Formats
+								</button>
+								<div id="cslCitationFormats" class="citation_formats_list" aria-hidden="true">
+									<ul class="citation_formats_styles">
+																					<li>
+												<a
+													aria-controls="citationOutput"
+													href="https://learning-analytics.info/index.php/JLA/citationstylelanguage/get/acm-sig-proceedings?submissionId=6336&amp;publicationId=10937"
+													data-load-citation
+													data-json-href="https://learning-analytics.info/index.php/JLA/citationstylelanguage/get/acm-sig-proceedings?submissionId=6336&amp;publicationId=10937&amp;return=json"
+												>
+													ACM
+												</a>
+											</li>
+																					<li>
+												<a
+													aria-controls="citationOutput"
+													href="https://learning-analytics.info/index.php/JLA/citationstylelanguage/get/acs-nano?submissionId=6336&amp;publicationId=10937"
+													data-load-citation
+													data-json-href="https://learning-analytics.info/index.php/JLA/citationstylelanguage/get/acs-nano?submissionId=6336&amp;publicationId=10937&amp;return=json"
+												>
+													ACS
+												</a>
+											</li>
+																					<li>
+												<a
+													aria-controls="citationOutput"
+													href="https://learning-analytics.info/index.php/JLA/citationstylelanguage/get/apa?submissionId=6336&amp;publicationId=10937"
+													data-load-citation
+													data-json-href="https://learning-analytics.info/index.php/JLA/citationstylelanguage/get/apa?submissionId=6336&amp;publicationId=10937&amp;return=json"
+												>
+													APA
+												</a>
+											</li>
+																					<li>
+												<a
+													aria-controls="citationOutput"
+													href="https://learning-analytics.info/index.php/JLA/citationstylelanguage/get/associacao-brasileira-de-normas-tecnicas?submissionId=6336&amp;publicationId=10937"
+													data-load-citation
+													data-json-href="https://learning-analytics.info/index.php/JLA/citationstylelanguage/get/associacao-brasileira-de-normas-tecnicas?submissionId=6336&amp;publicationId=10937&amp;return=json"
+												>
+													ABNT
+												</a>
+											</li>
+																					<li>
+												<a
+													aria-controls="citationOutput"
+													href="https://learning-analytics.info/index.php/JLA/citationstylelanguage/get/chicago-author-date?submissionId=6336&amp;publicationId=10937"
+													data-load-citation
+													data-json-href="https://learning-analytics.info/index.php/JLA/citationstylelanguage/get/chicago-author-date?submissionId=6336&amp;publicationId=10937&amp;return=json"
+												>
+													Chicago
+												</a>
+											</li>
+																					<li>
+												<a
+													aria-controls="citationOutput"
+													href="https://learning-analytics.info/index.php/JLA/citationstylelanguage/get/harvard-cite-them-right?submissionId=6336&amp;publicationId=10937"
+													data-load-citation
+													data-json-href="https://learning-analytics.info/index.php/JLA/citationstylelanguage/get/harvard-cite-them-right?submissionId=6336&amp;publicationId=10937&amp;return=json"
+												>
+													Harvard
+												</a>
+											</li>
+																					<li>
+												<a
+													aria-controls="citationOutput"
+													href="https://learning-analytics.info/index.php/JLA/citationstylelanguage/get/ieee?submissionId=6336&amp;publicationId=10937"
+													data-load-citation
+													data-json-href="https://learning-analytics.info/index.php/JLA/citationstylelanguage/get/ieee?submissionId=6336&amp;publicationId=10937&amp;return=json"
+												>
+													IEEE
+												</a>
+											</li>
+																					<li>
+												<a
+													aria-controls="citationOutput"
+													href="https://learning-analytics.info/index.php/JLA/citationstylelanguage/get/modern-language-association?submissionId=6336&amp;publicationId=10937"
+													data-load-citation
+													data-json-href="https://learning-analytics.info/index.php/JLA/citationstylelanguage/get/modern-language-association?submissionId=6336&amp;publicationId=10937&amp;return=json"
+												>
+													MLA
+												</a>
+											</li>
+																					<li>
+												<a
+													aria-controls="citationOutput"
+													href="https://learning-analytics.info/index.php/JLA/citationstylelanguage/get/turabian-fullnote-bibliography?submissionId=6336&amp;publicationId=10937"
+													data-load-citation
+													data-json-href="https://learning-analytics.info/index.php/JLA/citationstylelanguage/get/turabian-fullnote-bibliography?submissionId=6336&amp;publicationId=10937&amp;return=json"
+												>
+													Turabian
+												</a>
+											</li>
+																					<li>
+												<a
+													aria-controls="citationOutput"
+													href="https://learning-analytics.info/index.php/JLA/citationstylelanguage/get/vancouver?submissionId=6336&amp;publicationId=10937"
+													data-load-citation
+													data-json-href="https://learning-analytics.info/index.php/JLA/citationstylelanguage/get/vancouver?submissionId=6336&amp;publicationId=10937&amp;return=json"
+												>
+													Vancouver
+												</a>
+											</li>
+																			</ul>
+																			<div class="label">
+											Download Citation
+										</div>
+										<ul class="citation_formats_styles">
+																							<li>
+													<a href="https://learning-analytics.info/index.php/JLA/citationstylelanguage/download/ris?submissionId=6336&amp;publicationId=10937">
+														<span class="fa fa-download"></span>
+														Endnote/Zotero/Mendeley (RIS)
+													</a>
+												</li>
+																							<li>
+													<a href="https://learning-analytics.info/index.php/JLA/citationstylelanguage/download/bibtex?submissionId=6336&amp;publicationId=10937">
+														<span class="fa fa-download"></span>
+														BibTeX
+													</a>
+												</li>
+																					</ul>
+																	</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			
+										<div class="item issue">
+
+											<section class="sub_item">
+							<h2 class="label">
+								Issue
+							</h2>
+							<div class="value">
+								<a class="title" href="https://learning-analytics.info/index.php/JLA/issue/view/463">
+									Vol. 6 No. 2 (2019): Human-Centred Learning Analytics
+								</a>
+							</div>
+						</section>
+					
+											<section class="sub_item">
+							<h2 class="label">
+								Section
+							</h2>
+							<div class="value">
+								Special Section: Human-Centred Learning Analytics
+							</div>
+						</section>
+									</div>
+			
+															
+						
+			
+
+		</div><!-- .entry_details -->
+	</div><!-- .row -->
+
+</article>
+
+	<div id="articlesBySameAuthorList">
+				</div>
+
+
+</div><!-- .page -->
+
+	</div><!-- pkp_structure_main -->
+
+									<div class="pkp_structure_sidebar left" role="complementary" aria-label="Sidebar">
+				 
+<div class="pkp_block block_custom" id="customblock-About">
+	<div class="content">
+		<p><span class="title">Quick links</span></p>
+<ul>
+<li class=""><a href="https://learning-analytics.info/index.php/JLA/about">About the Journal </a></li>
+<li class=""><a href="https://learning-analytics.info/index.php/JLA/about/editorialTeam"> Editorial Team </a></li>
+<li class=""><a href="https://learning-analytics.info/index.php/JLA/focusandscope"> Focus &amp; scope </a></li>
+<li class=""><a href="https://learning-analytics.info/index.php/JLA/guidelines"> Author guidelines </a></li>
+<li class=""><a href="https://learning-analytics.info/index.php/JLA/policies"> Journal policies </a></li>
+<li class=""><a href="https://learning-analytics.info/index.php/JLA/faq"> FAQ </a></li>
+</ul>
+	</div>
+</div>
+<link rel="stylesheet" type="text/css" href="https://learning-analytics.info/plugins/generic/shariff//shariff-3.2.1/shariff.complete.css">
+<div class="shariff pkp_block plugins_generic_shariff" data-lang="en"
+	data-services="[twitter,facebook,linkedin]"
+	data-mail-url="mailto:"
+	data-mail-body=https://learning-analytics.info/index.php/JLA/article/view
+	data-backend-url="https://learning-analytics.info/shariff-backend"
+	data-theme="white"
+	data-orientation="horizontal"
+	data-url="https://learning-analytics.info/index.php/JLA/article/view/6336">
+</div>
+<script src="https://learning-analytics.info/plugins/generic/shariff/shariff-3.2.1/shariff.complete.js"></script>
+<div class="pkp_block block_Keywordcloud">
+	<span class="title">Keywords</span>
+	<div class="content" id='wordcloud'></div>
+
+	<script>
+	function randomColor() {
+		var cores = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf'];
+		return cores[Math.floor(Math.random()*cores.length)];
+	}
+
+	document.addEventListener("DOMContentLoaded", function() {
+		var keywords = [{"text":"research paper","size":142},{"text":"learning analytics","size":121},{"text":"Learning analytics","size":32},{"text":"higher education","size":25},{"text":"ethics","size":15},{"text":"privacy","size":15},{"text":"collaborative learning","size":15},{"text":"editorial","size":14},{"text":"educational data mining","size":12},{"text":"multimodal learning analytics","size":12},{"text":"self-regulated learning","size":11},{"text":"machine learning","size":10},{"text":"MOOCs","size":10},{"text":"learning design","size":10},{"text":"Learning Analytics","size":9},{"text":"generative AI","size":9},{"text":"self regulated learning","size":8},{"text":"natural language processing","size":8},{"text":"collaboration","size":8},{"text":"social network analysis","size":8},{"text":"data and tools report","size":7},{"text":"online learning","size":7},{"text":"feedback","size":7},{"text":"equity","size":6},{"text":"assessment","size":6},{"text":"learning management system","size":6},{"text":"impact","size":6},{"text":"collaboration analytics","size":6},{"text":"transparency","size":6},{"text":"epistemic network analysis","size":6},{"text":"Learning design","size":6},{"text":"CSCL","size":6},{"text":"motivation","size":5},{"text":"dashboard","size":5},{"text":"game-based learning","size":5},{"text":"trust","size":5},{"text":"systematic review","size":5},{"text":"curriculum analytics","size":5},{"text":"artificial intelligence","size":5},{"text":"creativity","size":5},{"text":"data protection","size":5},{"text":"network analysis","size":4},{"text":"generative artificial intelligence","size":4},{"text":"orchestration","size":4},{"text":"MOOC","size":4},{"text":"computational thinking","size":4},{"text":"predictive analytics","size":4},{"text":"research","size":4},{"text":"practice","size":4},{"text":"learning","size":4}];
+		var totalWeight = 0;
+		var width = 300;
+		var height = 200;
+		var transitionDuration = 200;	
+		var length_keywords = keywords.length;
+		var layout = d3.layout.cloud();
+
+		layout.size([width, height])
+			.words(keywords)
+			.fontSize(function(d)
+			{
+				return fontSize(+d.size);
+			})
+			.on('end', draw);
+		
+		var svg = d3.select("#wordcloud").append("svg")
+			.attr("viewBox", "0 0 " + width + " " + height)	
+			.attr("width", '100%');		
+		
+		function update() {
+			var words = layout.words();
+			fontSize = d3.scaleLinear().range([16, 34]);
+			if (words.length) {
+				fontSize.domain([+words[words.length - 1].size || 1, +words[0].size]);
+			}
+		}
+		
+		keywords.forEach(function(item,index){totalWeight += item.size;});
+
+		update();
+
+		function draw(words, bounds) {
+			var w = layout.size()[0],
+                h = layout.size()[1];
+
+			scaling = bounds
+                ? Math.min(
+                      w / Math.abs(bounds[1].x - w / 2),
+                      w / Math.abs(bounds[0].x - w / 2),
+                      h / Math.abs(bounds[1].y - h / 2),
+                      h / Math.abs(bounds[0].y - h / 2),
+                  ) / 2
+                : 1;
+
+			svg
+			.append("g")
+			.attr(
+                "transform",
+                "translate(" + [w >> 1, h >> 1] + ")scale(" + scaling + ")",
+            )
+			.selectAll("text")
+				.data(words)
+			.enter().append("text")
+				.style("font-size", function(d) { return d.size + "px"; })
+				.style("font-family", 'serif')
+				.style("fill", randomColor)
+				.style('cursor', 'pointer')
+				.style('opacity', 0.7)
+				.attr('class', 'keyword')
+				.attr("text-anchor", "middle")
+				.attr("transform", function(d) {
+					return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+				}) 
+				.text(function(d) { return d.text; })
+				.on("click", function(d, i){
+					window.location = "https://learning-analytics.info/index.php/JLA/search?query=QUERY_SLUG".replace(/QUERY_SLUG/, encodeURIComponent(''+d.text+''));
+				})
+				.on("mouseover", function(d, i) {
+					d3.select(this).transition()
+						.duration(transitionDuration)
+						.style('font-size',function(d) { return (d.size + 3) + "px"; })
+						.style('opacity', 1);
+				})
+				.on("mouseout", function(d, i) {
+					d3.select(this).transition()
+						.duration(transitionDuration)
+						.style('font-size',function(d) { return d.size + "px"; })
+						.style('opacity', 0.7);
+				})
+				.on('resize', function() { update() });
+		}
+
+		layout.start();
+
+	});
+
+	</script>
+</div>
+			</div><!-- pkp_sidebar.left -->
+			</div><!-- pkp_structure_content -->
+
+<div class="pkp_structure_footer_wrapper" role="contentinfo">
+	<a id="pkp_content_footer"></a>
+
+	<div class="pkp_structure_footer">
+
+					<div class="pkp_footer_content">
+				<div class="issn">ISSN 1929-7750 (online). Beginning with Issue 11(3), The Journal of Learning Analytics is published under a <a href="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons License, Attribution 4.0 International (CC BY 4.0)</a>. Please refer to the Journal's <a title="Copyright notice" href="https://learning-analytics.info/index.php/JLA/policies#copyrightnotice"> Copyright notice</a> for more details.</div>
+<div class="issn">
+<p>Follow <a title="@jla_editorial" href="https://twitter.com/jla_editorial"> @jla_editorial</a></p>
+<p><a href="https://learning-analytics.info/index.php/JLA/policies#privacy">Privacy Policy</a></p>
+</div>
+			</div>
+		
+		<div class="pkp_brand_footer" role="complementary">
+			<a href="https://learning-analytics.info/index.php/JLA/about/aboutThisPublishingSystem">
+				<img alt="More information about the publishing system, Platform and Workflow by OJS/PKP." src="https://learning-analytics.info/templates/images/ojs_brand.png">
+			</a>
+		</div>
+	</div>
+</div><!-- pkp_structure_footer_wrapper -->
+
+</div><!-- pkp_structure_page -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js?v=3.2.1.1" type="text/javascript"></script><script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js?v=3.2.1.1" type="text/javascript"></script><script src="https://learning-analytics.info/lib/pkp/js/lib/jquery/plugins/jquery.tag-it.js?v=3.2.1.1" type="text/javascript"></script><script src="https://learning-analytics.info/plugins/themes/default/js/lib/popper/popper.js?v=3.2.1.1" type="text/javascript"></script><script src="https://learning-analytics.info/plugins/themes/default/js/lib/bootstrap/util.js?v=3.2.1.1" type="text/javascript"></script><script src="https://learning-analytics.info/plugins/themes/default/js/lib/bootstrap/dropdown.js?v=3.2.1.1" type="text/javascript"></script><script src="https://learning-analytics.info/plugins/themes/default/js/main.js?v=3.2.1.1" type="text/javascript"></script><script src="https://learning-analytics.info/plugins/generic/citationStyleLanguage/js/articleCitation.js?v=3.2.1.1" type="text/javascript"></script><script src="https://d3js.org/d3.v4.js?v=3.2.1.1" type="text/javascript"></script><script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js?v=3.2.1.1" type="text/javascript"></script><script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-50784418-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_id=https%3A%2F%2Flearning-analytics.info%2Findex.php%2FJLA%2Farticle%2Fview%2F6336&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.language=en_US&amp;rft.genre=article&amp;rft.title=Journal+of+Learning+Analytics&amp;rft.jtitle=Journal+of+Learning+Analytics&amp;rft.atitle=Co-Designing+a+Real-Time+Classroom+Orchestration+Tool+to+Support+Teacher%E2%80%93AI+Complementarity&amp;rft.artnum=6336&amp;rft.stitle=Learning+Analytics&amp;rft.volume=6&amp;rft.issue=2&amp;rft.aulast=Holstein&amp;rft.aufirst=Kenneth&amp;rft.date=2019-07-22&amp;rft.au=Bruce+M.+McLaren&amp;rft.au=Vincent+Aleven&amp;rft_id=info%3Adoi%2F10.18608%2Fjla.2019.62.3&amp;rft.pages=27%E2%80%9352&amp;rft.eissn=1929-7750"></span>
+
+</body>
+</html>

@@ -1,62 +1,42 @@
 ---
 description: All-in-one JavaScript/TypeScript runtime built in Zig with package manager, bundler, test runner, and transpiler
-tags: [bun, javascript-runtime, zig, package-manager, bundler, testing]
-sources: ["bun-v1-3-12", "package-manager-comparison"]
+tags:
+  - package-manager/bun
+  - javascript-runtime
+  - zig
+  - package-manager
+  - bundler
+  - testing
+sources:
+  - bun-v1-3-12
+  - package-manager-comparison
 created: 2026-04-29
 updated: 2026-04-29
 ---
 
 # Bun Runtime
 
-All-in-one JavaScript/TypeScript runtime built in Zig by Jarred Sumner. Includes package manager, bundler, test runner, and transpiler. Designed for speed.
+Bun is what happens when someone asks "why do I need four separate tools to run JavaScript?" and builds the answer in Zig. Runtime, package manager, bundler, test runner, transpiler — one binary, no config. Jarred Sumner's bet that the Node.js ecosystem's tool sprawl is unnecessary, and the benchmarks back him up: `bun install` is 18x faster than npm.
 
-## Core Components
+Anthropic runs Claude Code on Bun. That's a pretty strong signal.
 
-- **Runtime** — Native TypeScript/JSX execution without transpilation
-- **Package Manager** — `bun install`, 18x faster than npm
-- **Bundler** — `bun build`, includes CSS and HTML bundling
-- **Test Runner** — Jest-compatible, built-in mocking
+## What It Does
+
+- **Runtime** — runs TypeScript and JSX natively, no transpilation step
+- **Package manager** — `bun install`, binary lockfile (or text `bun.lock`)
+- **Bundler** — `bun build` with CSS and HTML support
+- **Test runner** — Jest-compatible API, built-in mocking
 - **Transpiler** — TypeScript, JSX, TSX out of the box
 
-## Key Features
+## Notable Features (v1.3.12+)
 
-### Bun.WebView (v1.3.12)
-Headless browser automation built into runtime:
-- WebKit (macOS default) and Chrome backends
-- OS-level input dispatch (`isTrusted: true`)
-- Playwright-style actionability waiting
-- CDP access on Chrome backend
+- **Bun.WebView** — headless browser automation with WebKit or Chrome backends, OS-level input dispatch, Playwright-style waits
+- **In-process cron** — `Bun.cron(schedule, callback)`, no overlap, UTC-aware
+- **Performance** — URLPattern 2.3x faster, glob scanning 2x faster, nginx-style TCP_DEFER_ACCEPT
 
-### In-Process Cron
-- `Bun.cron(schedule, callback)` — callback-based scheduler
-- No overlap, UTC scheduling, `--hot` safe
-- Complements OS-level persistent crons
+## When to Use vs. Avoid
 
-### Performance
-- URLPattern 2.3x faster (direct regex engine calls)
-- Bun.Glob.scan 2x faster (deduplicated directory reads)
-- cgroup-aware parallelism on Linux
-- TCP_DEFER_ACCEPT for Bun.serve() (nginx-style optimization)
-
-## Compatibility
-
-- ~99% npm compatible
-- ~98% Node.js API compatible
-- Used in production by Anthropic (Claude Code)
-- Binary lockfile (`bun.lockb`) not human-readable; text `bun.lock` available
-
-## When to Use
-
-- New projects where speed matters
-- CI/CD pipelines (dramatic time savings)
-- TypeScript-first codebases
-- Teams wanting unified runtime + package manager + bundler
-
-## When to Avoid
-
-- Legacy projects with specific Node.js API dependencies
-- Environments requiring guaranteed 100% Node compatibility
-- Teams not ready to adopt new runtime
+Use it for new projects, CI pipelines, TypeScript-first codebases. Avoid it for legacy Node.js projects with exotic API dependencies, or if your team needs guaranteed 100% Node compat (~98% API compatible, ~99% npm compatible). The ecosystem isn't caught up yet, but it's close.
 
 ## Related
 

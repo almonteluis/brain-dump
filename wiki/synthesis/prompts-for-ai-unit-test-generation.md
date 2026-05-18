@@ -1,6 +1,13 @@
 ---
 description: Prompt templates for AI-generated unit tests covering error states, edge cases, boundaries, and failure scenarios
-tags: ["synthesis", "prompts", "testing", "unit-testing", "ai-workflow", "edge-cases", "error-handling"]
+tags:
+  - synthesis
+  - prompts
+  - testing
+  - unit-testing
+  - ai/workflow
+  - edge-cases
+  - error-handling
 created: 2026-04-11
 sources:
   - "[[workflows]]"

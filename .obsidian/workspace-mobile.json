@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "242eb00454baa710",
+        "id": "69c68e06360d60e3",
         "type": "tabs",
         "children": [
           {
-            "id": "a40c5862f4931e5e",
+            "id": "60310e45f7c56e17",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "street cart chicken over rice.md",
+                "file": "raw/The Science of Learning Math (and Anything Else) with Justin Skycak.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,59 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "street cart chicken over rice"
+              "title": "The Science of Learning Math (and Anything Else) with Justin Skycak"
+            }
+          },
+          {
+            "id": "30bfc8657e27183d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/concepts/three-ring-mastery-system.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "three-ring-mastery-system"
+            }
+          },
+          {
+            "id": "db0d95a15d915310",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "raw/holstein-codesign-orchestration-tool-2019-extracted.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": false
+                }
+              },
+              "icon": "lucide-file",
+              "title": "holstein-codesign-orchestration-tool-2019-extracted"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -46,7 +95,7 @@
         "state": {
           "type": "file-explorer",
           "state": {
-            "sortOrder": "alphabetical",
+            "sortOrder": "byModifiedTime",
             "autoReveal": true
           },
           "icon": "lucide-folder-closed",
@@ -59,9 +108,9 @@
         "state": {
           "type": "search",
           "state": {
-            "query": "",
+            "query": "Teacher curriculum",
             "matchingCase": true,
-            "explainSearch": false,
+            "explainSearch": true,
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical"
@@ -94,9 +143,33 @@
           "icon": "lucide-bookmark",
           "title": "Bookmarks"
         }
+      },
+      {
+        "id": "3026b221c157e720",
+        "type": "leaf",
+        "state": {
+          "type": "all-properties",
+          "state": {
+            "sortOrder": "frequency",
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-archive",
+          "title": "All properties"
+        }
+      },
+      {
+        "id": "68764ad42585f8a7",
+        "type": "leaf",
+        "state": {
+          "type": "notebook-navigator",
+          "state": {},
+          "icon": "notebook-navigator",
+          "title": "Notebook Navigator"
+        }
       }
     ],
-    "currentTab": 0
+    "currentTab": 5
   },
   "right": {
     "id": "a4127ef55cb29edf",
@@ -108,7 +181,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "street cart chicken over rice.md",
+            "file": "raw/holstein-codesign-orchestration-tool-2019-extracted.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -175,48 +248,62 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "templater-obsidian:Templater": false,
       "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false,
+      "notebook-navigator:Notebook Navigator": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "a40c5862f4931e5e",
+  "active": "db0d95a15d915310",
   "lastOpenFiles": [
-    "NewClassrooms/marlboro.md",
-    "street cart chicken over rice.md",
-    "raw/Modular embedding SDK - quickstart.md",
-    "raw/Full app embedding quickstart.md",
-    "raw/Modular embedding - authentication.md",
-    "wiki/reference/tmux-cheatsheet.md",
-    "raw/recursive-tickling-kahn.md",
-    "NewClassrooms",
-    "raw/LocalStorage, sessionStorage.md",
-    "wiki/sources/vite-rollup-tree-shaking-guide.md",
-    "wiki/index.md",
-    "wiki/Completed Work.md",
-    "wiki/Active Projects.md",
-    "wiki/sources/vite-4-4-1-to-7-x-upgrade-gameplan.md",
-    "wiki/sources/typescript-debugging-patterns.md",
-    "wiki/sources/obsidian-claude-ai-tools-conversations.md",
-    "wiki/sources/claude-code-power-user-patterns.md",
-    "wiki/sources/why-we-banned-useeffect.md",
-    "wiki/synthesis/thinking-frameworks-for-code-review.md",
-    "raw/02_reference/ai-conversations/Areas/coding/2025-02-07 - Roadmap to Mastering React Testing.md",
-    "raw/Post Mortem axios npm supply chain compromise · Issue 10636 · axiosaxios.md",
-    "raw/Conflict Resolution Diagram.md",
-    "raw/Coding Models Are Doing Too Much.md",
-    "raw/Fastest Frontend Tooling for Humans & AI.md",
-    "raw/Algorithms & Big O.md",
-    "raw/Ishikawa Diagram.md",
-    "raw/Decision matrix.md",
-    "02_reference/software-engineer/frontend/modern",
-    "styling",
-    "2025",
+    "raw/2026-05-18.md",
+    "wiki/concepts/pedagogy.md",
+    "raw/skye AI bot.md",
+    "wiki/sources/tools/logging.md",
+    "wiki/sources/obsidian/connections.md",
+    "raw/2026-05-17.md",
+    "raw/Constructivist.md",
+    "raw/Constructivist ideas.md",
+    "raw/Reflective.md",
+    "raw/In a perfect world the aha moments will fade as we use knowledge graphs and understanding the prerequisite skills and making sure that we fulfill those prerequisite skills. The aha moments will stop occurring naturally.md",
+    "raw/Collaborative.md",
+    "wiki/sources/software-engineering/building-a-code-search-engine-with-turso.md",
+    "wiki/sources/software-engineering/shipping-code-faster.md",
+    "wiki/sources/software-engineering/clean-code-javascript.md",
+    "wiki/sources/software-engineering/programmers-oath.md",
+    "wiki/sources/software-engineering/building-code-search-engine-turso.md",
+    "wiki/sources/software-engineering/lock-it-or-lose-it-avoiding-race-conditions-in-distributed-systems.md",
+    "wiki/sources/software-engineering/dependency-injection-in-node-js-typescript-the-part-nobody-teaches-you.md",
+    "wiki/sources/software-engineering/real-world-engineering-challenges-cursor.md",
+    "wiki/sources/software-engineering/tech-debt-infrastructure-opportunities.md",
+    "wiki/sources/software-engineering/good-software-knows-when-to-stop.md",
+    "wiki/sources/software-engineering/lock-it-or-lose-it-race-conditions.md",
+    "wiki/sources/software-engineering/real-world-engineering-challenges-building-cursor.md",
+    "wiki/sources/software-engineering/i-studied-1-460-onboarding-flows-here-s-what-i-found.md",
+    "wiki/sources/software-engineering/adding-correctness-conditions-code-changes.md",
+    "wiki/sources/software-engineering/adding-correctness-conditions-to-code-changes.md",
+    "wiki/sources/data",
+    "wiki/sources/product",
+    "wiki/sources/books",
+    "wiki/sources/education/btech",
+    "wiki/sources/psychology",
+    "wiki/sources/security",
+    "wiki/sources/career",
+    "wiki/sources/research",
+    "raw/Introducing a new spam policy for ",
+    "raw/Introducing a new spam policy for  2",
+    "archive/IMG_1969.jpeg",
+    "archive/IMG_1968.jpeg",
+    "Demo.canvas",
     "00_inbox/daily/2025/attachments/Pasted image 20250111144209.png",
     "00_inbox/daily/2025/attachments/Pasted image 20250112104657.png",
     "00_inbox/daily/2025/attachments/Pasted image 20250112104702.png",
@@ -225,14 +312,6 @@
     "00_inbox/daily/2025/attachments/Pasted image 20250111143753.png",
     "00_inbox/daily/2025/attachments/Pasted image 20250207004835.png",
     "00_inbox/daily/2025/attachments/Pasted image 20250111144225.png",
-    "00_inbox/daily/2025/attachments/Pasted image 20250617191155.png",
-    "00_inbox/daily/2025/attachments/Pasted image 20250112104837.png",
-    "00_inbox/daily/2025/attachments",
-    "00_inbox/daily/2025",
-    "06_system/standardize-yaml.py",
-    "06_system/add-layer2-react 2.py",
-    "06_system/add-layer2-react.py",
-    "06_system/add-layer2-descriptions.sh",
     "05_archive/Untitled.canvas",
     "Untitled 3.canvas",
     "Untitled 2.canvas",

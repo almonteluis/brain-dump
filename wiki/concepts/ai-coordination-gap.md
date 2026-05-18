@@ -1,9 +1,17 @@
 ---
 description: The gap between having AI systems and coordinating them — orchestration challenge at organizational scale
-tags: ["ai", "coordination", "orchestration", "organizational-design", "agentic-ai", "concept"]
+tags:
+  - ai
+  - coordination
+  - orchestration
+  - organizational-design
+  - agent
+  - concept
 created: 2026-04-11
 updated: 2026-04-11
-sources: ["raw/01_thinking/notes/ai-coordination-gap.md", "wiki/sources/session-2026-01-29-agentic-ai-transcript.md"]
+sources:
+  - raw/01_thinking/notes/ai-coordination-gap.md
+  - wiki/sources/session-2026-01-29-agentic-ai-transcript.md
 ---
 
 # AI Coordination Gap

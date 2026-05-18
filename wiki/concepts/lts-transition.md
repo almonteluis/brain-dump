@@ -1,9 +1,17 @@
 ---
 description: Long-Term Support transition — converting temporary A/B experiment code into permanent production features with full rigor
-tags: [process, lts, ab-testing, experiment, technical-debt, concept]
+tags:
+  - process
+  - lts
+  - ab-testing
+  - experiments
+  - technical-debt
+  - concept
 created: 2026-04-30
 updated: 2026-04-30
-sources: ["ab-testing-lifecycle", "teame-177-in-platform-polling-cleanup"]
+sources:
+  - ab-testing-lifecycle
+  - teame-177-in-platform-polling-cleanup
 ---
 
 # LTS Transition

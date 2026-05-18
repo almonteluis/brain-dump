@@ -1,7 +1,14 @@
 ---
 description: Model-View-Controller architecture pattern for separating concerns in applications
-tags: ["source", "mvc", "architecture", "patterns", "backend", "design"]
-sources: ["MVC Architecture.md"]
+tags:
+  - source
+  - mvc
+  - architecture
+  - pattern
+  - backend
+  - design
+sources:
+  - MVC Architecture.md
 created: 2026-04-09
 updated: 2026-04-09
 ---

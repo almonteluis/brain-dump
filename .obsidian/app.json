@@ -5,13 +5,13 @@
     "editor:insert-embed",
     "editor:insert-tag",
     "editor:attach-file",
-    "editor:set-heading",
     "editor:toggle-bold",
     "editor:toggle-italics",
     "editor:toggle-strikethrough",
     "editor:toggle-highlight",
     "editor:toggle-code",
     "editor:toggle-blockquote",
+    "note-composer:split-file",
     "editor:insert-link",
     "editor:insert-codeblock",
     "editor:toggle-bullet-list",
@@ -24,7 +24,12 @@
     "editor:configure-toolbar"
   ],
   "promptDelete": false,
-  "openBehavior": "",
+  "openBehavior": "daily",
   "vimMode": true,
-  "attachmentFolderPath": "05_archive"
+  "attachmentFolderPath": "archive",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "raw",
+  "userIgnoreFilters": [
+    "graphify-out/"
+  ]
 }

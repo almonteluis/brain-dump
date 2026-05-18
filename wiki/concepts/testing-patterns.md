@@ -1,6 +1,11 @@
 ---
 description: Patterns and practices for testing frontend applications including unit, integration, and E2E testing
-tags: [testing, patterns, frontend, quality, concept]
+tags:
+  - testing
+  - pattern
+  - frontend
+  - quality
+  - concept
 created: 2026-04-09
 updated: 2026-04-09
 ---

@@ -1,14 +1,20 @@
 ---
-description: Atomic Design methodology breaks UI into five levels — atoms, molecules, organisms, templates, and pages — creating hierarchical component structure
-tags: ["atomic-design", "react", "component-architecture", "design-systems", "concept"]
+description: Atomic Design breaks UI into five levels — atoms, molecules, organisms, templates, pages — so your component library has a spine instead of being a junk drawer.
+tags:
+  - atomic-design
+  - react
+  - component-architecture
+  - design/systems
+  - concept
 created: 2026-04-09
-updated: 2026-04-09
-sources: ["⚛️Atomic Design Methodology.md"]
+updated: 2026-05-17
+sources:
+  - ⚛️Atomic Design Methodology.md
 ---
 
 # Atomic Design
 
-A methodology for creating design systems by breaking interfaces into hierarchical component levels, from foundational elements to complete pages.
+Atomic Design is Brad Frost's answer to "how do I organize 200 React components without losing my mind?" Break the interface into five levels — atoms, molecules, organisms, templates, pages — so every component has a clear place in the hierarchy. It's not rocket science. It's chemistry metaphors applied to CSS.
 
 ## The Five Levels
 
@@ -17,34 +23,19 @@ Atoms → Molecules → Organisms → Templates → Pages
 ```
 
 ### 1. Atoms
-Basic building blocks — buttons, inputs, labels.
-- Not useful alone
-- Fundamental for larger components
-- No state
+The raw materials — buttons, inputs, labels. Useless alone, foundational for everything else. No state, no logic, just "here's a styled thing."
 
 ### 2. Molecules
-Functional groups of atoms.
-- Example: Search bar (input + button + icon)
-- Simple state possible
-- Single purpose
+Functional groups of atoms wired together. A search bar is an input + button + icon. Still simple — maybe a little local state — but now it *does* something.
 
 ### 3. Organisms
-Complex sections composed of molecules and atoms.
-- Example: Header, footer, navigation
-- Own state and functionality
-- Reusable across pages
+Complex UI sections built from molecules and atoms. Headers, footals, navigation bars. These have real state, real side effects, and get reused across pages.
 
 ### 4. Templates
-Page layouts with content structure.
-- Place organisms into layouts
-- No real content
-- Define spatial relationships
+Page layouts with content structure but no real content. Place your organisms into spatial relationships. This is where you decide *where* things go before you know *what* they say.
 
 ### 5. Pages
-Specific template instances with real content.
-- What users actually see
-- Multiple pages per template
-- Complete ecosystems
+Templates with real content. What users actually see. Multiple pages per template. The final product.
 
 ## File Structure
 
@@ -66,6 +57,8 @@ components/
 | Organisms | Complex state, side effects |
 | Templates | Layout state |
 | Pages | Page-specific state |
+
+The pattern keeps complexity where it belongs. Atoms stay dumb. Organisms hold the brain. Pages just compose. It's the same separation-of-concerns idea behind [[backend-for-frontend]] — different scope, same principle. The open thread: atomic design assumes a *hierarchical* UI. What happens when your interface is spatial or non-linear? Then the five levels start feeling like shoe-horning.
 
 ## Related
 

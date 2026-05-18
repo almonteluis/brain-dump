@@ -1,7 +1,13 @@
 ---
 description: A feedback cycle where agents continuously reflect on behavior, log successes/failures, and adjust future responses based on historical patterns
-tags: ["source", "ai", "self-improvement", "agent", "feedback-loop"]
-sources: ["Self-Improvement Loop.md"]
+tags:
+  - source
+  - ai
+  - self-improvement
+  - agent
+  - feedback/loop
+sources:
+  - Self-Improvement Loop.md
 created: 2026-04-09
 updated: 2026-04-09
 ---

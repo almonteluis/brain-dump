@@ -1,31 +1,39 @@
 ---
-description: Progressive disclosure — reveal information gradually, matching detail to user need
-tags: ["ux", "information-architecture", "cognitive-load", "design-patterns", "concept"]
+description: Progressive disclosure — reveal information gradually, matching detail to user need. Don't dump everything on the screen at once.
+tags:
+  - ux
+  - information-architecture
+  - cognitive/load
+  - design/patterns
+  - concept
 created: 2026-04-23
+updated: 2026-05-17
 ---
 
 # Progressive Disclosure
 
-Progressive disclosure is a design pattern that reveals information gradually — showing only what's needed at each level of interaction. It reduces cognitive load by hiding complexity until it's relevant.
+Progressive disclosure is the design pattern that says "don't show everything at once." Reveal information gradually — only what's needed at each step — and you keep people from drowning in detail they don't need yet.
 
-## How It Works
+## The Four Layers
 
-1. **Layer 1: Surface** — Names, titles, file tree structure (scanable at a glance)
-2. **Layer 2: Summary** — Descriptions, YAML frontmatter, one-line takeaways
-3. **Layer 3: Structure** — Headings, outlines, table of contents
-4. **Layer 4: Detail** — Full content, code examples, deep-dives
+1. **Surface** — Names, titles, file tree structure. Scanable at a glance.
+2. **Summary** — Descriptions, YAML frontmatter, one-line takeaways.
+3. **Structure** — Headings, outlines, table of contents.
+4. **Detail** — Full content, code examples, deep-dives.
 
-## When to Use
+Each layer is a filter. If the surface tells you "this isn't what I need," you stop. If it might be relevant, you peel back one layer. You only read the full thing when you're sure it matters.
 
-- **Navigation** — File trees before file contents
+## Where You See It
+
+- **Navigation** — file trees before file contents
 - **Documentation** — TL;DR before full explanation
-- **APIs** — Required params before optional params
-- **UI** — Defaults before advanced settings
-- **Knowledge bases** — Index before entries, summaries before sources
+- **APIs** — required params before optional params
+- **UI** — defaults before advanced settings
+- **Knowledge bases** — index before entries, summaries before sources
 
 ## Why It Works
 
-Rooted in [[cognitive-load]] theory — the human working memory holds ~4-7 items at once (Miller's Law). By controlling what's visible at each step, you keep users within that capacity.
+[[cognitive-load]] theory — the human working memory holds ~4-7 items at once (Miller's Law). By controlling what's visible at each step, you keep users within that capacity. Show 50 things and they remember none. Show 5 and they actually engage.
 
 Related: [[cognitive-load-theory]] (John Sweller, 1988) — intrinsic, extraneous, and germane load.
 
@@ -38,6 +46,8 @@ The LLM Wiki pattern uses progressive disclosure:
 - Full page content — read when confirmed relevant (Layer 4)
 
 See [[progressive-disclosure-in-practice]] for the vault-specific implementation.
+
+The same principle runs in the opposite direction in [[overlay-patterns]] — modals demand your attention, tooltips whisper. Picking the right overlay is progressive disclosure applied to interruption.
 
 ## Related
 

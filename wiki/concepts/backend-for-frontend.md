@@ -1,34 +1,43 @@
 ---
-description: Backend for Frontend pattern — a dedicated backend layer tailored to a specific frontend's needs, often handling aggregation, auth, and third-party API proxying
-tags: [architecture, bff, api-gateway, frontend, backend, concept]
+description: Backend for Frontend (BFF) — a dedicated backend service tailored to one specific frontend. Aggregation, auth proxying, data shaping — all in one place.
+tags:
+  - architecture
+  - marvin/bff
+  - api/gateway
+  - frontend
+  - backend
+  - concept
 created: 2026-04-30
-updated: 2026-04-30
-sources: ["bff-learnosity-bridge"]
+updated: 2026-05-17
+sources:
+  - bff-learnosity-bridge
 ---
 
 # Backend for Frontend (BFF)
 
-A dedicated backend service tailored to the needs of a specific frontend application. The BFF pattern sits between the frontend and downstream services, handling aggregation, authentication, and third-party API proxying.
+A BFF is a backend service that exists for exactly one frontend. Not a shared API that every client hits — a dedicated layer that aggregates, reshapes, and proxies specifically for *your* app's needs. If your mobile app and web app need different data shapes, they get different BFFs.
 
-## When to Use
+## When You Need One
 
 - Frontend needs data from multiple backend services
-- Third-party API keys must be kept server-side
+- Third-party API keys must stay server-side (never in the bundle)
 - Frontend requires specialized data shapes different from raw API responses
 - Mobile and web clients have different data needs
 
-## Benefits
+## What It Gets You
 
-| Benefit | Description |
-|---------|-------------|
-| Security | Private API keys and secrets stay server-side |
-| Aggregation | Combines multiple backend calls into one frontend request |
+| Benefit | What it means |
+|---------|---------------|
+| Security | Private API keys stay server-side |
+| Aggregation | Multiple backend calls → one frontend request |
 | Specialization | Data shapes optimized for specific frontend needs |
 | Decoupling | Frontend changes don't cascade to core backend APIs |
 
 ## Example: Learnosity Bridge
 
-The [[bff-learnosity-bridge]] stores private Learnosity API keys and proxies assessment session initialization requests from the frontend.
+The [[bff-learnosity-bridge]] stores private Learnosity API keys and proxies assessment session initialization requests from the frontend. Without it, those keys would end up in the browser bundle where anyone could grab them.
+
+BFFs are the backend cousin of [[atomic-design]] — both are about building specialized interfaces for specific consumers instead of one giant thing that tries to serve everyone.
 
 ## Related
 

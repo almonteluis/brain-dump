@@ -1,9 +1,16 @@
 ---
 description: Data masking hides fragment data from components that don't explicitly declare it, enabling local reasoning and safe refactoring
-tags: ["relay", "data-masking", "encapsulation", "local-reasoning", "concept"]
+tags:
+  - relay
+  - data/masking
+  - encapsulation
+  - local-reasoning
+  - concept
 created: 2026-04-09
 updated: 2026-04-09
-sources: ["data-masking-in-relay.md", "fragment-references-relay.md"]
+sources:
+  - data-masking-in-relay.md
+  - fragment-references-relay.md
 ---
 
 # Data Masking

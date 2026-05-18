@@ -1,6 +1,11 @@
 ---
 description: Compound components — flexible React composition pattern where parent and children share implicit state
-tags: ["react", "patterns", "composition", "components", "concept"]
+tags:
+  - react
+  - pattern
+  - composition
+  - components
+  - concept
 created: 2026-04-23
 ---
 

@@ -8,30 +8,15 @@ sources: ["devtools-simulated-devices"]
 
 # Browser DevTools
 
-Browser DevTools are built-in debugging and profiling tools for web development, available in all major browsers.
+Every modern browser ships with a full forensic toolkit baked in — network inspector, JS debugger, performance profiler, DOM explorer. Most developers use 10% of what's there. The device emulation mode alone is worth knowing: it lets you simulate iPhones, Pixels, iPads without owning any of them.
 
 ## Device Emulation
 
-### Built-In Device Simulation
+Toggle device mode (Chrome/Edge: device toolbar, Firefox: Responsive Design Mode) and you get pre-configured devices that simulate screen dimensions, touch events, and user agent strings. Need a device that isn't listed? Create a custom one — set name, dimensions, DPR, and UA string.
 
-- Toggle device emulation (Chrome/Edge: device toolbar button, Firefox: Responsive Design Mode)
-- Pre-configured devices: iPhone, iPad, Pixel, etc.
-- Simulates: screen dimensions, touch events, user agent string
+**Important caveat:** simulation changes viewport, touch, and UA — but rendering still uses *your* browser's engine. A layout that works in Chrome's simulated Safari might still break on actual Safari. Trust the sim for sizing, not for rendering bugs.
 
-### Custom Devices
-
-Create custom simulated devices for testing:
-1. Open device mode
-2. Expand device drop-down, click **Edit...**
-3. Click **Add Custom Device...**
-4. Set name, dimensions, DPR, user agent
-5. Submit — appears in device drop-down
-
-**Important:** Simulation only changes viewport, touch, and UA. Rendering still uses your browser's engine — not the target device's engine.
-
-### Polypane
-
-Polypane simplifies device testing: double-click anywhere to add a new device, configure from **Emulation options**.
+Polypane takes this further — double-click anywhere to add a device pane, configure from Emulation options. Useful when you need to see three breakpoints side by side.
 
 ## Related
 

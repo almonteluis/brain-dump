@@ -1,13 +1,17 @@
 ---
-description: Three-folder system for AI-powered personal knowledge management
-tags: ["pkm", "knowledge-management", "ai-workflow", "llm-wiki"]
+description: Second Brain Pattern — Karpathy's minimal AI-powered knowledge management. Three folders, one schema file, no special software. The system compounds with each use.
+tags:
+  - pkm
+  - knowledge-management
+  - ai/workflow
+  - llm-wiki
 created: 2026-04-09
-updated: 2026-04-09
+updated: 2026-05-17
 ---
 
 # Second Brain Pattern
 
-Karpathy's minimal approach to AI-powered knowledge management: three folders, one schema file, no special software. The system compounds in value with each use.
+Karpathy's minimal approach to AI-powered knowledge management: three folders, one schema file, no special software. You don't need Notion plugins or Obsidian themes. You need raw material, a place for organized knowledge, and a loop that keeps improving both.
 
 ## The Three Folders
 
@@ -49,42 +53,23 @@ Personal knowledge base about [TOPIC].
 ## My Interests
 - Interest 1
 - Interest 2
-- Interest 3
 ```
 
 ## The Workflow Loop
 
 ```
 1. CAPTURE → Drop everything into raw/
-        ↓
 2. COMPILE → AI reads raw/, creates wiki/
-        ↓
 3. QUERY → Ask questions against wiki/
-        ↓
 4. SYNTHESIZE → Save answers to outputs/
-        ↓
 5. (back to 1)
 ```
 
-## Compounding Effect
-
-Every cycle improves the system:
-- New sources add raw material
-- Questions generate new insights
-- Outputs get filed back
-- Wiki cross-references grow
+Every cycle improves the system. New sources add raw material. Questions generate new insights. Outputs get filed back. Wiki cross-references grow. The compound interest of knowledge management.
 
 **Health check monthly**: "Review wiki/. Flag contradictions, find gaps, suggest new articles."
 
-## Tool Agnostic
-
-The AI doesn't care what editor you use:
-- Terminal + Claude Code
-- VS Code
-- Obsidian (resist plugin bloat)
-- Notepad
-
-What matters: folder structure + schema.
+The tool doesn't matter — terminal + Claude Code, VS Code, Obsidian, Notepad. What matters: folder structure + schema. This vault is that pattern running live, with [[progressive-disclosure]] layered on top.
 
 ## Related
 
@@ -92,8 +77,3 @@ What matters: folder structure + schema.
 - [[llm-wiki-pattern]] — This vault's implementation
 - [[progressive-disclosure]] — Layered information access
 - [[knowledge-synthesis]] — AI-powered processing
-
-## Resources
-
-- Karpathy's approach: https://x.com/karpathy (see PKM thread)
-- Tutorial: https://x.com/NickSpisak_/status/2040448463540830705

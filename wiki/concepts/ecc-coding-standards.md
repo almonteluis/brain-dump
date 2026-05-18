@@ -1,7 +1,12 @@
 ---
-description: "Cross-language coding standards hub — ECC language patterns for TypeScript, Go, Kotlin, Python, PHP, Swift"
-tags: ["coding-standards", "reference", "ecc", "multi-language"]
-sources: ["raw/02_reference/ecc-language-patterns-archived/"]
+description: Cross-language coding standards hub — ECC language patterns for TypeScript, Go, Kotlin, Python, PHP, Swift
+tags:
+  - code/standards
+  - reference
+  - ecc
+  - multi-language
+sources:
+  - raw/02_reference/ecc-language-patterns-archived/
 created: 2026-04-15
 updated: 2026-04-15
 ---

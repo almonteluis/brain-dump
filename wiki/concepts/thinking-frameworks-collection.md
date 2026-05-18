@@ -1,24 +1,28 @@
 ---
 description: Collection of thinking frameworks for decision-making, problem-solving, communication, systems thinking, and planning
-tags: ["thinking-frameworks", "decision-making", "problem-solving", "systems-thinking"]
+tags:
+  - framework/thinking
+  - decision-making
+  - problem-solving
+  - systems-thinking
 sources:
-  - "OODA loop.md"
-  - "Six Thinking Hats.md"
-  - "Ishikawa Diagram.md"
-  - "Concept map.md"
-  - "Decision matrix.md"
-  - "Conflict Resolution Diagram.md"
-  - "Connection circles.md"
-  - "Issue trees.md"
-  - "Ladder of inference.md"
-  - "Minto Pyramid.md"
-  - "Productive Thinking Model.md"
-  - "First principles.md"
-  - "Reinforcing feedback loop.md"
-  - "Balancing feedback loop.md"
-  - "Situation-Behavior-Impact.md"
-  - "Impact-Effort Matrix.md"
-  - "Zwicky box.md"
+  - OODA loop.md
+  - Six Thinking Hats.md
+  - Ishikawa Diagram.md
+  - Concept map.md
+  - Decision matrix.md
+  - Conflict Resolution Diagram.md
+  - Connection circles.md
+  - Issue trees.md
+  - Ladder of inference.md
+  - Minto Pyramid.md
+  - Productive Thinking Model.md
+  - First principles.md
+  - Reinforcing feedback loop.md
+  - Balancing feedback loop.md
+  - Situation-Behavior-Impact.md
+  - Impact-Effort Matrix.md
+  - Zwicky box.md
 created: 2026-04-22
 updated: 2026-04-22
 ---

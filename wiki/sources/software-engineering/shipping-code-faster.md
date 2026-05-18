@@ -1,0 +1,69 @@
+---
+description: "Tips for Writing, Testing, and Getting Code Reviewed"
+tags: ['research']
+source: "https://www.developing.dev/p/shipping-code-faster"
+raw_file: "Shipping Code Faster.md"
+created: 2026-05-17
+---
+
+### Tips for Writing, Testing, and Getting Code Reviewed
+
+---
+
+Getting code out fast is a fundamental skill that you’ll build on for your whole career. It’s especially important early on since promotion from Junior (IC3) to Mid-Level (IC4) comes from completing larger tasks without guidance.
+
+I was landing an average of five commits a day when I was promoted to Mid-level. Here’s what I learned from that which helped me write code faster.
+
+![Cat Typing Gif GIFs | Tenor](https://substackcdn.com/image/fetch/$s_!27LN!,w_1456,c_limit,f_webp,q_auto:good,fl_lossy/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa960cacc-0845-4839-ad90-4a1fd228965e_220x220.gif)
+
+Typing speed is actually not that important for shipping code fast
+
+### Lifecycle of a Commit
+
+To optimize your workflow, it’s important to understand the stages your code goes through before it lands in prod. Here are the steps in order:
+
+![](https://substackcdn.com/image/fetch/$s_!Q_u6!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0d447880-fc16-4b18-aa2a-341e34d88515_816x120.png)
+
+1. **Design / Planning** - Figuring out what change to make and where
+2. **Coding** - Writing code that builds and has the intended effect
+3. **Testing** - Confirming that the code does what is expected and stays that way
+4. **Code Review** - Having your peers review the code to confirm style and correctness
+5. **Deploy** - Getting the code into the next release and rolling it out
+
+### Optimizing Your Workflow
+
+If you want to write code faster, you should debug where you’re spending the most time. **It can vary a lot depending on your experience in the codebase you’re working in.**
+
+If you’re newer to the codebase, then figuring out where to make changes and writing the code will take most of your time. In this case, here’s a few things you can do to get faster:
+
+- **Understand the high-level flow** - You should know what the system does and where each request flows. Save code pointers to each entry point so you can trace your way through the code when needed.
+- ==**Learn how to trace code** - In most text editors there are key bindings you should know that will help you traverse code faster==. At a minimum, you should know how to search for arbitrary text and how to find function definitions (usually **cmd + click**).
+- **Consider pair programming** - There are so many little things you can pick up from someone experienced. When they unblock you, don’t just remember the answer. Think about how you can unblock yourself next time a similar issue comes up.
+
+Once you’re familiar with the codebase and dev environment, you’ll notice that more of your time will be spent in testing and review.
+
+To get faster at testing your code:
+
+- ==**Use [feature flags](https://www.optimizely.com/optimization-glossary/feature-flags/#:~:text=Feature%20flags%20\(also%20known%20as,the%20full%20lifecycle%20of%20features.)** - You can land all your code changes behind gated code paths.== Then when the feature is ready, you can verify everything all at once by turning the flag on for a small population and monitoring.
+- **Batch your testing** - If you’re making many code changes in a similar area, stack all the changes then run tests covering the entire stack all at once. For a stack of N commits, you only need to pay the cost of testing once.
+- **Test via automation** - If there isn’t a quick test suite or automated script you can run, consider building something. This should save you (and the team) a lot of time if it’s a common code path.
+- **Reuse test plans** - ==One trick I’ve learned over the years is you can look at the [“git blame”](https://git-scm.com/docs/git-blame) to find old test plans.== You can use those as a starting point for testing your change.
+
+**Time spent testing your code should be proportional to how risky the change is.** The bigger the cost when the code breaks, the more time you need to spend to make sure it doesn’t. That’s one of the reasons why feature flags save you time; they reduce risk.
+
+To get your code reviewed faster:
+
+- **[Write smaller diffs](https://www.developing.dev/p/why-write-small-diffs)** - The smaller your diffs are, the more willing people are to review them. I’ll even add “\[easy\]” to the title for my shortest diffs to advertise this.
+- **Reduce the number of iterations** - You want your code to be approved the first time it's reviewed. Preempt any potential feedback or questions.
+- **Guide the reviewer** - Point out which parts to scrutinize and provide relevant context via comments.
+
+---
+
+Improve one thing each time you land code and you’ll become much faster over time. **You should be able to land code changes within the same day that you start working on them**. The only piece not fully in your control is code review. If you aren’t getting code reviewed within a day of publishing changes, consider discussing how to change that with your team.
+
+If you found this useful, **please share it with a friend and consider subscribing if you haven’t already.**
+
+Thanks for reading,  
+[Ryan Peterman](https://www.linkedin.com/in/ryanlpeterman/)
+
+[[My thoughts shipping faster code]]

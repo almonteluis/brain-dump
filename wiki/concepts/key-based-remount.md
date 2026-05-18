@@ -1,7 +1,11 @@
 ---
 description: Using React's key prop to force clean component remount instead of manual useEffect cleanup
-tags: ["react", "patterns", "refactoring"]
-sources: ["teame-218-brainbreak-postmortem"]
+tags:
+  - react
+  - pattern
+  - refactor
+sources:
+  - teame-218-brainbreak-postmortem
 created: 2026-04-11
 updated: 2026-04-11
 ---

@@ -1,6 +1,12 @@
 ---
 description: Behavior analytics and user feedback platform with session recording and heatmaps
-tags: [hotjar, analytics, session-recording, heatmaps, ux, concept]
+tags:
+  - hotjar
+  - analytics
+  - session/recording
+  - heatmaps
+  - ux
+  - concept
 created: 2026-04-30
 updated: 2026-04-30
 ---

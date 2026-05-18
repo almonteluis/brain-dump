@@ -77,5 +77,5 @@ This narrows the [[toctou]] window but cannot eliminate it without backend CAS s
 
 - [[toctou]] — Race condition that distributed locking prevents
 - [[bb-cross-browser-session-lock]] — Client-side two-layer lock implementation
-- [[bb-brain-break-session-lock-update]] — Updated implementation with 30s heartbeat
+- [[BB being open in 2 sessions via different browser]] — Updated implementation with 30s heartbeat
 - [[lock-it-or-lose-it-race-conditions]] — Article on pessimistic locking patterns

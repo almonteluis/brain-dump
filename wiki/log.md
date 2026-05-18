@@ -1,7 +1,736 @@
 ---
 description: Processing log — track what has been ingested into the wiki
-tags: ["log", "wiki", "meta"]
+tags:
+  - session/log
+  - wiki
+  - meta
 created: 2026-04-08
+---
+
+## [2026-05-12] ingest | Project ATLAS Concept Paper — 1 source, 2 new concepts, 5 updated concepts
+
+Processed `raw/Project Atlas.md` (PDF++ highlights with personal annotations from ATLAS Concept Paper 23-Pager). Project ATLAS is New Classrooms' AI-native intelligence layer for Teach to One Roadmaps.
+
+### New Source Pages (1)
+
+| Source           | Wiki Page         | Type                                                                                       |
+| ---------------- | ----------------- | ------------------------------------------------------------------------------------------ |
+| Project Atlas.md | [[project-atlas]] | ATLAS concept paper — AI-native intelligence layer (sequencing + instruction + assessment) |
+
+### New Concept Pages (1)
+
+| Concept                | Description                                                                                                    |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------- |
+| [[predecessor-skills]] | Foundational competencies predicting Algebra 1 success; 13% → 58% targeting insight from [[Unlocking Algebra]] |
+
+### Updated Concept Pages (5)
+
+| Concept                                | Change                                                |
+| -------------------------------------- | ----------------------------------------------------- |
+| [[competitive-landscape-teach-to-one]] | Added ATLAS intelligence layer section                |
+| [[three-ring-mastery-system]]          | Added ATLAS connection to feature concept             |
+| [[competency based learning]]          | Added ATLAS source                                    |
+| [[insight-recall]]                     | Added ATLAS source (spaced insight-recall annotation) |
+| [[knowledge-tracing]]                  | Added ATLAS source (competency inference)             |
+
+### Key Annotations Extracted
+
+Luis's personal highlights surfaced 5 ideas beyond the paper:
+1. Spaced insight-recall for predecessor skills across grade levels
+2. Metacognitive exit slips saved for future skill encounters
+3. Interactive curiosity-sparking content (med school dashboard pattern)
+4. Students teaching students via reciprocal peer tutoring
+5. LLM-based reasoning assessment → adaptive re-routing
+
+## [2026-05-11] ingest | Operation Endgame CBL Research — 3 sources, 9 new concepts, 3 new entities, 16 updated concepts
+
+Processed 3 CBL research notes from `raw/` as part of Operation Endgame — a Spring 2026 co-design prototype for competency-based learning with North Dakota teachers. Each note covers one pillar of the CBL framework.
+
+### New Source Pages (3)
+
+| Source | Wiki Page | Type |
+|--------|-----------|------|
+| cbl-assessing-demonstrations.md | [[cbl-assessing-demonstrations]] | CBL Pillar 1: performance-based assessment, formative assessment, equity |
+| cbl-knowledge-frontier.md | [[cbl-knowledge-frontier]] | CBL Pillar 2: ZPD, KST, BKT/DKT, adaptive sequencing |
+| cbl-differentiated-support.md | [[cbl-differentiated-support]] | CBL Pillar 3: differentiated instruction, scaffolding, AI tutoring, CRP |
+
+### New Concept Pages (9)
+
+| Concept | Description |
+|---------|-------------|
+| [[competency based learning]] | Three-pillar CBL framework; transparent targets, mastery-gated progression, continuous assessment; SDT alignment |
+| [[formative-assessment]] | Black & Wiliam (1998), Hattie (2009) effect sizes; continuous low-stakes demonstration in CBL |
+| [[performance-based-assessment]] | Stiggins (2005), Tobón (2020); portfolios, rubric design, multiple evidence types |
+| [[zone-of-proximal-development]] | Vygotsky (1978); three zones (below/within/beyond); maps to productive struggle states |
+| [[knowledge-space-theory]] | Doignon & Falmagne; knowledge states, learning spaces, ALEKS implementation |
+| [[deep-knowledge-tracing]] | Piech et al. (2015); LSTM architecture, BKT comparison, later variants (SAKT/SAINT/AKT) |
+| [[differentiated-instruction]] | Tomlinson (1999); readiness/interest/learning profile → content/process/product/environment |
+| [[scaffolding]] | Wood/Bruner/Ross (1976); Van de Pol (2010); Belland (2017, g≈0.50); four types |
+| [[culturally-responsive-pedagogy]] | Ladson-Billings (1995); academic achievement, cultural competence, sociopolitical consciousness |
+
+### New Entity Pages (3)
+
+| Entity | Description |
+|--------|-------------|
+| [[vygotsky]] | Lev Vygotsky: ZPD, social constructivism, scaffolding origins |
+| [[tomlinson]] | Carol Ann Tomlinson: differentiated instruction framework |
+| [[ladson-billings]] | Gloria Ladson-Billings: culturally relevant pedagogy |
+
+### Existing Concept Pages Updated (16)
+
+| Page | Changes |
+|------|---------|
+| [[skill-tree-competency-structure]] | Added CBL assessment section: DAG enables automated gap detection |
+| [[three-ring-mastery-system]] | Added mastery stages as assessment milestones |
+| [[insight-recall]] | Added metacognitive assessment extending beyond content mastery |
+| [[reverse-scoring]] | Added psychometric validity for affective measures in CBL |
+| [[adaptive-feedback-education]] | Added process-level feedback at knowledge frontier |
+| [[knowledge-tracing]] | Added DKT extension, CBL frontier targeting connection |
+| [[productive-struggle]] | Added ZPD mapping: frontier location → struggle state table |
+| [[ai-math-tutoring]] | Added multi-skill problems as frontier diagnostics |
+| [[cognitive-load]] | Added cognitive load estimation for personalized path generation |
+| [[self-determination-theory]] | Added CBL naturally satisfies all three SDT needs |
+| [[math-anxiety]] | Added CBL mastery orientation as protective against performance-goal anxiety |
+| [[math-identity]] | Added teacher positioning in CBL contexts |
+| [[behavioral-nudges-education]] | Added nudges as scalable differentiated support mechanism |
+| [[ai-math-tutoring]] | Added human-AI copilot as differentiated support delivery |
+| [[productive-struggle]] | Added emotional vs cognitive scaffolding equally important |
+| [[adaptive-feedback-education]] | Added process-level feedback at frontier boundary |
+
+### Raw Files Tagged
+- `raw/cbl-assessing-demonstrations.md` — tagged `ingested: true`, `cluster: operation-endgame`
+- `raw/cbl-knowledge-frontier.md` — tagged `ingested: true`, `cluster: operation-endgame`
+- `raw/cbl-differentiated-support.md` — tagged `ingested: true`, `cluster: operation-endgame`
+
+### Graphify
+- Rebuilt: 1,382 nodes, 1,819 edges, 134 communities (markdown wiki pages included)
+
+### Key Insights for Operation Endgame
+
+1. **CBL naturally satisfies all three SDT needs** — autonomy (choice in pace), competence (mastery-gated advancement), relatedness (teacher relationships)
+2. **ZPD maps directly to three struggle states** — below frontier = coasting, within = productive struggle, beyond = flailing
+3. **Multi-skill combination problems are ideal frontier diagnostics** — accuracy ≈ accuracy² makes them sensitive to partial mastery
+4. **Scaffolding has a robust effect size** — Belland meta-analysis g ≈ 0.50; four types (conceptual, strategic, metacognitive, motivational)
+5. **Culturally responsive pedagogy is structural, not additive** — CRP + CBE in NYC Competency Collaborative shows integration, not layering
+6. **Knowledge Space Theory provides the mathematical formalism** — prerequisite relationships between competencies enable automated gap detection
+7. **Formative assessment effect sizes dwarf summative** — d=0.90 (formative) vs typical summative; CBL is fundamentally formative
+
+---
+
+## [2026-05-10] synthesis | Claude Code Prompts for Research Implementation — 7 investigation prompts
+
+Created [[claude-code-prompts-research-implementation]] with 7 ready-to-paste Claude Code prompts targeting the gaps and opportunities identified in [[research-to-product-bridge]]. Each prompt is grounded in specific research evidence and targets a concrete codebase investigation.
+
+### Prompts Created
+
+| # | Target | Research Basis | Effort |
+|---|--------|---------------|--------|
+| 1 | Planning prompt in BrainBreak | Tolvanen 2025 (f=221), ES=1.11 | Low |
+| 2 | Teacher progress nudge system | Zearn megastudy, +1.89% (N≈3M) | Medium |
+| 3 | Confidence × performance divergence | Dunning-Kruger from KST maps | Medium |
+| 4 | Insight Recall forward-priming MVP | iRec paper + transfer research | Medium |
+| 5 | Skill graph prerequisite validation | Bijl 2025 DAG formalization | High |
+| 6 | Struggle detection → adaptive nudge | Productive struggle + KT signals | Medium-High |
+| 7 | Growth mindset → proximal target audit | Macnamara 2023 near-zero effects | Low-Medium |
+
+### Files Changed
+- Created `wiki/synthesis/claude-code-prompts-research-implementation.md`
+- Updated `wiki/index.md` — added synthesis entry
+- Linked from `wiki/synthesis/research-to-product-bridge.md` (was dangling reference)
+
+---
+
+## [2026-05-10] ingest | TTO Research Clusters F+G — 16 sources, 11 new concepts, 4 updated concepts
+
+Processed 16 paper notes from `raw/` across two research clusters: Motivation Theories (12) and Spaced Retrieval/Fluency (4). Framed for Teach to One / New Classrooms broadly.
+
+### New Source Pages (16)
+
+**Cluster F — Motivation Theories:**
+
+| Source | Wiki Page | Type |
+|--------|-----------|------|
+| paper-achievement-goal-profiles-math-2023.md | [[achievement-goal-profiles-math-2023]] | LPA of achievement goal profiles; instructional quality moderates |
+| paper-evt-achievement-goals-2025.md | [[evt-achievement-goals-2025]] | 6 homework motivation profiles integrating AGT + EVT + SRL (N=1,256) |
+| paper-evt-math-profiles-2024.md | [[evt-math-profiles-2024]] | EVT profiles shift during secondary-to-tertiary STEM transition |
+| paper-growth-mindset-chinese-math-2023.md | [[growth-mindset-chinese-math-2023]] | Chain mediation: mindset → self-efficacy → intrinsic motivation |
+| paper-growth-mindset-differentiation-2025.md | [[growth-mindset-differentiation-2025]] | Mathematical mindset ≠ growth mindset ≠ self-efficacy |
+| paper-growth-mindset-meta-analysis-2023.md | [[growth-mindset-meta-analysis-2023]] | Near-zero effects when design flaws controlled (Macnamara) |
+| paper-math-anxiety-stem-choices-2024.md | [[math-anxiety-stem-choices-2024]] | 3-year longitudinal: anxiety vs self-efficacy STEM pathways |
+| paper-math-identity-instrument-2023.md | [[math-identity-instrument-2023]] | First validated group-administrable math identity measure (grades 5–12) |
+| paper-sdt-math-outcomes-2026.md | [[sdt-math-outcomes-2026]] | SDT need-satisfaction → lower anxiety, more STEM major choice |
+| paper-sdt-meta-analysis-2024.md | [[sdt-meta-analysis-2024]] | 36-study meta-analysis: autonomy support is key active ingredient |
+| paper-sdt-online-math-2024.md | [[sdt-online-math-2024]] | SDT-based online math: competence/relatedness improved, autonomy harder digitally |
+| paper-teacher-positioning-math-identity-2023.md | [[teacher-positioning-math-identity-2023]] | Teacher positioning → math identity via problem-solving flexibility |
+
+**Cluster G — Spaced Retrieval / Fluency:**
+
+| Source | Wiki Page | Type |
+|--------|-----------|------|
+| paper-spaced-retrieval-calculus-desirable-difficulty-2022.md | [[spaced-retrieval-calculus-desirable-difficulty-2022]] | Desirable difficulty: worse quizzes, better final exams |
+| paper-spaced-retrieval-nine-STEM-courses-2024.md | [[spaced-retrieval-nine-STEM-courses-2024]] | 9-course within-subjects: 3–5% precalculus gains |
+| paper-math-fact-fluency-high-schoolers-2024.md | [[math-fact-fluency-high-schoolers-2024]] | High schoolers = professionals for fluency delivery |
+| paper-multiplication-fact-fluency-intervention-modality-2024.md | [[multiplication-fact-fluency-intervention-modality-2024]] | iPad = peer tutoring; retrieval practice is the active ingredient |
+
+### New Concept Pages (11)
+
+| Concept | Description |
+|---------|-------------|
+| [[growth-mindset]] | Near-zero achievement effects; construct differentiation from self-efficacy and math identity; proximal mediator targeting |
+| [[self-determination-theory]] | Three basic needs; 36-study meta-analysis validates autonomy support as key lever; digital autonomy challenge |
+| [[math-anxiety]] | Longitudinal STEM gatekeeper; anxiety pushes away from STEM, self-efficacy pulls toward; SDT reduction pathway |
+| [[math-identity]] | Validated instrument grades 5–12; teacher positioning co-construction; problem-solving flexibility mediator |
+| [[achievement-goal-theory]] | Mastery vs performance goals; latent profile approaches; instructional quality moderation |
+| [[expectancy-value-theory]] | Five EVT constructs; profile instability during secondary-tertiary transition |
+| [[motivational-profiles]] | Person-centered approach; multi-theory integration; 5–6 distinct profiles |
+| [[desirable-difficulty]] | Bjork's framework; spacing as productive short-term cost; motivation framing implications |
+| [[math-fact-fluency]] | Definition; intervention evidence; digital delivery validated; translation gap |
+| [[spaced-retrieval-practice]] | Classroom-level evidence; 3–5% precalculus gains; context-dependent effects |
+| [[peer-tutoring-math]] | Cross-age and reciprocal models; modality equivalence; social motivation angle |
+
+### Existing Pages Updated (4)
+
+| Page | Changes |
+|------|---------|
+| [[self-regulated-learning]] | Added 3 source references; 6 motivation framework cross-links; 4 motivation cross-links |
+| [[productive-struggle]] | Added 4 motivation cross-links |
+| [[spaced-repetition]] | Added STEM Classroom Evidence section (Lyle et al. + Bego et al.); added desirable-difficulty and spaced-retrieval-practice links |
+| [[forgetting-curve]] | Added classroom validation section connecting spaced retrieval to decay predictions |
+
+### Key Insights for TTO
+
+1. **Growth mindset alone is near-zero** on achievement — target proximal constructs (self-efficacy, math anxiety) instead
+2. **SDT has the strongest intervention evidence** — autonomy support is the key active ingredient across 36 studies
+3. **Motivation is heterogeneous** — 5–6 distinct profiles; one-size-fits-all interventions miss subgroups
+4. **Math identity ≠ growth mindset ≠ self-efficacy** — conflating them leads to muddled outcomes
+5. **Math anxiety is the STEM gatekeeper** — 3-year longitudinal evidence; middle school is the intervention window
+6. **Autonomy is hardest to achieve digitally** — requires intentional scaffolding in online math contexts
+7. **Spaced retrieval creates desirable difficulty** — students feel worse during practice but retain more long-term
+8. **Retrieval practice is the active ingredient, not modality** — iPad flashcards = peer tutoring for fluency
+
+---
+
+## [2026-05-10] ingest | TTO Research Clusters D+E — 6 sources, 1 new concept, 2 updated concepts
+
+Processed 6 paper notes from `raw/` across two research clusters: Behavioral Nudges (3) and Metacognition/Self-Regulation (3). Framed for Teach to One / New Classrooms broadly.
+
+### New Source Pages (6)
+
+**Cluster D — Behavioral Nudges:**
+
+| Source | Wiki Page | Type |
+|--------|-----------|------|
+| paper-nudge-meta-synthesis-2025.md | [[nudge-meta-synthesis-2025]] | Meta-synthesis — nudge taxonomy + design principles |
+| paper-streaks-math-engagement.md | [[streaks-math-engagement]] | RCT — streaks boost engagement + achievement |
+| paper-nudge-math-megastudy-2025.md | [[nudge-math-megastudy-2025]] | Megastudy — teacher nudges +1.89% math progress (N≈3M) |
+
+**Cluster E — Metacognition / Self-Regulation:**
+
+| Source | Wiki Page | Type |
+|--------|-----------|------|
+| paper-metacognition-math-modeling-computational-thinking-2024.md | [[metacognition-math-modeling-ct-2024]] | Causal chain: metacognition → CT → math modeling |
+| paper-metacognitive-skills-math-problem-solving-2025.md | [[metacognitive-skills-math-problem-solving-2025]] | Structured prompts enhance metacognition |
+| paper-metacognitive-instruction-meta-analysis-2025.md | [[metacognitive-instruction-meta-analysis-2025]] | PRISMA meta-analysis — ES=1.11 math, ES=1.27 other |
+
+### New Concept Page (1)
+
+| Concept | Description |
+|---------|-------------|
+| [[behavioral-nudges-education]] | Nudge taxonomy (informational/social/temporal/choice architecture), evidence base, design principles, intensive vs extensive margin, TTO applications, risks |
+
+### Existing Pages Updated (2)
+
+| Page | Changes |
+|------|---------|
+| [[metacognitive-reflection]] | Added evidence base (ES=1.11), causal chain section (metacognition → CT → math modeling), enriched explicit prompts with Tolvanen 2025 findings, added 3 sources + 3 cross-links |
+| [[self-regulated-learning]] | Added evidence for metacognitive instruction section, enriched SRL scaffolding target with prompt findings, added causal chain, added 3 sources + 2 cross-links |
+| [[index]] | Added 3 concept entries + 6 source entries under Learning Science section |
+
+### Key Insights for TTO
+
+1. **Streaks are proven** — RCT shows streaks increase both engagement AND math achievement; loss aversion is the mechanism
+2. **Personalized data > generic nudges** — Duckworth megastudy (N≈3M): teacher nudges referencing classroom-specific data significantly outperform generic reminders
+3. **Intensive vs extensive margin** — streaks keep active users engaged; reminders activate new users. Dual strategy needed.
+4. **Nudge design principles** — timeliness, personalization, workflow embedding, multi-strategy combination, actionability, heterogeneous treatment
+5. **Metacognitive instruction has massive effect sizes** — ES=1.11 for math achievement, ES=1.27 for other outcomes. Rare in education research.
+6. **Causal chain identified** — metacognition → critical thinking → mathematical modeling. CT bridges awareness and applied problem-solving.
+7. **Structured prompts dramatically enhance metacognition** — math problems alone activate some, but embedded reflective prompts (goal-setting + planning) massively amplify planning, monitoring, evaluation.
+8. **Goal-setting + actionable planning > superficial performance goals** — "I'll use substitution first" beats "I want a good grade"
+
+---
+
+## [2026-05-10] ingest | TTO Research Clusters A+B+C — 13 sources, 7 new concepts, 2 updated concepts
+
+Processed 13 paper notes from `raw/` across three research clusters: AI/Math Education (7), Knowledge Tracing/Skill Maps (4), and Productive Struggle (2). All framed for Teach to One / New Classrooms product research broadly.
+
+### New Source Pages (13)
+
+**Cluster A — AI/Math Education:**
+
+| Source | Wiki Page | Type |
+|--------|-----------|------|
+| paper-tutor-copilot-2025.md | [[tutor-copilot-2025]] | RCT — human-AI tutoring |
+| paper-genai-math-meta-analysis-2026.md | [[genai-math-meta-analysis-2026]] | Meta-analysis (22 studies, N=5,232) |
+| paper-ai-difficult-math-questions.md | [[ai-difficult-math-questions]] | MATH² multi-skill problem generation |
+| paper-mathedu-adaptive-feedback-2025.md | [[mathedu-adaptive-feedback-2025]] | Process-level feedback dataset |
+| paper-llm-education-systematic-review-2025.md | [[llm-education-systematic-review-2025]] | Systematic review (88 studies) |
+| paper-ai-math-tutoring-2025.md | [[ai-math-tutoring-2025]] | Multi-agent tutoring platform |
+| paper-its-llm-motivational-feedback-2025.md | [[its-llm-motivational-feedback-2025]] | ITS-LLM architecture |
+
+**Cluster B — Knowledge Tracing/Skill Maps:**
+
+| Source | Wiki Page | Type |
+|--------|-----------|------|
+| paper-skill-trees-competency-2025.md | [[skill-trees-competency-2025]] | Formal competency DAGs |
+| paper-deep-learning-knowledge-tracing-2025.md | [[deep-learning-knowledge-tracing-2025]] | DLKT vs BKT comparison |
+| paper-bkt-fairness-math-2025.md | [[bkt-fairness-math-2025]] | BKT fairness by reading ability |
+| paper-knowledge-graph-education-slr-2024.md | [[knowledge-graph-education-slr-2024]] | SLR of KGs in education |
+
+**Cluster C — Productive Struggle:**
+
+| Source | Wiki Page | Type |
+|--------|-----------|------|
+| paper-productive-struggle-ai-bellwether.md | [[productive-struggle-ai-bellwether]] | AI design for struggle |
+| paper-productive-struggle-students.md | [[productive-struggle-students]] | Student perceptions study |
+
+### New Concept Pages (7)
+
+| Concept | Description |
+|---------|-------------|
+| [[ai-math-tutoring]] | AI-powered math tutoring: human-AI copilot to autonomous platforms, multi-agent architectures, adaptive difficulty |
+| [[adaptive-feedback-education]] | Process-level feedback on student reasoning; teacher-quality benchmarks; instructional/motivational/diagnostic feedback types |
+| [[its-llm-architecture]] | ITS + LLM integration pattern; modular architecture for motivational and instructional feedback generation |
+| [[skill-tree-competency-structure]] | Formal prerequisite DAGs (acyclicity, coverage, coherence) enabling automated coaching and gap detection |
+| [[knowledge-graph-education]] | KGs in education: personalized learning, curriculum design, content recommendation, learning analytics |
+| [[bkt-fairness]] | Algorithmic fairness in BKT: reading ability confounds math mastery estimates by ~9 p.p. |
+| [[productive-struggle]] | Effortful grappling → deeper understanding; cognitive + emotional scaffolding; AI must preserve struggle |
+
+### Existing Pages Updated
+
+| Page | Changes |
+|------|---------|
+| [[knowledge-tracing]] | Added 2 sources, 3 cross-links (bkt-fairness, knowledge-graph-education, skill-tree-competency-structure) |
+| [[three-ring-mastery-system]] | Strengthened Practice Ring productive struggle section with research backing (emotional scaffolding, AI design principles) |
+| [[index]] | Added 7 concept entries + 13 source entries under Learning Science section |
+
+### Key Insights for TTO
+
+1. **Human-AI tutoring beats pure AI** — Tutor CoPilot RCT shows +9 p.p. for struggling students when AI augments human facilitators
+2. **GenAI reduces math anxiety** — Meta-analysis confirms low-stakes AI practice = psychological safety for struggling learners
+3. **Process-level feedback > answer-level** — LLMs can generate teacher-quality feedback on *how* students reason
+4. **ITS-LLM architecture is modular** — Motivational feedback generation is swappable; distinct from instructional feedback
+5. **BKT has a fairness gap** — Emerging readers penalized ~9 p.p.; must model reading as separate skill in math systems
+6. **Skill trees enable automated coaching** — Formal prerequisite DAGs with acyclicity/coverage/coherence properties
+7. **Knowledge graphs underpin adaptive systems** — Prerequisite mapping, gap detection, content recommendation
+8. **Productive struggle has two dimensions** — Emotional scaffolding (patience, normalizing difficulty) matters as much as cognitive scaffolding (hints, prompts)
+9. **AI must preserve struggle** — Over-scaffolding (immediate answers) reduces cognitive engagement; design for just-in-time support
+
+---
+
+## [2026-05-06] synthesis | Convert INFERRED bridges to EXTRACTED — 2 new synthesis pages, 6 cross-links
+
+Acted on graphify analysis from prior session. INFERRED `semantically_similar_to` bridges identified between communities are now backed by explicit synthesis pages + bidirectional cross-links in concept pages. Next ingest should re-classify these edges as EXTRACTED.
+
+### New Synthesis Pages
+
+| Page | Bridges | Purpose |
+|------|---------|---------|
+| [[speculative-data-as-state-machine]] | Experiment Speculative Data ↔ State Management | TEAME-287 root cause as state-machine problem; Path A/B/C refactor proposal |
+| [[trust-boundaries-formal-verification-and-bloat]] | Formal Verification ↔ Dependency Bloat | Twin strategies for trust boundary problem; 5-tier code provenance framework |
+
+### Cross-Links Added (INFERRED → EXTRACTED candidates)
+
+| Page | Cross-link added |
+|------|------------------|
+| [[experiment-speculative-data]] | → state-management + speculative-data-as-state-machine |
+| [[state-management]] | → experiment-speculative-data + speculative-data-as-state-machine |
+| [[formal-verification]] | → dependency-bloat + trust-boundaries synthesis |
+| [[dependency-bloat]] | → formal-verification + trust-boundaries synthesis |
+| [[design-systems]] | → dependency-injection-nodejs-typescript (Design Patterns ↔ DI bridge) |
+| [[dependency-injection-nodejs-typescript]] | → design-systems + react-patterns |
+
+### Skipped (graph signal weak)
+
+- Distributed Locking ↔ Ally Piechowski — INFERRED but not a real conceptual link; let next clustering downweight it
+- React Concurrent Mode ↔ Event Loop — neither has a wiki concept page; defer until wiki has dedicated concurrency-primitives concepts
+- Supply Chain Security ↔ JWT — INFERRED via Full App Embedding source page; weak
+
+### Index Changes
+
+- Added 2 entries under Synthesis section
+
+### Why this matters
+
+Two reasons to convert INFERRED → EXTRACTED:
+1. **Graph fidelity** — EXTRACTED edges reflect documented relationships; INFERRED edges are AI guesses. Writing the cross-link upgrades the graph.
+2. **Code quality leverage** — INFERRED semantic_similar_to edges often indicate duplicated code patterns or extractable abstractions. Making the relationship explicit in the wiki surfaces refactor candidates in the codebase.
+
+For TEAME-287 specifically, the state-machine framing (Path A) is the recommended ship-now fix.
+
+---
+
+## [2026-05-05] query | 5 major themes from last 2 days
+
+User asked for top 5 themes + takeaway from May 4-5 notes. Answered with five-theme breakdown, saved as synthesis page.
+
+### New Synthesis Page
+
+| Page | Description |
+|------|-------------|
+| [[may-4-5-2026-themes]] | Five themes: BrainBreak LTS bugs, dev-env friction, QA tooling, learning-product research, personal/wellness |
+
+### Project Status Change
+
+- Moved **TEAME-218: BrainBreak Feature** from [[Completed Work]] back to [[Active Projects]] as **TEAME-218: BrainBreak LTS Conversion** — feature shipped April 2026 but LTS conversion in progress, blocked on cooldown parser + speculative data bugs.
+
+### Key Themes Surfaced
+
+1. BrainBreak LTS close — Fix A + Fix B for cooldown parser, TEAME-287 speculative data, rehydration weirdness
+2. Dev-env friction — Docker volume cross-platform pitfall, stale rebase, Marvin FE setup
+3. QA + tooling self-evaluation — WezTerm 3-pane Playwright, axe linter ≈ 20% browser coverage
+4. Learning-product research — math game eureka design, reverse scoring, knowledge tracing scholar search, TTO tier disconnect
+5. Personal/wellness — meditation (Kobe), Type I/II fun, NBA playoffs, drinking rule
+
+---
+
+## [2026-05-05] lint | Health check
+Found 4 errors, 462 warnings (orphan pages), 0 info items. Fixed all 4 errors.
+
+### Errors (fixed)
+
+| Broken link | Fixed to | Files |
+|---|---|---|
+| `brain-break-cooldown-system` | `cooldown-system` | `work-status-may-5-2026`, `caption-logs-may-4-2026`, `remaining-brain-break-tickets`, `reverse-scoring` |
+| `remaining brain break tickets` | `remaining-brain-break-tickets` | `work-status-may-5-2026`, `caption-logs-may-4-2026`, `qa-fe-automation-local-workflow` |
+| `TEAME-287` | `teame-287-speculative-data-created-bug` | `brainbreak-lts-cooldown-speculative-bugs` (2x) |
+| `teame-218` | `teame-218-code-cleanup-lts-conversion` | `worktree-rebase-missed-flyway-migrations` |
+
+### Warnings (expected)
+- 462 orphan pages — concept/entity pages not heavily cross-linked yet. Normal for growing wiki.
+- ~1750 red links to future expansion topics. Expected.
+
+### Index consistency
+All 19 recent pages have exactly 1 index entry. Clean.
+
+---
+
+## [2026-05-05] ingest | Marvin runbook + worktree gotcha — 2 sources, 1 new concept, 2 updated
+
+Processed 2 new files from raw/. 2 new source pages, 1 new concept page, 2 existing pages updated.
+
+### New Source Pages
+
+| Source | Wiki Page | Type |
+|--------|-----------|------|
+| Marvin – Local Frontend Dev & Test User Setup.md | [[marvin-local-frontend-dev-setup]] | Runbook |
+| Worktree Rebase Missed Flyway Migration Files.md | [[worktree-rebase-missed-flyway-migrations]] | Gotcha / diagnosis |
+
+### New Concept Page
+
+| Concept | Description |
+|---------|-------------|
+| [[git-rebase-hygiene]] | Always fetch before rebasing — cached origin/main is stale |
+
+### Existing Pages Updated
+
+| Page | Changes |
+|------|---------|
+| [[flyway]] | Added gotcha section: missing migrations after stale rebase |
+| [[git-worktrees-parallel-work]] | Added fetch-before-rebase rule and worktree location guidance |
+
+### Key Insights
+
+1. **Marvin FE dev workflow** — run frontend outside Docker (`npm run dev:relay`) for hot-reload, stack in containers
+2. **Grade selection hang** — documented as real bug as of May 5, not setup issue
+3. **Rebase hygiene** — `git rebase origin/main` uses cached remote; stale `origin/main` = missing commits
+4. **Worktree location** — inside vs outside repo doesn't affect git (same object DB); outside preferred for IDE separation
+
+---
+
+## [2026-05-05] ingest | BrainBreak LTS refined write-up — 2 sources, 2 updated concepts
+
+Processed pasted markdown document: refined write-up of BrainBreak cooldown + speculative data bugs. More structured than voice memo. 2 new source pages, 2 concept pages updated, 1 source page cross-linked.
+
+### New Source Pages
+
+| Source | Wiki Page | Type |
+|--------|-----------|------|
+| BrainBreak LTS — Cooldown & Speculative Data Bugs (pasted) | [[brainbreak-lts-cooldown-speculative-bugs]] | Refined debug write-up |
+| TEAME-287 | [[teame-287-speculative-data-created-bug]] | Work ticket |
+
+### Existing Pages Updated
+
+| Page | Changes |
+|------|---------|
+| [[cooldown-system]] | Added proposed Fix A + Fix B code, manual QA table, next steps checklist, link to refined source |
+| [[experiment-speculative-data]] | Added TEAME-287 bug section: `created` column updated instead of `modified` |
+| [[remaining-brain-break-tickets]] | Added link to refined write-up |
+
+### Key Insights
+
+1. **Fix A + Fix B must ship together** — Fix A (robust ISO parsing) alone leaves off-by-hours edge from Fix B (calendar-day arithmetic)
+2. **Rehydration path has separate bug** — Redux state inconsistent (`hydrated: true` but no cooldown data) beyond parser issue
+3. **TEAME-287 = insert vs update confusion** — `created` bumped on repeat instead of `modified`
+4. **Placement fetch waste** — ~10 days of compute per student fetching placements for modal that can't render
+
+---
+
+## [2026-05-05] ingest | May 4–5 batch — 11 sources, 4 new concepts, 3 updated concepts
+
+Processed 11 source files (skipped 3 empty Untitled files). 6 work sources, 5 personal sources. 4 new concept pages, 3 existing concept pages updated, index updated with Personal section.
+
+### New Source Pages
+
+**Work:**
+
+| Source | Wiki Page | Type |
+|--------|-----------|------|
+| remaining brain break tickets.md | [[remaining-brain-break-tickets]] | Debug session / root cause analysis |
+| Work status for May 5, 2026.md | [[work-status-may-5-2026]] | Daily status |
+| Docker FE esbuild.exe error.md | [[docker-fe-esbuild-exe-error]] | Technical note |
+| QA FE automation local workflow.md | [[qa-fe-automation-local-workflow]] | Personal workflow |
+| Question for axetool linter.md | [[question-axe-linter]] | Tool evaluation |
+| Research terms recap.md | [[research-terms-recap]] | Research note |
+
+**Personal:**
+
+| Source | Wiki Page | Type |
+|--------|-----------|------|
+| Captain's log, volume one.md | [[captains-log-volume-one]] | Journal / voice memo |
+| Caption logs 5 4 2026.md | [[caption-logs-may-4-2026]] | Journal / voice memo |
+| NBA Eastern Playoff 5-2-26.md | [[nba-eastern-playoff-may-2-2026]] | Sports commentary |
+| Kobe Bryant meditation article | [[kobe-bryant-meditation-article]] | Article clipping |
+| Crazy Tweets.md | [[crazy-tweets]] | One-liner |
+
+### New Concept Pages
+
+| Concept | Description |
+|---------|-------------|
+| [[math-problem-game]] | Abstraction tools trigger pattern-recognition eureka moments |
+| [[meditation-practice]] | Daily silence routine: morning stillness, visualization, restorative mode |
+| [[reverse-scoring]] | Invert scale direction to detect response bias in questionnaires |
+| [[type-i-type-ii-fun]] | Fun taxonomy: enjoyable throughout vs hard now, rewarding later |
+
+### Existing Pages Updated
+
+| Page | Changes |
+|------|---------|
+| [[cooldown-system]] | Added Bug Analysis section: 4 bugs from debug session (broken parser, off-by-one, time-of-day eligibility, wasted compute) |
+| [[axe-deque]] | Added IDE Linter vs Browser Extension comparison table |
+| [[docker]] | Added cross-platform node_modules volume mount pitfall |
+
+### Index Changes
+
+- Added **Personal** section with 5 entries
+- Added 6 work entries under Architecture Patterns
+- Added 2 concepts under Product Concepts
+- Added 2 concepts under Thinking Frameworks
+
+---
+
+## [2026-05-03] ingest | Learning Science cluster — 8 source pages + 5 concept pages + 4 entity pages
+
+Processed 9 source files (skipped arxiv_2506_20156_1 dup). 8 new source pages, 5 new concept pages, 4 new entity pages, 1 existing concept page expanded with research-foundations cross-link section. Index updated with new Learning Science section.
+
+### New Source Pages
+
+| Source | Wiki Page | Type |
+|--------|-----------|------|
+| A Teacher's Guide To Spaced Repetition.md | [[teachers-guide-spaced-repetition]] | Pedagogical guide |
+| Spaced repetition.md (Wikipedia) | [[spaced-repetition-wikipedia]] | Reference article |
+| How we learn how you learn.md (Settles) | [[duolingo-half-life-regression]] | Industry research blog |
+| Introducing the new Duolingo learning path.md | [[duolingo-new-learning-path]] | Product redesign blog |
+| Duolingo Learning Strategy.md | [[duolingo-learning-strategy]] | Strategy synthesis |
+| The Geometry of Learning Mapping the Evolution of Mastery through KSTs.md | [[geometry-of-learning-kst-mastery-maps]] | Case study |
+| Practical Evaluation of Deep Knowledge Tracing Models.md | [[deep-knowledge-tracing-practical-evaluation]] | EDM 2025 industry paper (clipping) |
+| arxiv_2506_20156.md (Hou & Tan 2025) | [[irec-metacognitive-scaffolding-arxiv]] | Conceptual research paper |
+| The Psychology Behind Apple Watch.md | [[apple-watch-psychology-gamification]] | Behavioral science explainer |
+
+### New Concept Pages
+
+| Concept | Description |
+|---------|-------------|
+| [[spaced-repetition]] | Core SR concept with algorithm family, applications, critiques |
+| [[forgetting-curve]] | Ebbinghaus's `p = 2^(-Δ/h)` exponential decay model |
+| [[half-life-regression]] | Duolingo's trainable per-word HLR algorithm |
+| [[knowledge-tracing]] | Modeling student mastery state (BKT/DKT/SAINT/AKT) |
+| [[gamification]] | Game mechanics for non-game contexts + anti-patterns |
+
+### New Entity Pages
+
+| Entity | Description |
+|--------|-------------|
+| [[hermann-ebbinghaus]] | Forgetting curve discoverer (1880s) |
+| [[sebastian-leitner]] | Leitner box system creator (1973) |
+| [[paul-pimsleur]] | Graduated-interval recall pioneer (1967) |
+| [[burr-settles]] | Duolingo Half-Life Regression author (ACL 2016) |
+
+### Existing Pages Updated
+
+| Page | Changes |
+|------|---------|
+| [[three-ring-mastery-system]] | Appended Research Foundations section linking 9 source + 5 concept + 4 entity pages with 8 key takeaways for ring design |
+| [[index]] | Added Learning Science section under Product Concepts with concepts/sources/entities split |
+
+### Skipped as Confirmed Duplicate
+
+- arxiv_2506_20156_1.md → identical to arxiv_2506_20156.md except `captured_at` timestamp
+
+### Key Insights
+
+1. **Path B (empirical decay curves) is empirically grounded** — TTO has 6 years of data; can compute per-skill `h` without full ML infra (HLR-style) but with more accuracy than fixed Leitner intervals
+2. **15-20min daily session is empirically optimal** per Duolingo — directly informs three-ring daily-fill cadence
+3. **Practice ring rewards productive struggle** matches Manu Kapur's productive failure research and Apple Watch's "outcomes vary" finding (intrinsic motivation matters)
+4. **Anti-pattern: time-on-task** — Duolingo + Apple Watch both warn against engagement metrics that don't correlate with learning outcomes
+5. **"Practice as forward progress" reframing** (Duolingo path) avoids "going back" psychology — directly applicable to three-ring Maintain ring framing
+6. **Dunning-Kruger drop** (KST C-7 pilot) — expect Week 1 self-assessment to inflate; coach assessment Week 2 corrects. Implication: ring viz should incorporate teacher correction moments.
+7. **Depth vs breadth** (KST Laura Rivas case) — plateau in new skills can mask significant deepening; ring viz should surface both dimensions
+8. **Irec critique of SRS as de-contextualized** — opens design space for context-triggered review beyond schedule-based decay (JITAI framework)
+9. **HLR beat Leitner ~50% in error rate** at Duolingo scale (12M+ practice events) with 9.5% retention bump — strongest production validation of trainable SRS
+10. **Knowledge graph as next mastery-tracking substrate** — Hoppenstedt's KST scatter plots → graphs is parallel to Irec's knowledge-graph-driven retrieval
+
+---
+
+## [2026-05-03] ingest | Work/Marvin cluster — 12 source pages + 4 concept pages
+
+Processed 13 source files (folded TEAMF-539 into teamf-fe-package-updates) from the raw folder Work/Marvin cluster. 12 new source summaries, 4 new concept pages, 2 existing pages updated, Backlog updated, index updated.
+
+### New Source Pages
+
+| Source | Wiki Page | Type |
+|--------|-----------|------|
+| Local Development with Unleash.md | [[unleash-local-development-setup]] | Tool guide |
+| Edit - Unleash One Pager - PRODUCT.md | [[unleash-one-pager-product]] | Team agreement |
+| Feature Flagging One-Pager.md | [[feature-flagging-quick-reference]] | Quick reference |
+| Accessibility - Marvin.md | [[accessibility-marvin-wcag]] | Work documentation |
+| Using CloudWatch Logs Insights - Marvin.md | [[cloudwatch-logs-insights-queries]] | Tool reference |
+| New Classrooms Tech Stack - Quality Assurance.md | [[nc-tech-stack-overview]] | Stack reference |
+| How to run the QA frontend automated test workflow - Quality Assurance.md | [[qa-frontend-automated-test-workflow]] | Process / runbook |
+| teamf FE Package updates.md + TEAMF-539 Dependabot.md | [[teamf-fe-package-updates]] | Work ticket (folded) |
+| Learnosity incident 2026-02-24.md | [[learnosity-cdn-incident-2026-02-24]] | Incident post-mortem |
+| 2026-05-01-SkillResource-Phase2-Extract-GraphQL-Hook.md | [[skill-resource-phase2-extract-graphql-hook]] | Refactor plan |
+| 2026-05-01-SkillResource-Phase2-Extract-Modals-Hook.md | [[skill-resource-phase2-extract-modals-hook]] | Refactor plan |
+| 2026-05-01-SkillResource-Phase2-Extract-Timeline-Hook.md | [[skill-resource-phase2-extract-timeline-hook]] | Refactor plan |
+
+### New Concept Pages
+
+| Concept | Description |
+|---------|-------------|
+| [[axe-deque]] | Deque axe-DevTools / axe Linter for WCAG accessibility testing |
+| [[wcag-2-1]] | Web Content Accessibility Guidelines 2.1 (A/AA/AAA) |
+| [[cloudwatch-logs-insights]] | AWS log query interface |
+| [[third-party-version-management]] | Pinning, archive monitoring, self-hosting tradeoffs for vendor libraries |
+
+### Existing Pages Updated
+
+| Page | Changes |
+|------|---------|
+| [[unleash-feature-flags]] | Added cross-links to new Local Dev / One Pager / Quick Reference pages |
+| [[learnosity]] | Added CDN incident link + third-party-version-management |
+| [[Backlog]] | Added TEAMF-539 to In Progress section + ticket details |
+
+### Skipped as Confirmed Duplicates
+
+- General Conventions - Marvin.md → already ingested as [[general-graphql-conventions]] (different filename, same Confluence content)
+- Tech Debt andInfrastructure Opportunities.md → typo'd draft of already-ingested [[tech-debt-infrastructure-opportunities-product]]
+- How to run the QA frontend automated test workflow - Quality Assurance 1.md → identical content (image URL token only diff)
+- The Psychology of Apple Watch's Close Your Rings.md → 0-byte empty file
+
+### Key Insights
+
+1. **Unleash trio is complementary not duplicate** — Local Dev = tutorial, One Pager = team agreement, Quick Reference = synthesized card. Each plays a different role and should be linked from [[unleash-feature-flags]] hub.
+2. **Learnosity incident drives third-party-version-management concept** — pinning to specific patch (`v1.132.3`) within LTS branch (`v2025.1.LTS`) is the only stable strategy. Self-hosting decouples release cadence but loses archive notification surface.
+3. **SkillResource Phase 2 trio extends architecture overview** — already-ingested [[skill-resource-phase2-architecture-overview]] referenced sub-page wikilinks; now resolved with concrete plans for `useSkillResourceQueries`, `useSkillModals`, `useSkillTimeline`.
+4. **Accelerated CR/QA is a deliberate quality tradeoff** — `/experiments/` code is not reviewed for quality, only containment; LTS code outside `/experiments/` retains full review rigor. Captured in [[unleash-one-pager-product]].
+5. **Marvin's 3 backend log groups** (BFF Lambda, GraphQL Service ECS, Inference Engine Lambda) are the observability surface area — captured as concrete query reference in [[cloudwatch-logs-insights-queries]].
+
+---
+
+## [2026-05-01] ingest | Mastery Velocity Three-Ring Feature Concept
+
+Processed brainstorm session for TEAME — three-ring progress system for TTO platform. 1 source summary, 1 concept page, index updated.
+
+### New Source Summary
+
+| Source | Wiki Page | Type |
+|--------|-----------|------|
+| Mastery Velocity — Three-Ring Feature Concept.md | [[mastery-velocity-three-ring-feature-concept]] | Brainstorm session |
+
+### New Concept Page
+
+| Concept | Description |
+|----------|-------------|
+| [[three-ring-mastery-system]] | Combined ring + SR + mastery + weekly goal feature concept (all ring details in one note) |
+
+### Key Insights
+
+1. **Three rings = skill lifecycle** — New/Practice/Maintain mirrors learn→practice→keep sharp. Practice ring closes "no credit for trying" gap.
+2. **SR = skill graph's reason to live** — Without decay, tree fills in monotonically. With decay, students tend a living artifact.
+3. **Practice ring rewards productive struggle** — Wrong→right counts MORE than instant correct (Manu Kapur). Adaptive credit weighting.
+4. **Path B = sweet spot** — Leitner + empirical decay curves from 6yr data. Uses data without ML infra.
+5. **Anti-pattern: time-on-task as primary metric** — That's the social-media trap. Measure skills/week directly.
+
+---
+
+## [2026-05-01] ingest | Brain Break sprint status + TEAME-284 + career resources
+
+Processed 2 source files from `raw/` — 3 new source summaries, 5 existing pages updated, 1 wiki page updated.
+
+### New Source Summaries
+
+| Source | Wiki Page | Type |
+|--------|-----------|------|
+| Brain Break voice memo (sprint status) | [[BB being open in 2 sessions via different browser]] | Sprint snapshot |
+| TEAME-284 (root file + voice memo) | [[teame-284-emotion-picker-responsiveness]] | Work ticket |
+| Jordan Cutler handbook (GitHub) | [[path-to-senior-engineer-handbook]] | Career resources |
+
+### Existing Pages Updated
+
+| Page | Changes |
+|------|---------|
+| [[teame-268-brain-brake-retry-cooldown]] | Status: In Progress → Ready to merge (pending DB verification). Added sprint snapshot link |
+| [[teame-272-scrollbar-usability]] | Status: Open → Fixed (2026-05-01). Added sprint snapshot link |
+| [[teame-277-brain-break-two-minute-trigger]] | Status: Open → Ready to merge. Added sprint snapshot link |
+| [[teame-265-brain-brake-login]] | Added animation update "ready to merge" note + sprint snapshot link |
+| [[teame-267-brain-brake-practice-problems]] | Added sprint snapshot link, cancelled duplicate note |
+| [[Backlog]] | Moved TEAME-272/277 to Recently Resolved, added TEAME-284 to In Progress, updated stats |
+| [[index]] | Added 3 new entries (sprint snapshot, TEAME-284, handbook) |
+
+### Key Insights
+
+1. **TEAME-284 = release blocker** — Maria QA: "as long as we have TEAME-284 before release, UI ready to go"
+2. **Sprint wrap nearly done** — TEAME-272, 277, 265, 267 resolved/ready; 268 needs DB verification; 284 = last UI blocker
+3. **Jordan Cutler resource list** — career-progression scoped; companion to existing [[lifelong-learning-resources]]
+
+---
+
+## [2026-05-01] lint | Health check (session 2)
+
+Found 0 errors, 16 warnings, 1 info item. Fixed all warnings.
+
+### Warnings (fixed)
+- 16 pages missing from `wiki/index.md` — added entries for 12 concept hubs (metabase, qwen, unleash, vite, angular, learnosity, graphql, docker, postgresql, powershell, backend-for-frontend, observability), 2 skill-resource-phase2 pages, 2 three-ring mastery pages
+
+### Info
+- ~1100 red links remain as expected future expansion topics
+- 4 filename artifacts (Active, Projects, Completed, Work) appear as "missing" but are multi-word files already indexed under full names
+
+---
+
+## [2026-05-01] lint | Health check
+
+Found 1 error, 45 warnings, 1 info item.
+
+### Error (fixed)
+- `[[andrej-karpathy-bio]]` broken link in `wiki/concepts/vibe-coding.md` — page was renamed to `andrej-karpathy` in prior session. Fixed source reference and wikilink.
+
+### Warnings (fixed)
+- 44 pages missing from `wiki/index.md` — added entries for concepts (auth0, aws-aurora-serverless, browser-devtools, cooldown-system, experiment-speculative-data, flyway, frontend-performance, graphql-over-fetching, hot-chocolate-graphql, hotjar, jwt, lts-transition, openclaw, relay-connections, sentry, soapbox-labs, telemetry, voice-ui), work sources (cognitive-learning-model-product, in-platform-polling-design-notes-product, learnosity-access-product, learnosity-swap-out-notes-product, logging-conventions, marvin-architecture, marvin-diagnostic-inferencing-functional-requirements, marvin-example-skill-assessment-json-response, marvin-frontend, marvin-graphql-service, marvin-inferencing-v2, marvin-skill-assessment-inferencing-implementer-notes, query-filters, querying-graphql, team-e-onboarding-product, teamd-1010-embedding-prototype-metabase, teamf-556-chromebook-touchscreen-tap, tech-debt-infrastructure-opportunities-product), and misc sources (ai-should-elevate-your-thinking, graphify-knowledge-graph-tool-v5, how-i-use-llms-karpathy, karpathy-llm-wiki-day-job, global-object-ids).
+- `graphify-knowledge-graph-tool-v5` orphan — added cross-link from `graphify-knowledge-graph-tool.md`.
+
+### Info
+- ~1180 red-link topics remain as expected future expansion topics.
+
 ---
 
 ## [2026-04-30] ingest | TEAME notes — full backlog processing
@@ -85,7 +814,7 @@ Processed 28 source files from `raw/` — 31 new source summaries, 29 new concep
 - [[teame-189-skill-assessment-refresh-failure]] — Skill assessment refresh failure investigation
 - [[teame-203-assignment-creation-logging]] — Assignment creation logging and readiness score tracking
 - [[teamf-296-vite-upgrade]] — Vite build tool upgrade initiative
-- [[bb-brain-break-session-lock-update]] — BrainBreak session lock update implementation
+- [[BB being open in 2 sessions via different browser]] — BrainBreak session lock update implementation
 - [[cross-browser-toctou-window-analysis]] — Cross-browser TOCTOU window timing analysis
 - [[devtools-simulated-devices]] — Chrome DevTools device emulation guide
 - [[classesroster-graphql-performance-issue]] — GraphQL over-fetching fix for ClassesRoster (30s → 2s)
@@ -901,7 +1630,7 @@ Found 0 errors, 6 warnings, 2 info items. Fixed:
 | [[teame-218-brainbreak-postmortem]] | 7 refactoring approaches, key learnings |
 | [[teame-218-git-cleanup]] | 19 commits → 5 logical commits |
 | [[teame-218-brainbreak-refactor]] | Context + reducer pattern |
-| [[brainbreak-code-cleanup]] | Barrel file removal, reducer naming |
+| [[TEAME-218 Code Cleanup - TEAME-177 (In-Platform Polling)]] | Barrel file removal, reducer naming |
 | [[brainbreak-mvc-refactor]] | MVC state management refactor |
 
 ### React Pattern Concepts Already Present
@@ -1952,7 +2681,7 @@ Project-specific implementation plans archived to `raw/05_archive/process/`:
 |--------|-----------|------|
 | TEAME-218-BrainBreak-PostMortem.md | [[teame-218-brainbreak-postmortem]] | Post-mortem analysis |
 | TEAME-218-GIT-CLEANUP-MASTER.md | [[teame-218-git-cleanup]] | Git workflow documentation |
-| BrainBreak Code Cleanup Plan.md | [[brainbreak-code-cleanup]] | Code quality plan |
+| BrainBreak Code Cleanup Plan.md | [[TEAME-218 Code Cleanup - TEAME-177 (In-Platform Polling)]] | Code quality plan |
 
 ### Key Categories Found
 
@@ -2088,3 +2817,70 @@ Mostly duplicate of existing wiki page. No new pages created.
 - LLM x Obsidian 2nd Brain.md (331 bytes)
 
 ---
+
+## [2026-05-17] lint | Wiki health check and cleanup
+
+Fixed 3 errors, 32 warnings, improved organization.
+
+### Fixes Applied
+
+**Errors fixed:**
+- Renamed 5 space files to kebab-case (`Active Projects.md` → `active-projects.md`, etc)
+- Consolidated duplicates: `learnosity.md` and `soapbox-labs.md` now redirect from concepts/ to entities/
+- Created `sources/archive/` for 22 obsolete marvin/personal files
+
+**Warnings addressed:**
+- Archived 32 orphan pages to `sources/archive/` (mostly outdated marvin docs)
+- Added `sources/README.md` documenting structure
+
+**Organization improvements:**
+- Organized `sources/` into 11 subdirectories (ai-ml, architecture, education, frontend, patterns, etc)
+- 410 files remain at root for future categorization
+- Created `sources/README.md` with structure documentation
+
+### File Count Changes
+
+- Before: 557 files flat in sources/
+- After: 11 categorized folders + 410 root files
+- Archived: 22 files
+- Duplicates resolved: 2
+
+
+## [2026-05-17] continued | Sources folder organized
+
+**Completed organization of `sources/` folder:**
+
+### Before
+- 521 files flat in `sources/` root
+- No categorization
+- 22 marvin files mixed in
+
+### After
+- **0 files** at root — all organized
+- **15 categories** with clear purpose
+- **533 files** total categorized
+
+### Categories by file count
+1. `tools/` — 78 files (dev tools, workflows)
+2. `education/` — 60 files (learning science)
+3. `frontend/` — 59 files (React, Relay, CSS)
+4. `archive/` — 58 files (outdated, session logs)
+5. `research/` — 56 files (academic papers)
+6. `software-engineering/` — 53 files
+7. `articles/` — 36 files
+8. `obsidian/` — 30 files (vault workflows)
+9. `architecture/` — 30 files
+10. `patterns/` — 27 files
+11. `ai-ml/` — 24 files
+12. `backend/` — 13 files
+13. `career/` — 7 files
+14. `psychology/` — 5 files
+15. `books/` — 1 file
+
+### Rules applied
+- `session-*.md` → `archive/`
+- `marvin-*`, `*-marvin.md` → `archive/`
+- NC/BTech work → `education/btech/`
+- Papers → `research/`
+- All spaces in filenames → kebab-case
+

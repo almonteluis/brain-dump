@@ -1,9 +1,18 @@
 ---
 description: Relay is a React framework for data management and fetching with a GraphQL client that emphasizes data colocation, type safety, and efficient batching
-tags: ["relay", "graphql", "react", "data-fetching", "concept"]
+tags:
+  - relay
+  - graphql
+  - react
+  - data/fetching
+  - concept
 created: 2026-04-08
 updated: 2026-04-08
-sources: ["relay-fragment-composition.md", "relay-fragment-naming-and-typing.md", "relay-mutations-guide.md", "relay-uselazyload-to-usefragment-migration.md"]
+sources:
+  - relay-fragment-composition.md
+  - relay-fragment-naming-and-typing.md
+  - relay-mutations-guide.md
+  - relay-uselazyload-to-usefragment-migration.md
 ---
 
 # Relay

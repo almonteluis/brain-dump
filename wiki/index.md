@@ -27,12 +27,13 @@ This is the entry point to the processed knowledge base. All content is ingested
 - [[progressive-disclosure-in-practice]] — Layered vault navigation
 - [[progressive-disclosure]] — Reveal information gradually, matching detail to need
 - [[energy-spectrum-pattern]] — Energy spectrum universal pattern
+- [[meditation-practice]] — Daily silence for mental clarity: morning stillness, visualization, restorative brain mode
+- [[type-i-type-ii-fun]] — Fun taxonomy: Type I (enjoyable throughout) vs Type II (hard now, rewarding later)
 - [[agentic-ai-maturity-gap-thinking]] — Thinking note on the agentic AI maturity gap
 - [[agi-timeline-2026]] — AGI timeline predictions and analysis
 
 *See [[wiki/log|Processing Log]] for full list.*
 
-### Reference
 
 #### Relay / GraphQL
 - [[relay]] — Meta's React GraphQL framework
@@ -83,6 +84,11 @@ This is the entry point to the processed knowledge base. All content is ingested
 - [[web-components-architecture]] — Web components + server components for production (MDN architecture)
 - [[mdn-frontend-architecture]] — MDN rebuilt from React SPA to Lit + Rspack
 - [[fallow-dead-code-detection]] — 15 issue types for dead code detection in TS/JS
+- [[browser-devtools]] — Device emulation and debugging tools
+- [[frontend-performance]] — Performance optimization patterns
+- [[hotjar]] — User behavior analytics
+- [[sentry]] — Error tracking platform
+- [[voice-ui]] — Voice user interface patterns
 
 #### Claude Code
 - [[claude-code]] — Hub for Claude Code ecosystem (workflows, config, prompts, plugins)
@@ -128,6 +134,20 @@ This is the entry point to the processed knowledge base. All content is ingested
 - [[powershell-get-childitem-guide]] — PowerShell Get-ChildItem equivalent of find
 - [[voice-first-experiences-kids]] — Voice-first experiences for children guide
 
+#### Concept Hubs
+- [[metabase]] — Business intelligence platform
+- [[qwen]] — Qwen LLM family
+- [[unleash]] — Feature flag management
+- [[vite]] — Build tool overview and upgrade patterns
+- [[angular]] — Angular framework
+- [[learnosity]] — Third-party assessment platform (entity)
+- [[graphql]] — GraphQL query language
+- [[docker]] — Docker containerization
+- [[postgresql]] — PostgreSQL database
+- [[powershell]] — PowerShell scripting
+- [[backend-for-frontend]] — BFF pattern
+- [[observability]] — Observability as competitive advantage
+
 #### AI / Strategy
 - [[agentic-ai-maturity]] — Organizational AI readiness framework
 - [[ai-education]] — AI in education transformation
@@ -145,6 +165,10 @@ This is the entry point to the processed knowledge base. All content is ingested
 - [[buildflow-automated-research-pipeline]] — Automated URL-to-code pipeline (Chrome + Telegram + OpenCode)
 - [[vibe-coding-games-threejs]] — AI-assisted game dev with progressive skill improvement loop
 - [[street-fighting-mathematics]] — Six tools for educated guessing and opportunistic problem solving
+- [[openclaw]] — Open-source AI agent framework
+- [[soapbox-labs]] — Voice AI for children
+- [[project-atlas]] — AI-native intelligence layer for Teach to One (sequencing, instruction, assessment loops)
+- [[predecessor-skills]] — Foundational competencies that predict Algebra 1 success (13% → 58%)
 
 #### Sources (Links)
 - [[agentic-ai-maturity-gap]] — The Agentic AI Maturity Gap (Dev.to)
@@ -198,6 +222,10 @@ This is the entry point to the processed knowledge base. All content is ingested
 - [[experiment-database-schema]] — Experiment database schema
 - [[sql-style-guide]] — SQL style guide and conventions
 - [[git-workflow-guide]] — Git workflow and commit practices
+- [[ai-should-elevate-your-thinking]] — AI should elevate your thinking, not replace it (Koshy John)
+- [[graphify-knowledge-graph-tool-v5]] — Graphify v0.5.0 AI coding assistant skill
+- [[how-i-use-llms-karpathy]] — Karpathy's "How I Use LLMs" (comprehensive transcript)
+- [[karpathy-llm-wiki-day-job]] — Implementing Karpathy's LLM Wiki for AWS infrastructure
 
 #### Session Transcripts
 - [[session-2026-01-29-agentic-ai-transcript]] — Agentic AI governance discussion
@@ -212,18 +240,14 @@ This is the entry point to the processed knowledge base. All content is ingested
 - [[spatial-editing]] — Spatial editing workflow pattern
 
 ### System
-- [[system-tools-automation]] — Vault automation scripts and progressive disclosure
 - [[system-universal-mining-framework]] — Content extraction methodology
-- [[system-article-workflow]] — Article processing pipeline
 - [[system-levi-article-workflow]] — AI-assisted article processing
 - [[system-session-logs-guide]] — Session logging documentation
-- [[system-templates-guide]] — Daily note template guide
 - [[system-tasks-master-list]] — Aggregated vault-wide task list
 
 #### Templates
 - [[system-template-article]] — Article processing template
 - [[system-template-session-log]] — Session log template
-- [[system-template-daily-note]] — Full daily note template
 - [[system-template-daily-note-quick]] — Quick daily note template
 - [[system-template-case-study]] — System design case study template
 - [[system-template-service-doc]] — Service documentation template
@@ -265,7 +289,6 @@ This is the entry point to the processed knowledge base. All content is ingested
 - [[playwright-testing]] — Playwright browser automation and testing
 - [[web-frameworks-guide]] — Node.js web frameworks (Express, NestJS, etc.)
 - [[fullstack-graphql-workshop]] — GraphQL + Relay + .NET workshop
-- [[todo-list-challenge]] — DOM manipulation coding challenge
 - [[streaming-ssr]] — Streaming Server-Side Rendering
 - [[build-tools]] — JavaScript build tools (Vite, ESBuild, SWC)
 - [[frontend-architecture-guide]] — Production frontend architecture guide (React, Angular, Auth0, Sentry)
@@ -334,7 +357,11 @@ This is the entry point to the processed knowledge base. All content is ingested
 - [[toctou]] — Time-of-check to time-of-use race condition
 - [[distributed-locking]] — Patterns for mutual exclusion in distributed systems
 - [[supply-chain-security]] — npm package integrity and maintainer protection
+- [[third-party-version-management]] — Pinning, archive monitoring, self-hosting tradeoffs for vendor libraries
 - [[lambda-service-pattern]] — Three-tier Lambda architecture: Function → Engine → DataService
+- [[axe-deque]] — Deque axe-DevTools and axe Linter for WCAG accessibility testing
+- [[wcag-2-1]] — Web Content Accessibility Guidelines 2.1 (A/AA/AAA)
+- [[cloudwatch-logs-insights]] — AWS log query interface — fields, filter, sort, stats
 
 **Writing & AI Ethics:**
 - [[adding-correctness-conditions-code-changes]] — TDD for agents: verification before instructions (Jessica Kerr)
@@ -350,6 +377,7 @@ This is the entry point to the processed knowledge base. All content is ingested
 - [[migrating-npm-to-pnpm]] — Step-by-step npm to pnpm migration guide
 - [[dependency-injection-nodejs-typescript]] — Manual DI with factory functions + composition root
 - [[lifelong-learning-resources]] — 88+ curated resources for senior engineers
+- [[path-to-senior-engineer-handbook]] — 250+ career-progression resources (Jordan Cutler: newsletters, books, courses, papers, YouTube, podcasts, communities)
 - [[console-log-to-job-hunting]] — Personal job hunt + JavaScript learning journal
 - [[pnpm-vs-bun-vs-yarn-berry]] — Three-way comparison of npm alternatives
 - [[pnpm-npm-yarn-bun-benchmarks]] — Speed, disk, and deployment benchmarks
@@ -376,6 +404,7 @@ This is the entry point to the processed knowledge base. All content is ingested
 - [[git-codebase-analysis]] — Five commands for codebase diagnostics
 - [[git-commands-before-reading-code]] — Churn, bus factor, bug clusters
 - [[git-commands-hn-discussion]] — HN discussion with Jujutsu equivalents for git forensic commands
+- [[git-rebase-hygiene]] — Always fetch before rebasing — cached origin/main is stale
 
 #### Build Tools & Upgrades
 - [[vite-7-upgrade-plan]] — Vite v4 to v7 migration guide
@@ -383,6 +412,9 @@ This is the entry point to the processed knowledge base. All content is ingested
 #### Feature Flags & Experiments
 - [[ab-testing-lifecycle]] — Three-stage A/B testing process (Design → Test → LTS)
 - [[unleash-feature-flags]] — Unleash hierarchy, naming conventions, lifecycle
+- [[unleash-local-development-setup]] — Docker compose setup, flag JSON import/export, marvin/.env wiring
+- [[unleash-one-pager-product]] — Team agreement: Accelerated CR/QA + per-experiment release management
+- [[feature-flagging-quick-reference]] — Quick-reference card with lifecycle, containment rules, FlagSwitch + ExperimentTracker code
 - [[experiment-database-schema]] — Flag history, observations, speculative data tables
 
 #### Architecture Patterns
@@ -391,7 +423,7 @@ This is the entry point to the processed knowledge base. All content is ingested
 - [[teame-218-brainbreak-refactor]] — Context + reducer pattern (work notes)
 - [[teame-218-brainbreak-postmortem]] — 7 refactoring approaches, key learnings
 - [[teame-218-git-cleanup]] — 19 commits → 5 logical commits strategy
-- [[brainbreak-code-cleanup]] — Barrel file removal, reducer naming plan
+- [[TEAME-218 Code Cleanup - TEAME-177 (In-Platform Polling)]] — Barrel file removal, reducer naming plan
 - [[brainbreak-context-cleanup-implementation]] — Implementation plan for BrainBreak context cleanup
 - [[nc-frontend-architecture-research-2026-04-09]] — Comprehensive NC frontend: React 18, Redux, Relay, PrimeReact, 319+ components
 - [[unified-search-component-pattern]] — Facade + strategy pattern for combining PrimeReact AutoComplete and MultiSelect
@@ -411,10 +443,12 @@ This is the entry point to the processed knowledge base. All content is ingested
 - [[teame-267-brain-brake-practice-problems]] — Brain Brake in Practice Problems (resolved April 2026)
 - [[teame-268-brain-brake-retry-cooldown]] — Brain Brake cooldown not enforced on retry
 - [[teame-272-scrollbar-usability]] — Brain Break scrollbar drag not responsive
-- [[teame-277-brain-break-two-minute-trigger]] — Brain Break triggered within 2 minutes
+- [[teame-277-brain-break-two-minute-trigger]] — Brain Break triggered within 2 minutes (resolved 2026-05-01)
+- [[teame-284-emotion-picker-responsiveness]] — BB Q2 emotion-picker green options cut off on 1366×768 (release-blocking)
+- [[BB being open in 2 sessions via different browser]] — Sprint status snapshot (BB tickets, QA findings, TEAME-284)
 - [[teamf-296-vite-upgrade]] — Vite build tool upgrade initiative
 - [[bb-cross-browser-session-lock]] — Two-layer client-side mutex with TOCTOU three-phase handshake (TEAME-218)
-- [[bb-brain-break-session-lock-update]] — BrainBreak session lock update implementation
+- [[BB being open in 2 sessions via different browser]] — BrainBreak session lock update implementation
 - [[cross-browser-toctou-window-analysis]] — Cross-browser TOCTOU window timing analysis
 - [[brainbreak-knowledge-graph-analysis]] — 303-node merged graph revealing god objects and community structure
 - [[jumpcloud-django-user-sync-pipeline]] — Bidirectional JumpCloud/Django/Auth0/Roadmaps sync every 15 minutes
@@ -429,22 +463,199 @@ This is the entry point to the processed knowledge base. All content is ingested
 - [[general-graphql-conventions]] — GraphQL naming and structure conventions
 - [[ab-testing-logging-rollout]] — A/B test logging rollout plan
 - [[devtools-simulated-devices]] — Chrome DevTools device emulation guide
+- [[cooldown-system]] — Time-based eligibility gating
+- [[experiment-speculative-data]] — Pattern for experiment transient data
+- [[global-object-ids]] — GraphQL global object identification
+- [[graphql-over-fetching]] — GraphQL query bloat and optimization
+- [[hot-chocolate-graphql]] — .NET GraphQL framework
+- [[lts-transition]] — Long-Term Support conversion process
+- [[relay-connections]] — Relay connection pattern and pagination
+- [[telemetry]] — Event tracking and observation logging
+- [[cognitive-learning-model-product]] — Cognitive learning model design notes
+- [[in-platform-polling-design-notes-product]] — In-platform polling UI/UX design notes
+- [[learnosity-access-product]] — Learnosity API access and integration notes
+- [[learnosity-swap-out-notes-product]] — Learnosity swap-out planning notes
+- [[logging-conventions]] — Marvin logging conventions and patterns
+- [[marvin-architecture]] — Marvin system architecture overview
+- [[marvin-diagnostic-inferencing-functional-requirements]] — Diagnostic inferencing functional requirements
+- [[marvin-example-skill-assessment-json-response]] — Example skill assessment JSON response
+- [[marvin-frontend]] — Marvin frontend architecture and patterns
+- [[marvin-graphql-service]] — Marvin GraphQL service (Hot Chocolate .NET, ECS)
+- [[marvin-inferencing-v2]] — Marvin inferencing v2 design
+- [[marvin-skill-assessment-inferencing-implementer-notes]] — Skill assessment inferencing implementer notes
+- [[query-filters]] — Query filters design for Marvin
+- [[querying-graphql]] — GraphQL querying patterns and conventions
+- [[relay-connections]] — Relay connection pattern and pagination
+- [[team-e-onboarding-product]] — Team E onboarding documentation
+- [[teamd-1010-embedding-prototype-metabase]] — Metabase embedding prototype (SSO, row/column security)
+- [[teamf-556-chromebook-touchscreen-tap]] — Chromebook touchscreen tap display shift bug
+- [[teamf-fe-package-updates]] — TEAMF-539 Dependabot fixes (5 high-sev npm audit) + deferred PNPM migration
+- [[tech-debt-infrastructure-opportunities-product]] — Tech debt and infrastructure opportunities
+- [[learnosity-cdn-incident-2026-02-24]] — Feb 2026 Items API CDN archive post-mortem (pin v1.132.3 / v2025.1.LTS)
+- [[cloudwatch-logs-insights-queries]] — CloudWatch query reference for BFF, GraphQL Service, Inference Engine
+- [[qa-frontend-automated-test-workflow]] — GitHub Actions runbook for qa-frontend-automated-tests (5x recommended, ~20min)
+- [[nc-tech-stack-overview]] — One-line stack summary: React+Relay, GraphQL, .NET, Python tests, PostgreSQL, AWS CDK, GitLab
+- [[accessibility-marvin-wcag]] — Marvin WCAG 2.1 AA setup with Deque axe Linter
+- [[skill-resource-phase2-extract-graphql-hook]] — Phase 2: extract 6 Relay ops into useSkillResourceQueries
+- [[skill-resource-phase2-extract-modals-hook]] — Phase 2: consolidate modal flags into useSkillModals via reducer + discriminated union
+- [[skill-resource-phase2-extract-timeline-hook]] — Phase 2: extract step navigation state machine into useSkillTimeline
+- [[brainbreak-lts-cooldown-speculative-bugs]] — Refined write-up: cooldown parser bug, TEAME-287, proposed fixes
+- [[teame-287-speculative-data-created-bug]] — TEAME-287: speculative data `created` column bug
+- [[remaining-brain-break-tickets]] — Debug session: root cause analysis of cooldown date parsing bugs
+- [[work-status-may-5-2026]] — Daily status: grade selection bug, reverse scoring, Docker rebuild
+- [[docker-fe-esbuild-exe-error]] — Cross-platform node_modules in Docker volume mount pitfall
+- [[qa-fe-automation-local-workflow]] — Personal WezTerm + Playwright + PG Admin three-pane workflow
+- [[question-axe-linter]] — Axe IDE linter vs browser extension: ~20% coverage, custom component mapping
+- [[research-terms-recap]] — Scholar search for knowledge tracing + teacher dashboards
+- [[marvin-local-frontend-dev-setup]] — Runbook: local Marvin FE dev with Docker + seeded test user
+- [[worktree-rebase-missed-flyway-migrations]] — Gotcha: stale origin/main causes missing migration files
 
 #### Security
 - [[toctou-wikipedia]] — Formal definition of time-of-check to time-of-use race conditions
 - [[toctou-explained-deepstrike]] — Practical TOCTOU guide with attack methods and mitigation
 - [[lock-it-or-lose-it-race-conditions]] — Distributed locking: pessimistic locks, timeouts, fence tokens
 - [[axios-supply-chain-compromise-postmortem]] — March 2026 axios npm compromise via social engineering + RAT
+- [[auth0]] — Authentication platform
+- [[jwt]] — JSON Web Tokens
 
 #### Database & Standards
 - [[sql-style-guide]] — In-house SQL conventions and best practices
 - [[ecc-coding-standards]] — Cross-language coding standards hub (TypeScript, Go, Kotlin, Python, PHP, Swift)
+- [[aws-aurora-serverless]] — AWS Aurora Serverless database
+- [[flyway]] — Database migration tool
 
 ### Synthesis
+- [[may-4-5-2026-themes]] — Five themes from May 4-5: BrainBreak LTS bugs, dev-env friction, QA tooling, learning-product research, personal/wellness
+- [[speculative-data-as-state-machine]] — Speculative data writes are a state-management problem; state-machine refactor proposal for TEAME-287
+- [[trust-boundaries-formal-verification-and-bloat]] — Formal verification + dependency reduction as twin strategies for the trust boundary problem; 5-tier code provenance framework
 - [[prompts-for-ai-unit-test-generation]] — Prompt templates for AI-generated unit tests (error states, edge cases)
 - [[unified-search-component-pattern]] — Facade + strategy pattern for combining PrimeReact AutoComplete and MultiSelect
 - [[thinking-frameworks-for-debugging]] — Which thinking framework to use at each debugging phase (OODA, Ishikawa, Issue Trees, First Principles, Ladder of Inference, Connection Circles)
 - [[thinking-frameworks-for-code-review]] — Frameworks for code review: Cognitive Load, SBI feedback, Six Hats review lenses, Minto Pyramid comments, conflict resolution, clean code checklist
+- [[claude-code-prompts-research-implementation]] — 7 ready-to-paste Claude Code prompts for investigating the Marvin codebase to implement research findings (planning prompts, teacher nudges, confidence divergence, insight recall, skill graph, struggle detection, mindset audit)
+
+### Product Concepts
+- [[three-ring-mastery-system]] — Three-ring progress system: spaced repetition + mastery stages + weekly goals (TTO feature concept)
+- [[mastery-velocity-three-ring-feature-concept]] — Brainstorm source for three-ring system
+- [[math-problem-game]] — Game design: abstraction tools trigger pattern-recognition "eureka moments"
+- [[reverse-scoring]] — Psychometric technique: invert scale direction to detect response bias
+
+### Learning Science (Research Foundations)
+
+**Concepts:**
+- [[spaced-repetition]] — Evidence-based learning via expanding-interval review
+- [[forgetting-curve]] — Ebbinghaus exponential decay model `p = 2^(-Δ/h)`
+- [[half-life-regression]] — Duolingo's trainable per-word HLR algorithm
+- [[knowledge-tracing]] — Modeling student mastery from interaction history (BKT/DKT/SAINT)
+- [[gamification]] — XP/streaks/leagues/goal-gradient mechanics + anti-patterns
+- [[productive-struggle]] — Effortful grappling with challenging material; cognitive + emotional scaffolding
+- [[ai-math-tutoring]] — AI-powered math tutoring: human-AI collaboration, multi-agent systems, adaptive difficulty
+- [[adaptive-feedback-education]] — Process-level feedback on student reasoning, not just answer correctness
+- [[its-llm-architecture]] — ITS + LLM integration pattern for motivational and instructional feedback
+- [[skill-tree-competency-structure]] — Formal prerequisite DAGs for competency-based education
+- [[knowledge-graph-education]] — Structured concept relationships for personalized learning and curriculum design
+- [[bkt-fairness]] — Algorithmic fairness in Bayesian Knowledge Tracing (reading ability confound)
+- [[behavioral-nudges-education]] — Low-cost behavioral interventions leveraging loss aversion, social norms, and goal-gradient for engagement
+- [[metacognitive-reflection]] — Pausing to think about what and how you're learning; evidence base ES=1.11 for math achievement
+- [[self-regulated-learning]] — Zimmerman's SRL cycle: plan → monitor → reflect; meta-analysis ES=1.27 for learning outcomes
+- [[growth-mindset]] — Near-zero achievement effects (Macnamara 2023); distinct from self-efficacy and math identity
+- [[self-determination-theory]] — Three basic needs (autonomy, competence, relatedness); 36-study meta-analysis
+- [[math-anxiety]] — Longitudinal STEM gatekeeper; anxiety pushes away, self-efficacy pulls toward
+- [[math-identity]] — Validated instrument grades 5–12; co-constructed via teacher positioning
+- [[achievement-goal-theory]] — Mastery vs performance goals; latent profile heterogeneity
+- [[expectancy-value-theory]] — Five EVT constructs; profile instability during transitions
+- [[motivational-profiles]] — Person-centered approach; 5–6 distinct student motivation profiles
+- [[desirable-difficulty]] — Bjork's framework; spacing creates productive short-term cost for durable retention
+- [[math-fact-fluency]] — Intervention evidence; digital delivery validated equal to peer tutoring
+- [[spaced-retrieval-practice]] — Classroom-level evidence; 3–5% precalculus gains, context-dependent
+- [[peer-tutoring-math]] — Cross-age tutoring validated; modality equivalence finding
+- [[competency based learning]] — Mastery-gated progression with transparent targets, continuous assessment, flexible pacing
+- [[formative-assessment]] — Black & Wiliam (1998): continuous low-stakes demonstration replaces high-stakes summative events
+- [[performance-based-assessment]] — Stiggins, Tobón: portfolios, rubric design, multiple evidence types for competency demonstration
+- [[zone-of-proximal-development]] — Vygotsky (1978): optimal learning at the gap between independent and guided performance
+- [[knowledge-space-theory]] — Doignon & Falmagne: mathematical prerequisite mapping between competencies (ALEKS)
+- [[deep-knowledge-tracing]] — Piech et al. (2015): RNN/LSTM knowledge tracing with higher accuracy than BKT
+- [[differentiated-instruction]] — Tomlinson (1999): readiness, interest, learning profile → content, process, product, environment
+- [[scaffolding]] — Wood/Bruner/Ross (1976): contingent, faded support; Belland meta-analysis g ≈ 0.50
+- [[culturally-responsive-pedagogy]] — Ladson-Billings (1995): academic achievement, cultural competence, sociopolitical consciousness
+
+**Source pages:**
+- [[teachers-guide-spaced-repetition]] — Classroom SR playbook (1/3/6/10/14/18 wk schedule, 7 techniques)
+- [[spaced-repetition-wikipedia]] — Algorithm family + history canonical reference
+- [[duolingo-half-life-regression]] — Burr Settles ACL 2016 paper (9.5% retention bump vs Leitner)
+- [[duolingo-new-learning-path]] — Path-as-SRS UI pattern (Nov 2022 redesign)
+- [[duolingo-learning-strategy]] — Gamification + AI synthesis (15-20min sessions, Crown hovering)
+- [[geometry-of-learning-kst-mastery-maps]] — KST 0-5 rubric, Dunning-Kruger drop, depth-vs-breadth
+- [[deep-knowledge-tracing-practical-evaluation]] — EDM 2025 KT production-realities paper
+- [[irec-metacognitive-scaffolding-arxiv]] — Critique of de-contextualized SRS, JITAI alternative
+- [[apple-watch-psychology-gamification]] — Goal-gradient rings, social reinforcement, automaticity
+- [[tutor-copilot-2025]] — Human-AI tutoring RCT: +4/+9 p.p. mastery gains at $20/tutor/year
+- [[genai-math-meta-analysis-2026]] — Meta-analysis of 22 GenAI math studies (N=5,232)
+- [[ai-difficult-math-questions]] — MATH² multi-skill combination problems for calibrated difficulty
+- [[mathedu-adaptive-feedback-2025]] — MathEDU dataset: process-level feedback with teacher benchmarks
+- [[llm-education-systematic-review-2025]] — 88 empirical studies on LLMs in education
+- [[ai-math-tutoring-2025]] — Multi-agent adaptive math tutoring platform
+- [[its-llm-motivational-feedback-2025]] — ITS-LLM architecture for motivational feedback (Llama 3.2)
+- [[skill-trees-competency-2025]] — Formal skill tree DAGs for competency-based courses
+- [[deep-learning-knowledge-tracing-2025]] — DLKT vs BKT comparison study (Nature Sci. Reports)
+- [[bkt-fairness-math-2025]] — BKT fairness gap by reading ability (EDM 2025)
+- [[knowledge-graph-education-slr-2024]] — SLR of knowledge graphs in education
+- [[productive-struggle-ai-bellwether]] — AI risks undermining productive struggle
+- [[productive-struggle-students]] — Student perceptions of teacher support for productive struggle
+- [[nudge-meta-synthesis-2025]] — Meta-synthesis of nudge interventions across educational contexts
+- [[streaks-math-engagement]] — RCT: streak mechanics boost math engagement + achievement (Chile, N≈1,500)
+- [[nudge-math-megastudy-2025]] — Megastudy: personalized teacher nudges boost math progress 1.89% (Zearn, N≈3M)
+- [[metacognition-math-modeling-ct-2024]] — Metacognition → critical thinking → math modeling (N=661)
+- [[metacognitive-skills-math-problem-solving-2025]] — Structured reflective prompts enhance metacognition in math
+- [[metacognitive-instruction-meta-analysis-2025]] — PRISMA meta-analysis: metacognitive instruction ES=1.11 for math
+- [[growth-mindset]] — Near-zero achievement effects (Macnamara 2023); distinct from self-efficacy and math identity
+- [[self-determination-theory]] — Three basic needs; 36-study meta-analysis validates autonomy support as key lever
+- [[math-anxiety]] — Longitudinal STEM gatekeeper; anxiety pushes away, self-efficacy pulls toward
+- [[math-identity]] — Validated instrument grades 5–12; co-constructed via teacher positioning
+- [[achievement-goal-theory]] — Mastery vs performance goals; latent profile heterogeneity
+- [[expectancy-value-theory]] — Five EVT constructs; profile instability during transitions
+- [[motivational-profiles]] — Person-centered approach; 5–6 distinct student motivation profiles
+- [[desirable-difficulty]] — Bjork's framework; spacing creates productive short-term cost for durable retention
+- [[math-fact-fluency]] — Intervention evidence; digital delivery validated equal to peer tutoring
+- [[spaced-retrieval-practice]] — Classroom-level evidence; 3–5% precalculus gains, context-dependent
+- [[peer-tutoring-math]] — Cross-age tutoring validated; modality equivalence finding
+- [[achievement-goal-profiles-math-2023]] — LPA of achievement goal profiles; instructional quality moderates
+- [[evt-achievement-goals-2025]] — 6 homework motivation profiles integrating AGT + EVT + SRL (N=1,256)
+- [[evt-math-profiles-2024]] — EVT profiles shift during secondary-to-tertiary STEM transition
+- [[growth-mindset-chinese-math-2023]] — Chain mediation: mindset → self-efficacy → intrinsic motivation
+- [[growth-mindset-differentiation-2025]] — Mathematical mindset ≠ growth mindset ≠ self-efficacy
+- [[growth-mindset-meta-analysis-2023]] — Near-zero effects when design flaws controlled (Macnamara)
+- [[math-anxiety-stem-choices-2024]] — 3-year longitudinal: anxiety vs self-efficacy STEM pathways
+- [[math-identity-instrument-2023]] — First validated group-administrable math identity measure (grades 5–12)
+- [[sdt-math-outcomes-2026]] — SDT need-satisfaction → lower anxiety, more STEM major choice
+- [[sdt-meta-analysis-2024]] — 36-study meta-analysis: autonomy support is key active ingredient
+- [[sdt-online-math-2024]] — SDT-based online math: competence/relatedness improved, autonomy harder digitally
+- [[teacher-positioning-math-identity-2023]] — Teacher positioning → math identity via problem-solving flexibility
+- [[spaced-retrieval-calculus-desirable-difficulty-2022]] — Spaced retrieval: worse quizzes, better final exams
+- [[spaced-retrieval-nine-STEM-courses-2024]] — 9-course within-subjects: inconsistent but 3–5% precalculus gains
+- [[math-fact-fluency-high-schoolers-2024]] — High schoolers = professionals for fluency delivery
+- [[multiplication-fact-fluency-intervention-modality-2024]] — iPad = peer tutoring; retrieval practice is the active ingredient
+- [[cbl-assessing-demonstrations]] — CBL Pillar 1: performance-based assessment, formative assessment, equity in evaluation
+- [[cbl-knowledge-frontier]] — CBL Pillar 2: ZPD, KST, BKT/DKT, adaptive sequencing for frontier targeting
+- [[cbl-differentiated-support]] — CBL Pillar 3: differentiated instruction, scaffolding, AI tutoring, culturally responsive teaching
+
+**Entities:**
+- [[hermann-ebbinghaus]] — Forgetting curve discoverer (1880s)
+- [[sebastian-leitner]] — Leitner box system (1973)
+- [[paul-pimsleur]] — Graduated-interval recall (1967)
+- [[burr-settles]] — Half-Life Regression at Duolingo
+- [[skill-resource-phase2-architecture]] — Target post-refactor structure for SkillResource god component split
+- [[skill-resource-phase2-architecture-overview]] — SkillResource Phase 2 architecture overview (Container + View + hooks)
+- [[vygotsky]] — Lev Vygotsky: ZPD, social constructivism, scaffolding origins
+- [[tomlinson]] — Carol Ann Tomlinson: differentiated instruction framework
+- [[ladson-billings]] — Gloria Ladson-Billings: culturally relevant pedagogy
+
+### Personal
+- [[captains-log-volume-one]] — May 3 journal: Teach to One tiers, math problem game concept
+- [[caption-logs-may-4-2026]] — May 4 journal: NBA playoffs, work tasks, weekend recap
+- [[nba-eastern-playoff-may-2-2026]] — Playoff predictions: Knicks vs 76ers, LeBron vs OKC
+- [[kobe-bryant-meditation-article]] — Article clipping: Kobe's 15min daily meditation practice
+- [[crazy-tweets]] — One-liner: idea guys who are too busy to execute
 
 ### Projects
 - [[Active Projects]] — Current work in progress

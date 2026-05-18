@@ -1,16 +1,22 @@
 ---
-description: Using CSS transforms, math functions, and modern features to render 3D scenes without Canvas or WebGL
-tags: [css, 3d, rendering, browser-capabilities, transforms]
-sources: ["css-is-doomed"]
+description: CSS 3D Rendering — building 3D scenes with CSS transforms, math functions, and custom properties. No Canvas, no WebGL. cssDOOM proved it's possible. Performance is the limiting factor.
+tags:
+  - css
+  - 3d
+  - rendering
+  - transforms
+  - browser/capabilities
+sources:
+  - css-is-doomed
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-05-17
 ---
 
 # CSS 3D Rendering
 
-Using CSS transforms, math functions, and modern features to render 3D scenes without Canvas or WebGL. Demonstrated by cssDOOM — a full DOOM game where every element is a `<div>`.
+You can render 3D scenes using nothing but CSS transforms and math functions. No Canvas, no WebGL, no JavaScript graphics library — just `<div>` elements positioned in 3D space. cssDOOM proved it by building a playable DOOM clone where every wall, door, and enemy is a styled `<div>`. It's technically impressive. It's also a performance cautionary tale.
 
-## Key Techniques
+## The Toolkit
 
 ### 3D Transforms
 - `translate3d(x, y, z)` for positioning
@@ -20,12 +26,14 @@ Using CSS transforms, math functions, and modern features to render 3D scenes wi
 
 ### CSS Math Functions
 - `hypot(dx, dy)` — Pythagorean distance (wall width)
-- `atan2(dy, dx)` — Inverse tangent (wall rotation)
-- `sin()`, `cos()` — Camera offset calculations
+- `atan2(dy, dx)` — inverse tangent (wall rotation)
+- `sin()`, `cos()` — camera offset calculations
+
+These are the same math you'd use in any 3D engine. The difference: CSS runs it in the browser's style system instead of a JavaScript render loop.
 
 ### Custom Properties + @property
 - Raw DOOM coordinates stored as `--start-x`, `--start-y`, etc.
-- `@property` registers types for animation (e.g., `<number>`)
+- `@property` registers types for animation (`<number>`)
 - Enables smooth transitions for falling, doors, lights
 
 ### Clip-Path
@@ -38,13 +46,13 @@ Using CSS transforms, math functions, and modern features to render 3D scenes wi
 - `position-anchor` + `anchor(top)` for responsive positioning
 - Used for HUD weapon sprite anchored to status bar
 
-## Performance Limitations
+## Why It Falls Over
 
-- Browser compositors optimized for layered UI, not 3D scenes
-- Thousands of 3D-transformed elements overwhelm compositor
-- Safari on iOS crashes on large maps
-- Manual culling required (hide off-screen elements)
-- Experimental pure-CSS culling uses "type grinding" (paused animation tricks)
+Browser compositors are optimized for layered UI — buttons, menus, cards. Not 3D scenes with thousands of elements in perspective. Safari on iOS crashes on large maps. Manual culling (hiding off-screen elements) is required. There's experimental pure-CSS culling using "type grinding" (paused animation tricks), but it's a hack.
+
+The takeaway: CSS 3D is a proof of concept, not a production rendering engine. For a single cool demo or a small scene, it works. For anything resembling a real game or data visualization with thousands of elements, use WebGL. The browser compositor isn't built for this.
+
+The open thread: CSS keeps acquiring features that blur the line between styling and programming — math functions, anchor positioning, container queries. At some point the question flips from "can CSS do this?" to "should CSS do this?" cssDOOM is the answer to the first question. The second is still open.
 
 ## Related
 

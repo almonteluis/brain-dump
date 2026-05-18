@@ -1,7 +1,13 @@
 ---
 description: Using web components (Lit) with server components for production frontends — MDN's architecture of flat name-based structure, automatic lazy loading, and Declarative Shadow DOM
-tags: ["web-components", "lit", "server-components", "frontend-architecture", "concept"]
-sources: ["wiki/sources/mdn-frontend-architecture.md"]
+tags:
+  - web-components
+  - lit
+  - server-components
+  - frontend/architecture
+  - concept
+sources:
+  - wiki/sources/mdn-frontend-architecture.md
 created: 2026-04-11
 updated: 2026-04-11
 ---

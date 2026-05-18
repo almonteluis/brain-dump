@@ -1,7 +1,14 @@
 ---
 description: Dynamic routing patterns for React and frontend applications
-tags: ["source", "routing", "react", "frontend", "dynamic-routing", "patterns"]
-sources: ["Dynamic Routing.md"]
+tags:
+  - source
+  - routing
+  - react
+  - frontend
+  - dynamic-routing
+  - pattern
+sources:
+  - Dynamic Routing.md
 created: 2026-04-09
 updated: 2026-04-09
 ---

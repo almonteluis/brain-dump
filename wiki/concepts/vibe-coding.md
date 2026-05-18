@@ -1,13 +1,17 @@
 ---
-tags: [ai, coding, hobbyist, karpathy]
-sources: ["andrej-karpathy-bio"]
+tags:
+  - ai
+  - ai/code
+  - ai/hobbyist
+sources:
+  - andrej-karpathy
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-05-01
 ---
 
 # Vibe Coding
 
-Term coined by Andrej Karpathy (Feb 2025) for constructing apps and websites via AI prompts without traditional programming expertise.
+Term coined by [[andrej-karpathy]] (Feb 2025) for constructing apps and websites via AI prompts without traditional programming expertise.
 
 ## Definition
 
@@ -29,4 +33,4 @@ Term coined by Andrej Karpathy (Feb 2025) for constructing apps and websites via
 ## Related
 
 - [[ai-code-generation]] — Broader trend of AI as primary author
-- [[andrej-karpathy-bio]] — Term originator
+- [[andrej-karpathy]] — Term originator

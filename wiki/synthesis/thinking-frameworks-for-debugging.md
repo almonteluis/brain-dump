@@ -1,7 +1,14 @@
 ---
 description: How thinking frameworks map to software debugging workflows — which framework to use at each phase of bug investigation
-tags: ["thinking-frameworks", "debugging", "problem-solving", "synthesis"]
-sources: ["thinking-frameworks-collection.md", "typescript-debugging-patterns.md", "react-useeffect-patterns.md"]
+tags:
+  - framework/thinking
+  - debugging
+  - problem-solving
+  - synthesis
+sources:
+  - thinking-frameworks-collection.md
+  - typescript-debugging-patterns.md
+  - react-useeffect-patterns.md
 created: 2026-04-22
 updated: 2026-04-22
 ---

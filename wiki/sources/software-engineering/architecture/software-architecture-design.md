@@ -1,7 +1,14 @@
 ---
 description: Software architecture fundamentals covering design decisions, patterns, UML diagrams, deployment considerations, and best practices
-tags: ["source", "software-architecture", "design", "SDLC", "patterns", "best-practices"]
-sources: ["Software Architecture and Design.md"]
+tags:
+  - source
+  - software-architecture
+  - design
+  - SDLC
+  - pattern
+  - best-practices
+sources:
+  - Software Architecture and Design.md
 created: 2026-04-09
 updated: 2026-04-09
 ---

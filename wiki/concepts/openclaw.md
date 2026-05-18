@@ -1,6 +1,12 @@
 ---
 description: Self-hosted open-source AI coding agent compatible with multiple LLM providers
-tags: [openclaw, ai-coding, open-source, agent, terminal, concept]
+tags:
+  - openclaw
+  - ai/code
+  - open-source
+  - terminal
+  - concept
+  - agent
 created: 2026-04-30
 updated: 2026-04-30
 ---

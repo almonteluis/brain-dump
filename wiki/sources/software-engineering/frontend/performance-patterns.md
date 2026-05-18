@@ -1,7 +1,13 @@
 ---
 description: Frontend performance patterns for rendering, state management, network, and resource loading
-tags: ["source", "frontend", "performance", "patterns", "optimization"]
-sources: ["Performance Patterns.md"]
+tags:
+  - source
+  - frontend
+  - performance
+  - pattern
+  - optimization
+sources:
+  - Performance Patterns.md
 created: 2026-04-09
 updated: 2026-04-09
 ---

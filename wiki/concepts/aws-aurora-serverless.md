@@ -7,19 +7,19 @@ updated: 2026-04-30
 
 # AWS Aurora Serverless
 
-AWS's serverless relational database service that automatically scales compute capacity based on demand. Available for both MySQL and PostgreSQL-compatible editions.
+Imagine [[postgresql]] or MySQL, but instead of guessing how many ACUs you need and either overpaying or throttling, the database scales compute up and down on demand. That's Aurora Serverless — AWS's answer to "what if I don't want to think about database capacity?"
 
-## Key Characteristics
+It works well for workloads with spiky traffic (education platforms where 200 kids all log in at 8:15 AM, then nothing for an hour). v2 made scaling near-instant. The catch: read replicas have eventual consistency, typically sub-100ms replication lag but it's not zero. If your app can't tolerate stale reads right after a write, design around it.
+
+## Key Details
 
 - Auto-scaling within specified capacity unit ranges
-- Pay-per-use pricing model
+- Pay-per-use — you're billed for what you actually consume
 - Read replicas for read scaling
-- Eventual consistency between writer and reader instances
-- Typically sub-100ms replication lag
-- v2 version offers more granular scaling and instant scaling
+- v2 offers granular scaling and near-instant capacity changes
 
 ## Related
 
 - [[database-postgresql-aurora-guide]] — production architecture
-- [[PostgreSQL]] — underlying database engine
+- [[postgresql]] — underlying database engine
 - [[read-replica-eventual-consistency]] — replication behavior

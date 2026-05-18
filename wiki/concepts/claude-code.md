@@ -1,14 +1,22 @@
 ---
-description: Hub for Claude Code ecosystem — workflows, patterns, configuration, and plugins
-tags: [claude-code, ai-coding, workflows, configuration, concept]
+description: Claude Code — Anthropic's AI coding assistant, built on Bun. Structured workflows turn AI from toy to tool.
+tags:
+  - claude/code
+  - ai/code
+  - workflow
+  - configuration
+  - concept
 created: 2026-04-30
-updated: 2026-04-30
-sources: ["claude-code-power-user-patterns", "writing-good-claude-md", "workflows"]
+updated: 2026-05-17
+sources:
+  - claude-code-power-user-patterns
+  - writing-good-claude-md
+  - workflows
 ---
 
 # Claude Code
 
-AI coding assistant by Anthropic. Built on Bun. Core pattern: structured workflows transform AI from toy to tool.
+AI coding assistant by Anthropic. Built on Bun. The core insight: unstructured AI coding is a toy. Structured workflows — research, plan, implement — turn it into a tool.
 
 ## Core Workflows
 
@@ -62,6 +70,8 @@ AI coding assistant by Anthropic. Built on Bun. Core pattern: structured workflo
 | Agent self-check framework (MISS/FIX logging) | [[agent-self-check-framework]] |
 | Resume session skill | [[resume-session-skill]] |
 | SessionStart tree injection hook | [[sessionstart-tree-hook]] |
+
+The open thread: Claude Code is a [[context-engineering]] playground. Everything that works here — compaction, progressive disclosure, subagent isolation — transfers to any AI-assisted workflow. The [[second-brain-pattern]] in this vault is Claude Code running the compile-and-query loop on your notes.
 
 ## Related
 

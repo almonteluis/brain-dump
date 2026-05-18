@@ -20,24 +20,24 @@ All libraries in this collection are:
 
 ## Animation & Effects Libraries
 
-| Library | URL | Open Source | Focus |
-|---------|-----|-------------|-------|
-| **Magic UI** | [magicui.design](https://magicui.design) | ✓ | Animated components, particles, effects |
-| **Aceternity** | [ui.aceternity.com](https://ui.aceternity.com) | ✗ | Premium animations, 3D effects |
-| **Fancy Components** | [fancycomponents.dev](https://www.fancycomponents.dev) | ✓ | Animated UI elements |
-| **Hover.dev** | [hover.dev](https://www.hover.dev) | Partial | Hover effects and interactions |
+| Library              | URL                                                    | Open Source | Focus                                   |
+| -------------------- | ------------------------------------------------------ | ----------- | --------------------------------------- |
+| **Magic UI**         | [magicui.design](https://magicui.design)               | ✓           | Animated components, particles, effects |
+| **Aceternity**       | [ui.aceternity.com](https://ui.aceternity.com)         | ✗           | Premium animations, 3D effects          |
+| **Fancy Components** | [fancycomponents.dev](https://www.fancycomponents.dev) | ✓           | Animated UI elements                    |
+| **Hover.dev**        | [hover.dev](https://www.hover.dev)                     | Partial     | Hover effects and interactions          |
 
 ## Full Component Libraries
 
-| Library | URL | Open Source | Focus |
-|---------|-----|-------------|-------|
-| **shadcn/ui** | [ui.shadcn.com](https://ui.shadcn.com) | ✓ | Accessible, customizable Radix-based components |
-| **Preline** | [preline.co](https://preline.co) | ✓ | Complete UI kit with Figma files |
-| **HyperUI** | [hyperui.dev](https://www.hyperui.dev) | ✓ | Large collection of free components |
-| **Tailus** | [html.tailus.io](https://html.tailus.io) | ✓ | Modern, clean component designs |
-| **Origin UI** | [originui.com](https://originui.com) | ✓ | Well-crafted component library |
-| **Kokonut UI** | [kokonutui.com](https://kokonutui.com) | ✓ | React + Tailwind components |
-| **Bund UI** | [bundui.io](https://bundui.io) | ✓ | Modern component collection |
+| Library        | URL                                      | Open Source | Focus                                           |
+| -------------- | ---------------------------------------- | ----------- | ----------------------------------------------- |
+| **shadcn/ui**  | [ui.shadcn.com](https://ui.shadcn.com)   | ✓           | Accessible, customizable Radix-based components |
+|                |                                          | ✓           |                                                 |
+| **HyperUI**    | [hyperui.dev](https://www.hyperui.dev)   | ✓           | Large collection of free components             |
+| **Tailus**     | [html.tailus.io](https://html.tailus.io) | ✓           | Modern, clean component designs                 |
+| **Origin UI**  | [originui.com](https://originui.com)     | ✓           | Well-crafted component library                  |
+| **Kokonut UI** | [kokonutui.com](https://kokonutui.com)   | ✓           | React + Tailwind components                     |
+| **Bund UI**    | [bundui.io](https://bundui.io)           | ✓           | Modern component collection                     |
 
 ## Component Marketplaces & Collections
 

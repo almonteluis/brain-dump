@@ -1,5 +1,5 @@
 {
   "folder": "raw",
-  "template": "06_system/templates/daily note template",
+  "template": "wiki/reference/templates/Daily Note Template",
   "format": "YYYY-MM-DD"
 }

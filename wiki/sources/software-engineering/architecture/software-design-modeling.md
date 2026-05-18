@@ -1,16 +1,20 @@
 ---
 description: Software design fundamentals using UML diagrams, structure diagrams, state transitions, and interaction diagrams for modeling systems
-tags: ["source", "software-design", "UML", "diagrams", "modeling", "structured-design"]
-sources: ["Software Design and Modeling.md"]
+tags:
+  - source
+  - software-design
+  - UML
+  - diagrams
+  - modeling
+  - structured-design
+sources:
+  - Software Design and Modeling.md
 created: 2026-04-09
 updated: 2026-04-09
+type: technical reference
 ---
 
 # Software Design and Modeling
-
-**Source:** raw/02_reference/software-engineer/Architecture/Design/Software Design and Modeling.md
-**Date ingested:** 2026-04-09
-**Type:** technical reference
 
 ## Summary
 

@@ -1,7 +1,16 @@
 ---
 description: How thinking frameworks, cognitive science, and clean code principles map to code review workflows
-tags: ["thinking-frameworks", "code-review", "clean-code", "synthesis"]
-sources: ["thinking-frameworks-collection.md", "cognitive-load.md", "clean-code-javascript.md", "programmers-oath.md", "teame-218-brainbreak-postmortem.md"]
+tags:
+  - framework/thinking
+  - code/review
+  - code/clean
+  - synthesis
+sources:
+  - thinking-frameworks-collection.md
+  - cognitive-load.md
+  - clean-code-javascript.md
+  - programmers-oath.md
+  - teame-218-brainbreak-postmortem.md
 created: 2026-04-22
 updated: 2026-04-22
 ---
