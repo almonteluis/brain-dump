@@ -1,6 +1,6 @@
 ---
-type: concept
-status: stub
+description: Per-workflow terminal layouts bound to a single shortcut, eliminating the working-memory cost of context switching
+tags: [workflow, terminal, productivity, concept]
 created: 2026-05-17
 source_capture: "[[daily note for friday]]"
 ---
@@ -25,3 +25,8 @@ From [[QA FE automation local workflow]]: WezTerm, `Cmd+Shift+Q` opens a three-p
 - **Bottom right**: database connection via Leap → Core Auto → PG Admin
 
 This is the QA workflow incarnation of the spatial layout pattern. The keybind lands you in the exact configuration needed to run frontend automation against a specific environment. No remembering which database to connect to, no hunting for the env file — the layout *is* the context. This is why [[shift-left-fe-automation]] matters: if running automation is one keybind away, you run it earlier and more often.
+
+## Related Concepts
+- [[context-engineering]]
+- [[progressive-disclosure]]
+- [[shift-left-fe-automation]]

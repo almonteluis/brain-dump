@@ -1,6 +1,6 @@
 ---
-type: concept
-status: stub
+description: Giving classroom and lab teachers a shared student skill-graph so supplemental time becomes directed practice instead of study hall
+tags: [education, math-education, scaffolding, concept]
 created: 2026-05-17
 source_capture: "[[Captain's log, volume one]]"
 ---
@@ -14,3 +14,6 @@ At New Classrooms, tier one is in-class instruction with a dedicated math teache
 The alternative — predetermining lab work by the math teacher or the program — only works if the feedback loop is tight. If a kid bombs a concept in tier one at 10am, the lab at 1pm should know. If the system can't close that loop fast enough, the lab teacher needs agency to pull from the graph themselves.
 
 This rhymes with [[differentiated-instruction]] but from the infrastructure side — Tomlinson's framework assumes one teacher doing the differentiating. What happens when two teachers share one student across two rooms?
+
+## Related Concepts
+- [[differentiated-instruction]]

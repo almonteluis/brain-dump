@@ -1,6 +1,6 @@
 ---
-type: concept
-status: stub
+description: Using Obsidian Canvas to spatially map processed wiki notes for research synthesis
+tags: [obsidian, research, knowledge-management, concept]
 created: 2026-05-17
 source_capture: "[[end cap]]"
 ---
@@ -14,3 +14,7 @@ Obsidian Canvas is the missing piece for that moment. You drop notes onto an inf
 The workflow: dump research into `raw/`, let the [[second-brain-pattern|LLM wiki]] process it into concept notes, then pull the key notes onto a Canvas to visually map the synthesis. The wiki handles atomic storage. Canvas handles the spatial reasoning your brain actually wants to do when it's synthesizing.
 
 This rhymes with [[graphify-community-detection]] — both are about seeing structure that's invisible in a flat list. But Canvas is manual and spatial where Graphify is algorithmic and relational. What would it look like to auto-generate a Canvas from a Graphify community?
+
+## Related Concepts
+- [[second-brain-pattern]]
+- [[graphify-community-detection]]

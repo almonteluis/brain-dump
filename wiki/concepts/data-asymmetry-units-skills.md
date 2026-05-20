@@ -1,6 +1,6 @@
 ---
-type: concept
-status: stub
+description: How page-level GraphQL query isolation creates invisible data boundaries within the same app
+tags: [frontend, architecture, graphql, concept]
 created: 2026-05-17
 source_capture: "[[Working status of 203]]"
 ---
@@ -14,3 +14,6 @@ This is an architectural gotcha, not a bug. The queries evolved independently be
 The pattern: **page-level query isolation creates invisible data boundaries**. Every page in a frontend app is potentially its own data silo, even when they share the same backend. The fix isn't merging queries — it's making the boundary explicit and deciding which page owns the canonical data for each field.
 
 This connects to [[experiment-speculative-data]] — when you're logging experiment data per assignment, you need to know which fields are reliable from which page. What other data boundaries are hiding in plain sight across the app?
+
+## Related Concepts
+- [[experiment-speculative-data]]

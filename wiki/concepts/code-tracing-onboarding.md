@@ -1,6 +1,6 @@
 ---
-type: concept
-status: stub
+description: Tracing a feature from UI click to database write as the real, practiceable onboarding skill
+tags: [onboarding, debugging, software-engineering, concept]
 created: 2026-05-17
 source_capture: "[[My thoughts shipping faster code]]"
 ---
@@ -14,3 +14,6 @@ NeoVim forces you to learn it because there's no file tree to browse and no "go 
 The concrete skill: pick a feature you didn't write. Start at the UI. Trace it all the way down. Name every layer you pass through. If you can't name it, you found a gap in your understanding. That gap is more valuable than any onboarding doc.
 
 This is the engineering equivalent of what [[context-engineering]] does for LLMs — the quality of your output depends on how well you can retrieve the right context. A dev who can trace code fast has a better mental context window than one who can't. Does this skill transfer across languages, or is it syntax-specific? Probably language-agnostic but framework-specific — tracing through Next.js is a different map than tracing through Express, even in the same language.
+
+## Related Concepts
+- [[context-engineering]]

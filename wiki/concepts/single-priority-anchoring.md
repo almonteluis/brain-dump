@@ -1,6 +1,6 @@
 ---
-type: concept
-status: stub
+description: Naming the one thing that matters each day as a decision filter, not a plan
+tags: [productivity, focus, planning, concept]
 created: 2026-05-17
 source_capture: "[[Start of the day]]"
 ---
@@ -14,3 +14,6 @@ The failure mode this guards against: splitting across five tickets, going quiet
 The pattern works because it's a *filter*, not a *plan*. A plan says "here's everything I'll do." A filter says "when in doubt, here's what wins." Plans break. Filters compound. Same reason [[context-engineering]] works — reduce the tokens spent on deciding and spend them on executing.
 
 What's the analogue for weekly planning? If single-priority anchoring works for days, does a "one theme per week" hold the same filtering power, or does the longer timeframe dilute it?
+
+## Related Concepts
+- [[context-engineering]]

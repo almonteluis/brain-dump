@@ -1,6 +1,6 @@
 ---
-type: concept
-status: stub
+description: Graphify's second-pass community detection surfaces note clusters that linear reading misses
+tags: [obsidian, knowledge-graph, graphify, concept]
 created: 2026-05-17
 source_capture: "[[daily note for friday]]"
 ---
@@ -14,3 +14,9 @@ The first pass is what you'd expect. Run it on a research folder about student m
 The workflow: point Graphify at a folder, let it build the graph, run the deeper community analysis, then review what it grouped together. The value isn't the graph itself (you could build that manually for a small enough set). The value is the community detection flagging relationships your linear reading missed because you encountered those sources on different days in different moods and never held them in working memory at the same time.
 
 It's the same reason [[knowledge-graph-education]] works for students — the graph surfaces prerequisites and connections the learner can't see from inside their own progression. But here the learner is you, the researcher, and the "curriculum" is a pile of notes you haven't synthesized yet. Sounds adjacent to [[second-brain-pattern]] but this is specifically about the *detection* step, not the storage model.
+
+## Related Concepts
+- [[knowledge-graph-education]]
+- [[second-brain-pattern]]
+- [[self-determination-theory]]
+- [[growth-mindset]]

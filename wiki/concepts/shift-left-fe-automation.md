@@ -1,6 +1,6 @@
 ---
-type: concept
-status: stub
+description: Running the Playwright suite when a feature hits dev rather than waiting for QA, to catch your own bugs while the code is fresh
+tags: [testing, frontend, playwright, concept]
 created: 2026-05-17
 source_capture: "[[My thoughts shipping faster code]]"
 ---
@@ -14,3 +14,6 @@ The shift: once the feature is on dev and you think it's working, run the Playwr
 This is shift-left testing applied specifically to frontend E2E. Unit tests run during dev. Integration tests run during dev. But Playwright? That somehow got classified as "a QA thing." It's not. It's a regression safety net that works best when you're the one reading the failures, because you wrote the code five minutes ago.
 
 This pairs with [[spatial-terminal-layouts]] — the QA terminal layout exists precisely because the workflow of "run automation, read failures, fix, repeat" needs its own spatial context. If you're running automation earlier, you probably need that layout earlier too, not just during QA crunch.
+
+## Related Concepts
+- [[spatial-terminal-layouts]]
