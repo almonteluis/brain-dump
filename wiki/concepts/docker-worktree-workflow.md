@@ -2,7 +2,7 @@
 description: Sharing one running Docker container and database across git worktrees to skip rebuilds when switching branches
 tags: [docker, git-worktrees, workflow, concept]
 created: 2026-05-17
-source_capture: "[[Captain's log, 5-6-26.]]"
+source: "[[Captain's log, 5-6-26.]]"
 ---
 
 # Docker worktree workflow — share the container, skip the rebuild

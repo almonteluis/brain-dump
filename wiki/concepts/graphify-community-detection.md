@@ -2,7 +2,7 @@
 description: Graphify's second-pass community detection surfaces note clusters that linear reading misses
 tags: [obsidian, knowledge-graph, graphify, concept]
 created: 2026-05-17
-source_capture: "[[daily note for friday]]"
+source: "[[daily note for friday]]"
 ---
 
 # Graphify community detection on knowledge bases

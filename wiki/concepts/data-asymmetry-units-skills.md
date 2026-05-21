@@ -2,7 +2,7 @@
 description: How page-level GraphQL query isolation creates invisible data boundaries within the same app
 tags: [frontend, architecture, graphql, concept]
 created: 2026-05-17
-source_capture: "[[Working status of 203]]"
+source: "[[Working status of 203]]"
 ---
 
 # Data asymmetry between pages — when the same app holds different truths

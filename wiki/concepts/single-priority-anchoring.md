@@ -2,7 +2,7 @@
 description: Naming the one thing that matters each day as a decision filter, not a plan
 tags: [productivity, focus, planning, concept]
 created: 2026-05-17
-source_capture: "[[Start of the day]]"
+source: "[[Start of the day]]"
 ---
 
 # Single priority anchoring — name the one thing

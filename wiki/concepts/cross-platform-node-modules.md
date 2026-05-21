@@ -2,7 +2,7 @@
 description: Never share node_modules between a host OS and a container OS — platform-specific binaries break cross-platform file operations
 tags: [docker, node, frontend, concept]
 created: 2026-05-17
-source_capture: "[[Docker FE esbuild.exe error]]"
+source: "[[Docker FE esbuild.exe error]]"
 ---
 
 # Cross-platform node_modules — never share between host and container

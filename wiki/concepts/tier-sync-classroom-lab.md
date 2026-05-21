@@ -2,7 +2,7 @@
 description: Giving classroom and lab teachers a shared student skill-graph so supplemental time becomes directed practice instead of study hall
 tags: [education, math-education, scaffolding, concept]
 created: 2026-05-17
-source_capture: "[[Captain's log, volume one]]"
+source: "[[Captain's log, volume one]]"
 ---
 
 # Tier sync between classroom and lab

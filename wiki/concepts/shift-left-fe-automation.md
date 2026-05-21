@@ -2,7 +2,7 @@
 description: Running the Playwright suite when a feature hits dev rather than waiting for QA, to catch your own bugs while the code is fresh
 tags: [testing, frontend, playwright, concept]
 created: 2026-05-17
-source_capture: "[[My thoughts shipping faster code]]"
+source: "[[My thoughts shipping faster code]]"
 ---
 
 # Shift-left FE automation — run Playwright when the feature hits dev, not when QA asks

@@ -2,7 +2,7 @@
 description: Tracing a feature from UI click to database write as the real, practiceable onboarding skill
 tags: [onboarding, debugging, software-engineering, concept]
 created: 2026-05-17
-source_capture: "[[My thoughts shipping faster code]]"
+source: "[[My thoughts shipping faster code]]"
 ---
 
 # Code tracing as the real onboarding skill

@@ -2,7 +2,7 @@
 description: Reframing kids quitting hard problems as a scaffolding gap, not a motivation gap
 tags: [education, math-education, scaffolding, concept]
 created: 2026-05-17
-source_capture: "[[Thoughts]]"
+source: "[[Thoughts]]"
 ---
 
 # Persistence as a scaffolding problem

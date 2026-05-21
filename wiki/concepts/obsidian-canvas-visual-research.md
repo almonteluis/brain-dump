@@ -2,7 +2,7 @@
 description: Using Obsidian Canvas to spatially map processed wiki notes for research synthesis
 tags: [obsidian, research, knowledge-management, concept]
 created: 2026-05-17
-source_capture: "[[end cap]]"
+source: "[[end cap]]"
 ---
 
 # Obsidian Canvas for visual research synthesis

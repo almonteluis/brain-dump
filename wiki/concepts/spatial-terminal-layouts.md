@@ -2,7 +2,7 @@
 description: Per-workflow terminal layouts bound to a single shortcut, eliminating the working-memory cost of context switching
 tags: [workflow, terminal, productivity, concept]
 created: 2026-05-17
-source_capture: "[[daily note for friday]]"
+source: "[[daily note for friday]]"
 ---
 
 # Spatial terminal layouts as context-switch elimination
@@ -17,16 +17,7 @@ The right pane does the heavy lifting for flexibility: NeoVim for deep edits, La
 
 This is [[context-engineering]] for the physical workspace — reduce the tokens your brain spends on navigation and spend them on the actual problem. The same principle behind [[progressive-disclosure]] but applied to your terminal real estate.
 
-## Concrete Instance — QA FE Automation Layout (2026-05-17)
-
-From [[QA FE automation local workflow]]: WezTerm, `Cmd+Shift+Q` opens a three-pane tab:
-- **Left pane**: auto-fills `nvim .env` for environment switching
-- **Top right**: Playwright command line (swap project flag per environment)
-- **Bottom right**: database connection via Leap → Core Auto → PG Admin
-
-This is the QA workflow incarnation of the spatial layout pattern. The keybind lands you in the exact configuration needed to run frontend automation against a specific environment. No remembering which database to connect to, no hunting for the env file — the layout *is* the context. This is why [[shift-left-fe-automation]] matters: if running automation is one keybind away, you run it earlier and more often.
-
 ## Related Concepts
 - [[context-engineering]]
 - [[progressive-disclosure]]
-- [[shift-left-fe-automation]]
+- [[qa-fe-automation-layout]]
